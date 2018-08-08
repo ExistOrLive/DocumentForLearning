@@ -1,0 +1,50 @@
+### 1、 获取本地网络接口信息 （如 IP地址,端口）
+
+获取网络接口的信息
+
+```
+#include <ifaddrs.h>
+int getifaddrs(struct ifaddrs **);
+```
+
+相关结构体
+
+```
+// 描述接口的信息；包括接口名，网络地址，掩码
+struct ifaddrs 
+{ 
+    struct ifaddrs  *ifa_next;           /* Next item in list */           下一个接口的信息
+    char            *ifa_name;           /* Name of interface */           接口名 en0 一般为局域网   pdp_ip0 为 移动网IP （2G/3G/4G）
+    unsigned int     ifa_flags;          /* Flags from SIOCGIFFLAGS */ 
+    struct sockaddr *ifa_addr;           /* Address of interface */        接口的地址
+    struct sockaddr *ifa_netmask;        /* Netmask of interface */        掩码
+    union 
+    { 
+        struct sockaddr *ifu_broadaddr;  /* Broadcast address of interface */ 
+        struct sockaddr *ifu_dstaddr;    /* Point-to-point destination address */ 
+    } ifa_ifu; 
+    #define              ifa_broadaddr ifa_ifu.ifu_broadaddr 
+    #define              ifa_dstaddr   ifa_ifu.ifu_dstaddr 
+    void            *ifa_data;           /* Address-specific data */ 
+}; 
+
+// 描述协议族，IP地址
+struct sockaddr
+{ 
+    __uint8_t        sa_len;
+    sa_family_t      sa_family;               协议族  AF_INET ipV4
+    char             sa_data[14];             /*ip 地址的值 实际可能超过14位*/   
+}
+
+//描述协议族 端口号 IP地址
+struct sockaddr_in 
+{
+    __uint8_t  sin_len;                  
+    short int sin_family;                                         /* 协议族 */
+    unsigned short int sin_port;                              /* 端口号 */
+    struct in_addr sin_addr;                                    /* Internet地址 */
+    unsigned char sin_zero[8];                                /* 保持与struct sockaddr一样的长度 */
+     };
+```
+
+#### 获取IP地址
