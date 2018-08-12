@@ -6,8 +6,11 @@
 
 > 广义上说，操作系统包括了内核和一些其他软件，包括系统实用程序，应用程序，shell以及公用函数库。
 
-![image](UNIX structure.png)
-![image](UNIX structure.jpeg)
+![UNIX structure][1]
+
 
 
  
+
+
+  [1]: UNIX structure.png
