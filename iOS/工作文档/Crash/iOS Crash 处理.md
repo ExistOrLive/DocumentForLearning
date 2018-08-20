@@ -4,7 +4,7 @@
 
 ### 2、闪退日志分析
 
-闪退日志样例：[MOA_UCS  2018-7-31 下午7-09.crash](MOA_UCS  2018-7-31 下午7-09.crash)
+闪退日志样例：[MOA_UCS  2018-7-31 下午7-09.crash](MOA_UCS.crash)
 
 ##### crash log header
 ```
