@@ -27,7 +27,7 @@ sar:x:205:105:Stephon:/home/sar:/bin/bash
 
 ---
 
-#### 文件和目录
+## 文件和目录
 
  1. 文件系统
     UNIX文件系统是目录和文件的一种层次结构
@@ -376,7 +376,7 @@ int main(int argc, const char * argv[])
 ```
 ### 附属组ID
 
-##信号（signal）
+## 信号（signal）
 
 > **信号（signal）** 用于通知进程发生了某些情况。 
 > 进程有以下3种处理信号的方式：
