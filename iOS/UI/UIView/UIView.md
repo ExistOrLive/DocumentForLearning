@@ -1,4 +1,4 @@
-﻿
+
 # UIView 
 
 > An object that manages the content for a rectangular area on the screen.
@@ -111,4 +111,4 @@ UIView* myView = [[UIView alloc] initWithFrame:viewRect];
 ![The Runtime Interaction Model For Views][1]
 
 
-  [1]: The Runtime Interaction Model For Views.png
+  [1]: Runtime Interaction Model for UIViews.png
