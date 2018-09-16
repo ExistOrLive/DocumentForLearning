@@ -111,4 +111,4 @@ UIView* myView = [[UIView alloc] initWithFrame:viewRect];
 ![The Runtime Interaction Model For Views][1]
 
 
-  [1]: Runtime\ Interaction\ Model\ for\ UIViews.png
+  [1]:UIView的运行时交互模型.png
