@@ -23,4 +23,51 @@
 // this has no effect on presses
 - (BOOL)touchesShouldCancelInContentView:(UIView *)view;
 ```
+- `UIScrollView`也可以处理内容的缩放（zooming）和平移（panning）。当用户做放大（pinch-out）或者缩小（pinch-in）的手势，UIScrollView会调整偏移量和范围。当手势进行中时，不会向子视图发送任何事件通知
+- `UIScrollView` 必须有一个实现`UIScrollViewDelegate`的委托。
+
+平移和缩放相关的方法有：
+
+```
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView NS_AVAILABLE_IOS(3_2); 
+// any zoom scale changes
+
+
+- (nullable UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView;     
+// return a view that will be scaled. if delegate returns nil, nothing happens
+
+- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(nullable UIView *)view NS_AVAILABLE_IOS(3_2); 
+// called before the scroll view begins zooming its content
+
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(nullable UIView *)view atScale:(CGFloat)scale; 
+// scale between minimum and maximum. called after any 'bounce' animations
+
+
+```
+
+滚动相关的方法有：
+```
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;                                               // any offset changes
+
+
+// called on start of dragging (may require some time and or distance to move)
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+// called on finger up if the user dragged. velocity is in points/millisecond. targetContentOffset may be changed to adjust where the scroll view comes to rest
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset NS_AVAILABLE_IOS(5_0);
+// called on finger up if the user dragged. decelerate is true if it will continue moving afterwards
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;   // called on finger up as we are moving
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;      // called when scroll view grinds to a halt
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView; // called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
+```
  
+状态保护（state preservation）
+
+
+
+![UIScrollView][1]
+
+
+  [1]: UIScrollView.png
