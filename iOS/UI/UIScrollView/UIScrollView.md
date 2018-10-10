@@ -1,4 +1,4 @@
-﻿# UIScrollView
+# UIScrollView
 
 > A View that allows the scrolling and zooming of its contained views
   一个视图，允许滚动和缩放其包含的视图
@@ -65,7 +65,7 @@
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView; // called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
 ```
  
-##状态保护（state preservation）
+## 状态保护（state preservation）
 如果给UIViewController的`restorationIdentifier`属性赋值，系统会保存滚动相关的信息在应用关闭后，然后在应用重启后恢复状态。特别是，`zoomScale`，`contentInset`,`contentOffset`属性的值会被保存。
 
   [1]: UIScrollView.png
