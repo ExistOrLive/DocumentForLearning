@@ -129,7 +129,9 @@ FOUNDATION_EXPORT Protocol * _Nullable NSProtocolFromString(NSString *namestr) A
 **通过获取SEL的对应的函数指针实现方法的调用**
 ![error2][2]
 
+[[爆栈热门 iOS 问题] performSelector may cause a leak because its selector is unknown][3]
 
 
   [1]: error1.png
   [2]: error2.png
+  [3]: https://www.jianshu.com/p/6517ab655be7
