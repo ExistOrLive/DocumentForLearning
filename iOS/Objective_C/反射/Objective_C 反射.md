@@ -52,8 +52,86 @@ typedef struct objc_selector *SEL;
 
 ```
 
+---
+
+## OC 层
+
+> 在`<Foundation/NSObjCRuntime.h>` 提供了一些函数用于在OC层实现简单的反射
+
+```
+/**
+ *  这些方法实现了字符串和Class ，SEL ， Protocal 之间的转换
+ **/
+#import <Foundation/NSObjCRuntime.h>
+
+FOUNDATION_EXPORT NSString *NSStringFromSelector(SEL aSelector);
+FOUNDATION_EXPORT SEL NSSelectorFromString(NSString *aSelectorName);
+
+FOUNDATION_EXPORT NSString *NSStringFromClass(Class aClass);
+FOUNDATION_EXPORT Class _Nullable NSClassFromString(NSString *aClassName);
+
+FOUNDATION_EXPORT NSString *NSStringFromProtocol(Protocol *proto) API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+FOUNDATION_EXPORT Protocol * _Nullable NSProtocolFromString(NSString *namestr) API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+```
+
+> 同时在NSObject类中也提供了方法，用于反射的方式创建实例，调用方法
+
+```
+#import "NSObject.h"
+
+/**
+ * 检查该实例是否实现了这个方法
+ **/ 
+- (BOOL)respondsToSelector:(SEL)aSelector;
 
 
 
+/**
+ * 发送消息 (调用方法)
+ **/ 
+- (id)performSelector:(SEL)aSelector;
+- (id)performSelector:(SEL)aSelector withObject:(id)object;
+- (id)performSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2;
+
+/**
+ * 该实例是否是Class或者Class超类的对象
+ **/
+- (BOOL)isKindOfClass:(Class)aClass;
+/**
+ * 该实例是否是Class的对象
+ **/
+- (BOOL)isMemberOfClass:(Class)aClass;
+/**
+ * 是否实现了该协议
+ **/
+- (BOOL)conformsToProtocol:(Protocol *)aProtocol;
+
+/**
+ * 获取SEL对应的函数指针(具体实现)
+ **/
+- (IMP)methodForSelector:(SEL)aSelector;
++ (IMP)instanceMethodForSelector:(SEL)aSelector;
+
+```
+
+### Tip
+> 通过反射调用某方法时，应避免使用`- (id)performSelector:(SEL)aSelector;`
+
+- 使用-(id)performSelector:(SEL)aSelector 难以适应多个参数的情况
+
+- 由于SEL的返回值类型不能确定，可能是OC类，可能是基本数据类型，可能是void，而- (id)performSelector:(SEL)aSelector 返回值类型默认为id即OC类，编译器会默认向返回值发送retain或者release消息，当返回值时基本数据类型时，可能会闪退
+
+- 效率相对于直接调用函数指针效率不高
+
+**会有如下的报错：**
+![error1][1]
+
+**通过获取SEL的对应的函数指针实现方法的调用**
+![error2][2]
+
+[[爆栈热门 iOS 问题] performSelector may cause a leak because its selector is unknown][3]
 
 
+  [1]: error1.png
+  [2]: error2.png
+  [3]: https://www.jianshu.com/p/6517ab655be7
