@@ -68,7 +68,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"cellForRowAtIndexPath start: [%@]",indexPath);
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"dasdas"];
+  //  UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"dasdas"];
+    UITableViewCell * cell = nil;
     
     if(!cell)
     {
@@ -176,11 +177,15 @@
 //
 //    [tableView moveRowAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForRow:indexPath.row+1 inSection:indexPath.section]];
     
-    NSLog(@"insert data");
+//    NSLog(@"insert data");
+//
+//    [self.array[6] insertObject:@"insertData" atIndex:indexPath.row];
+//
+//    [tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:indexPath.row inSection:6]] withRowAnimation:UITableViewRowAnimationNone];
     
-    [self.array[6] insertObject:@"insertData" atIndex:indexPath.row];
+    NSLog(@"reload data");
     
-    [tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:indexPath.row inSection:6]] withRowAnimation:UITableViewRowAnimationNone];
+    [tableView reloadData];
 }
 
 

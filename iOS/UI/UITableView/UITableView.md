@@ -150,9 +150,9 @@
 [iOS UITableView 的 Plain和Grouped样式的区别][3]
 
 
-  [1]: UITableViewCell.png
-  [2]: UITableViewCell_Hierarchy.png
+  [1]: pic/UITableViewCell.png
+  [2]: pic/UITableViewCell_Hierarchy.png
   [3]: https://www.jianshu.com/p/764ed5aa46cf
-  [4]: UITableViewStylePlain.png
-  [5]: UITableViewStyleGrouped.png
-  [6]: edit_mode.png
+  [4]: pic/UITableViewStylePlain.png
+  [5]: pic/UITableViewStyleGrouped.png
+  [6]: pic/edit_mode.png
