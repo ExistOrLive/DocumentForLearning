@@ -55,20 +55,27 @@
 
 - (void) setNewNeedsLayout
 {
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
     NSLog(@"setNeedsLayout; start %@",self);
+    }
     
     [self setNewNeedsLayout];
     
-    NSLog(@"setNeedsLayout: end %@",self);
+   // NSLog(@"setNeedsLayout: end %@",self);
 }
 
 - (void) setNewNeedsDisplay
 {
+    
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
     NSLog(@"setNeedsDisplay; start %@",self);
+    }
     
     [self setNewNeedsDisplay];
     
-    NSLog(@"setNeedsDisplay: end %@",self);
+    //NSLog(@"setNeedsDisplay: end %@",self);
 }
 
 
@@ -81,22 +88,28 @@
 
 - (void)newDisplayLayer:(CALayer *)layer
 {
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
     NSLog(@"displayer: start ...%@",self);
+    }
     
     [self newDisplayLayer:layer];
     
-    NSLog(@"displayer: end ...%@",self);
+    //NSLog(@"displayer: end ...%@",self);
 }
 
 /* If defined, called by the default implementation of -drawInContext: */
 
 - (void)newDrawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
 {
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
     NSLog(@"drawLayer:inContext: start ...%@",self);
+    }
     
     [self newDrawLayer:layer inContext:ctx];
     
-    NSLog(@"drawLayer:inContext: end ...%@",self);
+    //NSLog(@"drawLayer:inContext: end ...%@",self);
 }
 
 
@@ -108,11 +121,14 @@
 
 - (void)newLayerWillDraw:(CALayer *)layer
 {
-    NSLog(@"layerWillDraw: start ...%@",self);
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
+        NSLog(@"layerWillDraw: start ...%@",self);
+    }
     
     [self newLayerWillDraw:layer];
     
-    NSLog(@"layerWillDraw: end ...%@",self);
+    //NSLog(@"layerWillDraw: end ...%@",self);
 }
 
 /* Called by the default -layoutSublayers implementation before the layout
@@ -121,11 +137,14 @@
 
 - (void)newLayoutSublayersOfLayer:(CALayer *)layer
 {
-    NSLog(@"layoutSublayersOfLayer: start ...%@",self);
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
+        NSLog(@"layoutSublayersOfLayer: start ...%@",self);
+    }
     
     [self newLayoutSublayersOfLayer:layer];
     
-    NSLog(@"layoutSublayersOfLayer: end ...%@",self);
+    // NSLog(@"layoutSublayersOfLayer: end ...%@",self);
 }
 
 /* If defined, called by the default implementation of the
@@ -137,11 +156,14 @@
 
 - (nullable id<CAAction>)newActionForLayer:(CALayer *)layer forKey:(NSString *)event
 {
-    NSLog(@"actionForLayer:forKey: start ...%@",self);
+    if([self isKindOfClass:NSClassFromString(@"DrawRectTestView")])
+    {
+         NSLog(@"actionForLayer:forKey: start ...%@  event:%@",self,event);
+    }
     
    id a =  [self newActionForLayer:layer forKey:event];
     
-    NSLog(@"actionForLayer:forKey: end ...%@",self);
+    //NSLog(@"actionForLayer:forKey: end ...%@",self);
     
     return a;
 }
