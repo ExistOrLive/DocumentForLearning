@@ -28,8 +28,7 @@
     self.pview = [[DrawRectTestView alloc] initWithFrame:CGRectMake(0,0,100,100)];
 
     [self.pview setBackgroundColor:[UIColor blackColor]];
-
-
+    
     [self.view addSubview:self.pview];
     
   //  NSLog(@"viewDidLoad %@ %@",self.view,self.pview);

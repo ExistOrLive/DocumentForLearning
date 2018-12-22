@@ -8,12 +8,17 @@
 
 ###  `DrawRectTestView` 没有实现`DrawRect`
 
-![DrawRectTestView_NODrawRect_Log](pic/DrawRectTestView_NODrawRect_Log)
+![DrawRectTestView_NODrawRect_Log][1]
 
-有日志可知
-
-
+> 由日志可知：
 
 
-![DrawRectTestView_DrawRect_Log](pic/DrawRectTestView_DrawRect_Log)
 
+###  `DrawRectTestView` 实现`DrawRect`
+
+![DrawRectTestView_DrawRect_Log][2]
+
+
+
+[1]: pic/DrawRectTestView_NODrawRect_Log.png
+[2]: pic/DrawRectTestView_DrawRect_Log.png

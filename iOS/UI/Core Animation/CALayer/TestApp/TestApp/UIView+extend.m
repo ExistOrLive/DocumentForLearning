@@ -19,7 +19,7 @@
      
         
         Method sourceMethod1 = class_getInstanceMethod([self class], @selector(setNeedsDisplay));
-        Method dstMethod1 = class_getInstanceMethod([self class], @selector(setNewNeedsLayout));
+        Method dstMethod1 = class_getInstanceMethod([self class], @selector(setNewNeedsDisplay));
         
         Method sourceMethod2 = class_getInstanceMethod([self class], @selector(setNeedsLayout));
         Method dstMethod2 = class_getInstanceMethod([self class], @selector(setNewNeedsLayout));
