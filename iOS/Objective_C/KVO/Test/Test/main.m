@@ -18,7 +18,7 @@ int main(int argc, const char * argv[])
     {
         KVOTestObserver * observer = [[KVOTestObserver alloc] init];
         
-        [observer test];
+        [observer testArray];
         
         [[NSRunLoop mainRunLoop] run];
         

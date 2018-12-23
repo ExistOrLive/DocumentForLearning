@@ -12,6 +12,7 @@
 
 - (void) test;
 
+- (void) testArray;
 
 
 @end

@@ -10,7 +10,16 @@
 
 @implementation KVOTest
 
+- (instancetype) init
+{
+    if(self = [super init])
+    {
+           _value1 = @"dasda";
+    }
+    
+    return self;
 
+}
 
 
 
