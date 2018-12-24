@@ -135,6 +135,49 @@
 
 ## KVO的通知 
 
+> KVO 可以不自动发通知，而可以通过编程发出通知
+
+```
+@interface NSObject(NSKeyValueObservingCustomization)
+
+/**
+ * 通过重写，可以修改观察者实际观察的keypath
+ * 
+ **/
++ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key;
+
+/**
+  *
+  * 通过重写，可以关闭kvo自动发出的通知
+  **/
++ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key;
+
+
+@property (nullable) void *observationInfo NS_RETURNS_INNER_POINTER;
+
+@end
+
+```
+
+```
+/**
+ * 通过以下方法可以手动发出KVO通知
+ * 
+ **/
+@interface NSObject(NSKeyValueObserverNotification)
+
+- (void)willChangeValueForKey:(NSString *)key;
+- (void)didChangeValueForKey:(NSString *)key;
+
+- (void)willChange:(NSKeyValueChange)changeKind valuesAtIndexes:(NSIndexSet *)indexes forKey:(NSString *)key;
+- (void)didChange:(NSKeyValueChange)changeKind valuesAtIndexes:(NSIndexSet *)indexes forKey:(NSString *)key;
+
+- (void)willChangeValueForKey:(NSString *)key withSetMutation:(NSKeyValueSetMutationKind)mutationKind usingObjects:(NSSet *)objects;
+- (void)didChangeValueForKey:(NSString *)key withSetMutation:(NSKeyValueSetMutationKind)mutationKind usingObjects:(NSSet *)objects;
+
+@end
+
+```
 
 
 

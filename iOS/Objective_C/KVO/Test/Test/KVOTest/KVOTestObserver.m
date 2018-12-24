@@ -54,19 +54,15 @@
 
     self.test1 = [[KVOTest alloc] init];
 
-//    [self.test1 addObserver:self forKeyPath:@"array" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
-//
-//    NSMutableArray * tmpArray = [self.test1 mutableArrayValueForKey:@"array"];
-//
-//    [tmpArray addObject:@"a"];
+    [self.test1 addObserver:self forKeyPath:@"array" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+
+    NSMutableArray * tmpArray = [self.test1 mutableArrayValueForKey:@"array"];
+
+    [tmpArray addObject:@"b"];
     
-    [self.test1 addObserver:self forKeyPath:@"dic" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+    [tmpArray addObject:@"a"];
     
-    self.test1.dic mutableArrayValueForKey:
-    
-    [self.test1.dic setObject:@"ads" forKey:@"1"];
-    
-    
+    [tmpArray addObject:@"c"];
 
 }
 
