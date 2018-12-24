@@ -26,12 +26,18 @@
 {
     self.test1 = [[KVOTest alloc] init];
     
-     [_test1 setValue1:@"2"];
+    Method method1 = class_getInstanceMethod(object_getClass(self.test1), @selector(setValue1:));
+    IMP imp1 = method_getImplementation(method1);
+    Class class1 = object_getClass(self.test1);
    
-    [_test1 addObserver:self forKeyPath:@"value1" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew|NSKeyValueObservingOptionInitial context:nil];
+    [self.test1 addObserver:self forKeyPath:@"value1" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew|NSKeyValueObservingOptionPrior context:nil];
+
     
-    [_test1 setValue1:@"1"];
+    Method method2 = class_getInstanceMethod(object_getClass(self.test1), @selector(setValue1:));
+    IMP imp2 = method_getImplementation(method2);
+    Class class2 = object_getClass(self.test1);
     
+    [self.test1 setValue1:@"1"];
 
 }
 
@@ -43,16 +49,25 @@
 
 - (void) testArray
 {
-    NSMutableArray * array = [[NSMutableArray alloc] init];
-    
-//    [array mutableArrayValueForKeyPath:@"arr"];
-//
+   
 //    [array addObserver:self forKeyPath:@"count" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionPrior|NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionOld context:nil];
+
+    self.test1 = [[KVOTest alloc] init];
+
+//    [self.test1 addObserver:self forKeyPath:@"array" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 //
-//    [array addObject:@"a"];
+//    NSMutableArray * tmpArray = [self.test1 mutableArrayValueForKey:@"array"];
+//
+//    [tmpArray addObject:@"a"];
     
-    Class a1 = [array class];
-    NSLog(@"%@",a1);
+    [self.test1 addObserver:self forKeyPath:@"dic" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+    
+    self.test1.dic mutableArrayValueForKey:
+    
+    [self.test1.dic setObject:@"ads" forKey:@"1"];
+    
+    
+
 }
 
 @end

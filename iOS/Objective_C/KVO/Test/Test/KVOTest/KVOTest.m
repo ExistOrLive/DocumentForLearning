@@ -14,13 +14,20 @@
 {
     if(self = [super init])
     {
-           _value1 = @"dasda";
+        _value1 = @"dasda";
+        _array = [[NSMutableArray alloc] init];
+        _dic = [[NSMutableDictionary alloc] init];
     }
     
     return self;
 
 }
 
+
+- (void) printClassName
+{
+   
+}
 
 
 @end

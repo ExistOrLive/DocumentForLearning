@@ -20,6 +20,10 @@
 
 @property(nonatomic,strong) KVOTestValue * vaule3;
 
+@property(nonatomic,strong) NSMutableArray * array;
+
+@property(nonatomic,strong) NSMutableDictionary* dic;
+
 
 
 @end
