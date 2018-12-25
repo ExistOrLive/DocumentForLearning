@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/panzhengwei/Documents/document/DocumentForLearning/iOS/Objective_C/Runtime/Demo/SwizzedMethod/Aspects-master/DerivedData/Aspects/Build/Products/Debug-iphoneos/Aspects.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Aspects-Swift.h",
+          'external-contents': "/Users/panzhengwei/Documents/document/DocumentForLearning/iOS/Objective_C/Runtime/Demo/SwizzedMethod/Aspects-master/DerivedData/Aspects/Build/Products/Debug-iphoneos/Aspects.framework/Headers/Aspects-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Aspects.h",
+          'external-contents': "/Users/panzhengwei/Documents/document/DocumentForLearning/iOS/Objective_C/Runtime/Demo/SwizzedMethod/Aspects-master/Aspects.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/panzhengwei/Documents/document/DocumentForLearning/iOS/Objective_C/Runtime/Demo/SwizzedMethod/Aspects-master/DerivedData/Aspects/Build/Products/Debug-iphoneos/Aspects.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/panzhengwei/Documents/document/DocumentForLearning/iOS/Objective_C/Runtime/Demo/SwizzedMethod/Aspects-master/DerivedData/Aspects/Build/Intermediates.noindex/Aspects.build/Debug-iphoneos/Aspects-iOS.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

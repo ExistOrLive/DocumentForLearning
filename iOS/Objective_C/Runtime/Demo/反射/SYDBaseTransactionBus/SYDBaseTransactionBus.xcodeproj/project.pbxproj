@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D6B7A421F62583A000EDB0B /* SYDBaseTransactionBus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A2B1F62583A000EDB0B /* SYDBaseTransactionBus.mm */; };
+		8D6B7A451F62583A000EDB0B /* SYDBaseTBAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A301F62583A000EDB0B /* SYDBaseTBAdapter.mm */; };
+		8D6B7A481F62583A000EDB0B /* SYDBaseTBDispatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A351F62583A000EDB0B /* SYDBaseTBDispatch.mm */; };
+		8D6B7A4A1F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A371F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.mm */; };
+		8D6B7A4C1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A391F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.mm */; };
+		8D6B7A4E1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A3B1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.mm */; };
+		8D6B7A501F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A3D1F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.mm */; };
+		8D6B7A521F62583A000EDB0B /* SYDBaseTBDispatchRunData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B7A3F1F62583A000EDB0B /* SYDBaseTBDispatchRunData.mm */; };
+		8D6B7A531F62589C000EDB0B /* SYDBaseTransactionBusHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A291F62583A000EDB0B /* SYDBaseTransactionBusHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A541F62589C000EDB0B /* SYDBaseTransactionBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A2A1F62583A000EDB0B /* SYDBaseTransactionBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A551F62589C000EDB0B /* SYDBaseTBAdapterHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A2E1F62583A000EDB0B /* SYDBaseTBAdapterHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A561F62589C000EDB0B /* SYDBaseTBAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A2F1F62583A000EDB0B /* SYDBaseTBAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A571F62589C000EDB0B /* SYDBaseTBDispatchHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A331F62583A000EDB0B /* SYDBaseTBDispatchHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A581F62589C000EDB0B /* SYDBaseTBDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A341F62583A000EDB0B /* SYDBaseTBDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A591F62589C000EDB0B /* SYDBaseTBDispatchEventArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A361F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A5A1F62589C000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A381F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A5B1F62589C000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A3A1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6B7A5C1F62589C000EDB0B /* SYDBaseTBDispatchRegisterTaskData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6B7A3C1F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D6B7A1F1F6257AE000EDB0B /* libSYDBaseTransactionBus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSYDBaseTransactionBus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6B7A291F62583A000EDB0B /* SYDBaseTransactionBusHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTransactionBusHeader.h; sourceTree = "<group>"; };
+		8D6B7A2A1F62583A000EDB0B /* SYDBaseTransactionBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTransactionBus.h; sourceTree = "<group>"; };
+		8D6B7A2B1F62583A000EDB0B /* SYDBaseTransactionBus.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTransactionBus.mm; sourceTree = "<group>"; };
+		8D6B7A2E1F62583A000EDB0B /* SYDBaseTBAdapterHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBAdapterHeader.h; sourceTree = "<group>"; };
+		8D6B7A2F1F62583A000EDB0B /* SYDBaseTBAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBAdapter.h; sourceTree = "<group>"; };
+		8D6B7A301F62583A000EDB0B /* SYDBaseTBAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBAdapter.mm; sourceTree = "<group>"; };
+		8D6B7A331F62583A000EDB0B /* SYDBaseTBDispatchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatchHeader.h; sourceTree = "<group>"; };
+		8D6B7A341F62583A000EDB0B /* SYDBaseTBDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatch.h; sourceTree = "<group>"; };
+		8D6B7A351F62583A000EDB0B /* SYDBaseTBDispatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBDispatch.mm; sourceTree = "<group>"; };
+		8D6B7A361F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatchEventArgument.h; sourceTree = "<group>"; };
+		8D6B7A371F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBDispatchEventArgument.mm; sourceTree = "<group>"; };
+		8D6B7A381F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatchEventArgumentForReceiver.h; sourceTree = "<group>"; };
+		8D6B7A391F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBDispatchEventArgumentForReceiver.mm; sourceTree = "<group>"; };
+		8D6B7A3A1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatchEventArgumentForSender.h; sourceTree = "<group>"; };
+		8D6B7A3B1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBDispatchEventArgumentForSender.mm; sourceTree = "<group>"; };
+		8D6B7A3C1F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatchRegisterTaskData.h; sourceTree = "<group>"; };
+		8D6B7A3D1F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBDispatchRegisterTaskData.mm; sourceTree = "<group>"; };
+		8D6B7A3E1F62583A000EDB0B /* SYDBaseTBDispatchRunData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDBaseTBDispatchRunData.h; sourceTree = "<group>"; };
+		8D6B7A3F1F62583A000EDB0B /* SYDBaseTBDispatchRunData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SYDBaseTBDispatchRunData.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D6B7A1C1F6257AE000EDB0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D6B7A161F6257AE000EDB0B = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A261F62583A000EDB0B /* BaseService */,
+				8D6B7A201F6257AE000EDB0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D6B7A201F6257AE000EDB0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A1F1F6257AE000EDB0B /* libSYDBaseTransactionBus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D6B7A261F62583A000EDB0B /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A271F62583A000EDB0B /* SYDBaseTransactionBus */,
+				8D6B7A2C1F62583A000EDB0B /* SYDBaseTransactionBusAdapter */,
+				8D6B7A311F62583A000EDB0B /* SYDBaseTransactionBusDispatch */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		8D6B7A271F62583A000EDB0B /* SYDBaseTransactionBus */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A281F62583A000EDB0B /* interface */,
+				8D6B7A2A1F62583A000EDB0B /* SYDBaseTransactionBus.h */,
+				8D6B7A2B1F62583A000EDB0B /* SYDBaseTransactionBus.mm */,
+			);
+			path = SYDBaseTransactionBus;
+			sourceTree = "<group>";
+		};
+		8D6B7A281F62583A000EDB0B /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A291F62583A000EDB0B /* SYDBaseTransactionBusHeader.h */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		8D6B7A2C1F62583A000EDB0B /* SYDBaseTransactionBusAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A2D1F62583A000EDB0B /* interface */,
+				8D6B7A2F1F62583A000EDB0B /* SYDBaseTBAdapter.h */,
+				8D6B7A301F62583A000EDB0B /* SYDBaseTBAdapter.mm */,
+			);
+			path = SYDBaseTransactionBusAdapter;
+			sourceTree = "<group>";
+		};
+		8D6B7A2D1F62583A000EDB0B /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A2E1F62583A000EDB0B /* SYDBaseTBAdapterHeader.h */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		8D6B7A311F62583A000EDB0B /* SYDBaseTransactionBusDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A321F62583A000EDB0B /* interface */,
+				8D6B7A341F62583A000EDB0B /* SYDBaseTBDispatch.h */,
+				8D6B7A351F62583A000EDB0B /* SYDBaseTBDispatch.mm */,
+				8D6B7A361F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.h */,
+				8D6B7A371F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.mm */,
+				8D6B7A381F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.h */,
+				8D6B7A391F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.mm */,
+				8D6B7A3A1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.h */,
+				8D6B7A3B1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.mm */,
+				8D6B7A3C1F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.h */,
+				8D6B7A3D1F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.mm */,
+				8D6B7A3E1F62583A000EDB0B /* SYDBaseTBDispatchRunData.h */,
+				8D6B7A3F1F62583A000EDB0B /* SYDBaseTBDispatchRunData.mm */,
+			);
+			path = SYDBaseTransactionBusDispatch;
+			sourceTree = "<group>";
+		};
+		8D6B7A321F62583A000EDB0B /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B7A331F62583A000EDB0B /* SYDBaseTBDispatchHeader.h */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D6B7A1D1F6257AE000EDB0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D6B7A531F62589C000EDB0B /* SYDBaseTransactionBusHeader.h in Headers */,
+				8D6B7A541F62589C000EDB0B /* SYDBaseTransactionBus.h in Headers */,
+				8D6B7A551F62589C000EDB0B /* SYDBaseTBAdapterHeader.h in Headers */,
+				8D6B7A561F62589C000EDB0B /* SYDBaseTBAdapter.h in Headers */,
+				8D6B7A571F62589C000EDB0B /* SYDBaseTBDispatchHeader.h in Headers */,
+				8D6B7A581F62589C000EDB0B /* SYDBaseTBDispatch.h in Headers */,
+				8D6B7A591F62589C000EDB0B /* SYDBaseTBDispatchEventArgument.h in Headers */,
+				8D6B7A5A1F62589C000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.h in Headers */,
+				8D6B7A5B1F62589C000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.h in Headers */,
+				8D6B7A5C1F62589C000EDB0B /* SYDBaseTBDispatchRegisterTaskData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D6B7A1E1F6257AE000EDB0B /* SYDBaseTransactionBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D6B7A231F6257AE000EDB0B /* Build configuration list for PBXNativeTarget "SYDBaseTransactionBus" */;
+			buildPhases = (
+				8D6B7A1B1F6257AE000EDB0B /* Sources */,
+				8D6B7A1C1F6257AE000EDB0B /* Frameworks */,
+				8D6B7A1D1F6257AE000EDB0B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYDBaseTransactionBus;
+			productName = SYDBaseTransactionBus;
+			productReference = 8D6B7A1F1F6257AE000EDB0B /* libSYDBaseTransactionBus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D6B7A171F6257AE000EDB0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = YueMingXingXi;
+				TargetAttributes = {
+					8D6B7A1E1F6257AE000EDB0B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8D6B7A1A1F6257AE000EDB0B /* Build configuration list for PBXProject "SYDBaseTransactionBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8D6B7A161F6257AE000EDB0B;
+			productRefGroup = 8D6B7A201F6257AE000EDB0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D6B7A1E1F6257AE000EDB0B /* SYDBaseTransactionBus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D6B7A1B1F6257AE000EDB0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D6B7A4E1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForSender.mm in Sources */,
+				8D6B7A4C1F62583A000EDB0B /* SYDBaseTBDispatchEventArgumentForReceiver.mm in Sources */,
+				8D6B7A421F62583A000EDB0B /* SYDBaseTransactionBus.mm in Sources */,
+				8D6B7A521F62583A000EDB0B /* SYDBaseTBDispatchRunData.mm in Sources */,
+				8D6B7A4A1F62583A000EDB0B /* SYDBaseTBDispatchEventArgument.mm in Sources */,
+				8D6B7A451F62583A000EDB0B /* SYDBaseTBAdapter.mm in Sources */,
+				8D6B7A501F62583A000EDB0B /* SYDBaseTBDispatchRegisterTaskData.mm in Sources */,
+				8D6B7A481F62583A000EDB0B /* SYDBaseTBDispatch.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8D6B7A211F6257AE000EDB0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D6B7A221F6257AE000EDB0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8D6B7A241F6257AE000EDB0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		8D6B7A251F6257AE000EDB0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D6B7A1A1F6257AE000EDB0B /* Build configuration list for PBXProject "SYDBaseTransactionBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D6B7A211F6257AE000EDB0B /* Debug */,
+				8D6B7A221F6257AE000EDB0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D6B7A231F6257AE000EDB0B /* Build configuration list for PBXNativeTarget "SYDBaseTransactionBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D6B7A241F6257AE000EDB0B /* Debug */,
+				8D6B7A251F6257AE000EDB0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D6B7A171F6257AE000EDB0B /* Project object */;
+}

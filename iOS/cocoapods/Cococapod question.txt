@@ -1,0 +1,62 @@
+1、问题 The dependency `JSONKit (~> 1.4)` is not used in any concrete target.
+
+添加target
+
+target 'Test1' do
+pod 'AFNetworking', '~>1.4'
+end
+
+https://blog.csdn.net/wjh15085872684/article/details/51564369
+
+2、
+
+Errno::ENOENT - No such file or directory @ realpath_rec - /Users/panzhengwei/Desktop/MOAForICenter/UI/iCenter/lib/YYText-1.0.7/LICENSE
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/project.rb:190:in `realpath'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/project.rb:190:in `realpath'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/project.rb:190:in `add_file_reference'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:122:in `block (3 levels) in add_developer_files'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:120:in `each'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:120:in `block (2 levels) in add_developer_files'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:115:in `each'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:115:in `block in add_developer_files'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:142:in `message'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:114:in `add_developer_files'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator/file_references_installer.rb:43:in `install!'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator.rb:163:in `install_file_references'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer/xcode/pods_project_generator.rb:64:in `generate!'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:184:in `block in generate_pods_project'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/user_interface.rb:64:in `section'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:183:in `generate_pods_project'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/installer.rb:119:in `install!'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/command/install.rb:41:in `run'
+/Library/Ruby/Gems/2.3.0/gems/claide-1.0.2/lib/claide/command.rb:334:in `run'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/lib/cocoapods/command.rb:52:in `run'
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.4.0/bin/pod:55:in `<top (required)>'
+/usr/local/bin/pod:23:in `load'
+/usr/local/bin/pod:23:in `<main>'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[!] Failed to load 'iCenterSupport' podspec: 
+[!] Invalid `iCenterSupport.podspec` file: formal argument cannot be a constant
+  s.subspec 'MRC_Module' do |MRCSpec|
+                                    ^
+/Users/panzhengwei/Desktop/MOAForICenter/UI/iCenter/iCenter/iCenterSupport.podspec:165: formal argument cannot be a constant.
+
+ #  from /Users/panzhengwei/Desktop/MOAForICenter/UI/iCenter/iCenter/iCenterSupport.podspec:159
+ #  -------------------------------------------
+ #    
+ >    s.subspec 'MRC_Module' do |MRCSpec|
+ #       
+ #  -------------------------------------------
