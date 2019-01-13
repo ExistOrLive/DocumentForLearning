@@ -46,9 +46,20 @@
 
 [在OC项目中引入Swift的方法][2]
 
+[OC 调用 Swift 方法][7]
+
+[Swift与OC混编][8]
+
+[OC调用Swift4.0的各种坑][9]
+
+
+
 [1]: https://www.jianshu.com/p/c8dadf10ec98
 [2]: https://www.jianshu.com/p/a342fba7f418
 [3]: pic/桥接文件1.jpg
 [4]: pic/桥接文件2.png
 [5]: pic/define_module.png
 [6]: pic/product_module_name.png
+[7]:https://blog.csdn.net/qin_shi/article/details/82458916
+[8]: https://www.jianshu.com/p/69ba19692bae
+[9]: https://blog.csdn.net/u012338816/article/details/83176751
