@@ -83,7 +83,8 @@ if ([session respondsToSelector:@selector(requestRecordPermission:)])
      }];
 }
 ```
-** 申请访问相册的权限 **
+
+**申请访问相册的权限**
 
 ```
    

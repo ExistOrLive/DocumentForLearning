@@ -14,7 +14,7 @@
 
   一些View属性可以以动画形式更新 *(Some view properties can be animated to new values.)*
 
-- **布局和子视图管理*（Layout and subview management）***
+- **布局和子视图管理*（Layout and subview management）**
 
   视图可能会包含0个或多个子视图*（Views may contain zero or more subviews.）*
 

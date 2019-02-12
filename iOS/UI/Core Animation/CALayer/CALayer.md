@@ -1,4 +1,4 @@
-# CALAyer
+# CALayer
 
 >  一个管理基于图像内容并允许你在内容上执行动画的对象(An object that manages image-based content and allows you to perform animations on that content)
 ----
