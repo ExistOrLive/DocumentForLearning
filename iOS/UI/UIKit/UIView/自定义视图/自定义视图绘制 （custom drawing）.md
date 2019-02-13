@@ -8,7 +8,7 @@
  - Core Graphics 是UIKit下的主要绘图系统，频繁用于绘制***自定义视图***，与UIKit高度集成，以CG作为前缀。
  - Core Animation 动画服务
  - Core Image 提供了图片处理的方法，如切图，锐化，扭曲以及变形
- - OpenCG ES 用于编写游戏
+ - OpenGL ES 用于编写游戏
  
 ## 视图的绘制周期
 
