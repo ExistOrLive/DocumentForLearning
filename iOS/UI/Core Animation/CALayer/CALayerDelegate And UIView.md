@@ -1,6 +1,6 @@
 # CALayerDelegate And UIView
 
-> `CALayer` 有一个delegate属性，需要分配一个继承`CALayerDelegate`协议的实例。而在`UIView`中`CALayer`的`delegate`就是`UIView`本身。 
+> `CALayer` 有一个delegate属性，需要分配一个实现`CALayerDelegate`协议的实例。而在`UIView`中`CALayer`的`delegate`就是`UIView`本身。 
 
 我们就来看看`CALayer`和`UIView`之间是怎么交互的。 [实验代码](TestApp)
 

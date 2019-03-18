@@ -40,6 +40,25 @@
 
 ----
 
+## OC 中引入swift代码
+
+> 在OC中不能够直接编写swift的代码；只能够编写swift转换后的OC代码。但是swift代码必须要满足以下的条件才能够转换
+
+- swift类必须继承NSObject类或者它的子类
+  
+  ![OC混编swift][10]
+
+  如图ApolloClient没有继承NSObject，不能够被转换
+  
+  ![OC混编swift1][11]
+  
+  如果ApolloAdapter继承了NSObject，可以被转换
+
+- 在Swift 4.0的版本，定义类前必须加上@objcMembers,需要被转换的方法前需要加上@objc； 如上图所示
+
+[OC调用Swift4.0的各种坑][9]
+
+
 ## 参考文档
 
 [Podfile中的use_frameworks!][1]
@@ -60,6 +79,9 @@
 [4]: pic/桥接文件2.png
 [5]: pic/define_module.png
 [6]: pic/product_module_name.png
-[7]:https://blog.csdn.net/qin_shi/article/details/82458916
+[7]: https://blog.csdn.net/qin_shi/article/details/82458916
 [8]: https://www.jianshu.com/p/69ba19692bae
 [9]: https://blog.csdn.net/u012338816/article/details/83176751
+[10]: pic/OC混编Swift.png
+[11]: pic/OC混编Swift1.png
+[12]: 
