@@ -89,7 +89,57 @@ static const DDLogLevel ddLogLevel = DDLogLevelInfo;
 ```
 
 
+## DDLog 输出日志的实现细节
 
+- 在`DDLog`的`+initialize`中
+
+创建一个串行队列 `_loggingQueue`,保证多线程日志(在处理器只有一个的情况下)的同步打印；
+
+创建了一个信号量`_queueSemaphore`，传参1000，避免向队列中抛过多的打印任务(在多处理器的情况下，打印的过程是异步执行)。
+
+```
++ (void)initialize {
+    static dispatch_once_t DDLogOnceToken;
+    
+    dispatch_once(&DDLogOnceToken, ^{
+        NSLogDebug(@"DDLog: Using grand central dispatch");
+        
+        _loggingQueue = dispatch_queue_create("cocoa.lumberjack", NULL);
+        _loggingGroup = dispatch_group_create();
+        
+        void *nonNullValue = GlobalLoggingQueueIdentityKey; // Whatever, just not null
+        dispatch_queue_set_specific(_loggingQueue, GlobalLoggingQueueIdentityKey, nonNullValue, NULL);
+        
+        _queueSemaphore = dispatch_semaphore_create(DDLOG_MAX_QUEUE_SIZE);
+        
+        // Figure out how many processors are available.
+        // This may be used later for an optimization on uniprocessor machines.
+        
+        _numProcessors = MAX([NSProcessInfo processInfo].processorCount, (NSUInteger) 1);
+        
+        NSLogDebug(@"DDLog: numProcessors = %@", @(_numProcessors));
+    });
+}
+```
+
+
+- 调用宏定义`DDLogInfo`
+   
+```
+/**
+ *  在宏定义中过滤了等级低于ddLogLevel的日志打印
+ *  然后调用 `[DDLog log: ]`
+ **／ 
+#define LOG_MAYBE(async, lvl, flg, ctx, fnct, frmt, ...)                       \
+        do { if(lvl & flg) LOG_MACRO(async, lvl, flg, ctx, nil, fnct, frmt, ##__VA_ARGS__); } while(0)
+
+```
+- 调用`[DDLog log: ]`
+  
+  1、首先将日志的内容，level，flag，调用的哪个函数，哪个文件封装在`DDLogMessage`中
+
+  2、将`DDLogMessage`
+   
 
 
 
