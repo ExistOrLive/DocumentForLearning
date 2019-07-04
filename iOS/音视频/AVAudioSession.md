@@ -108,7 +108,7 @@
  
    仅支持音频处理，不支持播放
    
-- `AVAudioSessionCategoryMutiRoute
+- `AVAudioSessionCategoryMutiRoute`
    
    支持音频播放和录制。允许多条音频流的同步输入和输出
 
