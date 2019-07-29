@@ -4,7 +4,7 @@
 
 > 如下，函数的定义是必须有名字的,函数可以通过函数指针来传递和调用;Block的定义不需要名字，但是需要赋给Block变量才可以使用
 
-```
+```c
 /**
  *
  * 函数的定义必须是有名字的
@@ -133,8 +133,7 @@ C语言实现如下：
 
 > 由于Block在访问自动变量时，比较容易造成循环引用。对于这个问题，需要将引用的一方变为weak，避免循环引用。
 
-```
-
+```objc
 __weak __typeof__(self) weakSelf = self;    // 将引用一方变为weak
 
 NSBlockOperation *op = [[NSBlockOperation alloc] init];
@@ -148,6 +147,10 @@ NSBlockOperation *op = [[NSBlockOperation alloc] init];
 [someOperationQueue addOperation:op];
 
 ```
+
+## 原文章地址
+
+[https://github.com/ExistOrLive/DocumentForLearning/blob/master/iOS/Objective_C/Block/Block.md](https://github.com/ExistOrLive/DocumentForLearning/blob/master/iOS/Objective_C/Block/Block.md)
 
 
 
