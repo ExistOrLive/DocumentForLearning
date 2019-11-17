@@ -71,9 +71,28 @@ UIKIT_EXTERN const UIWindowLevel UIWindowLevelStatusBar;  // 1000.0
 ```
 > keyWindow是系统设置来用于接受键盘和其他非触摸事件的UIWindow
 
+苹果官方文档对于keywindow的描述
+```
+This property holds the UIWindow object in the windows array that is 
+most recently sent the makeKeyAndVisible message.
+```
+
 可以通过`makeKeyWindow`和`resignKeyWindow`将自己创建的UIWindow设置keywindow
 
 > windows 以弱引用的方式，保存了应用中所有的UIWindow
+
+#### issue
+
+> 当在window的rootViewController的时候，有时候keyWindow会为空，只要将makeKeyAndVisible的实现在rootViewController初始化之前就没有问题了。
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = [ViewController new];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+}
+```
 
 ##### Tip
 
