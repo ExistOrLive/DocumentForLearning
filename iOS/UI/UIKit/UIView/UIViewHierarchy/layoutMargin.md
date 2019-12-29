@@ -7,15 +7,19 @@
 
 @property (nonatomic) UIEdgeInsets layoutMargins API_AVAILABLE(ios(8.0));      // 表示布局内容的默认边距 
 
+@property (nonatomic) NSDirectionalEdgeInsets directionalLayoutMargins API_AVAILABLE(ios(11.0),tvos(11.0));
+
 @property (nonatomic) BOOL preservesSuperviewLayoutMargins API_AVAILABLE(ios(8.0));  // default is NO - 从父视图集成layoutMargin
 
+- (void)layoutMarginsDidChange API_AVAILABLE(ios(8.0));
 
-@property (nonatomic) NSDirectionalEdgeInsets directionalLayoutMargins API_AVAILABLE(ios(11.0),tvos(11.0));
+@property (nonatomic,readonly) UIEdgeInsets safeAreaInsets API_AVAILABLE(ios(11.0),tvos(11.0));
+
+- (void)safeAreaInsetsDidChange API_AVAILABLE(ios(11.0),tvos(11.0));
 
 @end
 
 ```
-
 
 > `-layoutMargins`  返回一组距离view边界的insets，表示布局内容的默认边距。 默认值为{8，8，8，8}。
 
@@ -26,6 +30,13 @@
 >  在iOS11和之后 ，为了支持多个方向的界面布局，提供新属性`directionalLayoutMargins`。当方向为LTR，layoutMagins.left 取 directionalLayoutMargins.leading的值；当方向为RTL，layoutMargins.left 取 directionalLayoutMargins.trailing 的值
 
 > `insetsLayoutMarginsFromSafeArea`, 默认YES， 会根据SafeArea自动增加layoutMargin的值
+
+> `safeAreaInsets` 代表安全区域中的insets，它会随着view的位置的变化，而变化
+
+
+
+
+
 
 
 
@@ -42,7 +53,7 @@
 
 
 
-```
+``` objc
   
     CustomView * view1 = [CustomView new];
     view1.directionalLayoutMargins = NSDirectionalEdgeInsetsMake(20, 30, 40, 10);
