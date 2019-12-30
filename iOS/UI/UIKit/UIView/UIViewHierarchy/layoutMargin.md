@@ -1,6 +1,8 @@
 # layoutMargin 
 
 
+## layoutMargins 和  safeAreaInsets
+
 ```objc
 
 @interface UIView(UIViewHierarchy)
@@ -21,6 +23,9 @@
 
 ```
 
+[Positioning Content Within Layout Margins][1]
+
+
 > `-layoutMargins`  返回一组距离view边界的insets，表示布局内容的默认边距。 默认值为{8，8，8，8}。
 
 > 当`preservesSuperviewLayoutMargins`设置为YES，会继承父视图的layoutMargins。 
@@ -33,52 +38,53 @@
 
 > `safeAreaInsets` 代表安全区域中的insets，它会随着view的位置的变化，而变化
 
+## Example
+
+![][2]
+
+![][3]
+
+
+> 如上图所示，绿色方块在红色方块顶部，`safeAreaInsets`为{44，0，0，0}，`layoutMargins`为{52，8，8，8}。在向下移动的过程中，`safeAreaInsets`和`layoutMargins`不停的在变化，离开顶部的iphonex的危险区域后，变为{0，0，0，0}和{8，8，8，8}；进入底部的危险区域后，逐渐变为{8，8，42，8}和{0，0，34，0}
+
+
+## UILayoutGuide
+
+```objc
+
+/* The edges of this guide are constrained to equal the edges of the view inset by the layoutMargins
+ */
+@property(readonly,strong) UILayoutGuide *layoutMarginsGuide API_AVAILABLE(ios(9.0));
+
+/// This content guide provides a layout area that you can use to place text and related content whose width should generally be constrained to a size that is easy for the user to read. This guide provides a centered region that you can place content within to get this behavior for this view.
+@property (nonatomic, readonly, strong) UILayoutGuide *readableContentGuide  API_AVAILABLE(ios(9.0));
+
+/* The top of the safeAreaLayoutGuide indicates the unobscured top edge of the view (e.g, not behind
+ the status bar or navigation bar, if present). Similarly for the other edges.
+ */
+@property(nonatomic,readonly,strong) UILayoutGuide *safeAreaLayoutGuide API_AVAILABLE(ios(11.0),tvos(11.0));
+
+```
+
+> `UILayoutGuide` 是被设计用来执行之前由虚拟视图执行的任务。它仅仅表示坐标系中的一块矩形区域，它不会存在图层中，不会被渲染，不会存在于事件的响应链中，相较于UIView有着更低的开销，而且可以用于AutoLayout
+
+[UILayoutGuide][4]
+
+> `layoutMarginsGuide` 与 `layoutMargins`表示的矩形区域一致。 `safeAreaLayoutGuide`与 `safeAreaInsets` 表示的矩形区域一致
+
+
+![][5]
 
 
 
-
-
-
-
-
-[Positioning Content Within Layout Margins][1]
 
 
 [1]: https://developer.apple.com/documentation/uikit/uiview/positioning_content_within_layout_margins?language=objc
 
+[2]: pic/safeAreaInsetsTest.jpeg
 
+[3]: pic/safeAreaInsets.png
 
+[4]: https://developer.apple.com/documentation/uikit/uilayoutguide?language=objc
 
-
-
-
-
-``` objc
-  
-    CustomView * view1 = [CustomView new];
-    view1.directionalLayoutMargins = NSDirectionalEdgeInsetsMake(20, 30, 40, 10);
-    view1.preservesSuperviewLayoutMargins = YES;
-    view1.insetsLayoutMarginsFromSafeArea = YES;
-    [self.view addSubview:view1];
-    view1.backgroundColor = [UIColor redColor];
-    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
-    self.view1 = view1;
-    
-    CustomView * view2 = [CustomView new];
-    view2.backgroundColor = [UIColor greenColor];
-    [view1 addSubview:view2];
-    
-    NSLog(@"%lf %lf %lf %lf",view1.layoutMargins.top,view1.layoutMargins.left,view1.layoutMargins.bottom,view1.layoutMargins.right);
-    NSLog(@"%lf %lf %lf %lf",view1.safeAreaInsets.top,view1.safeAreaInsets.left,view1.safeAreaInsets.bottom,view1.safeAreaInsets.right);
-
-
-    [view2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(view1.mas_topMargin);
-        make.left.equalTo(view1.mas_leftMargin);
-        make.right.equalTo(view1.mas_rightMargin);
-        make.bottom.equalTo(view1.mas_bottomMargin);
-    }];
-
-```
+[5]: pic/safeAreaLayoutGuide.png
