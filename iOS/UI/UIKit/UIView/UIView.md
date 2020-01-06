@@ -14,7 +14,7 @@
 
   一些View属性可以以动画形式更新 *(Some view properties can be animated to new values.)*
 
-- **布局和子视图管理*（Layout and subview management）**
+- **布局和子视图管理（Layout and subview management)**
 
   视图可能会包含0个或多个子视图*（Views may contain zero or more subviews.）*
 
@@ -22,7 +22,7 @@
 
   使用Auto Layout来定义调整视图大小和重新定位视图的规则，以响应视图层次结构中的更改 *（Use Auto Layout to define the rules for resizing and repositioning your views in response to changes in the view hierarchy.）*
 
-- **事件处理*（Event handling）***
+- **事件处理（Event handling）**
 
   UIView 是 UIResponder 的子类，能够响应触摸和其他事件 *（A view is a subclass of UIResponder and can respond to touches and other types of events.）*
 
