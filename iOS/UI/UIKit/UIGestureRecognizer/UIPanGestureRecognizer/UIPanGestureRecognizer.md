@@ -15,10 +15,6 @@
 
 
 
-
-
-
-
 [handle pan gestures][1]
 
 [1]: https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures
