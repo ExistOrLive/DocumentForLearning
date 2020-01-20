@@ -9,11 +9,25 @@
 
 ## 定义动画内容
 
- `UIViewControllerAnimatedTransitioning`
+ `UIViewControllerAnimatedTransitioning`             动画转场
  
- `UIViewControllerInteractiveTransitioning`
+ `UIViewControllerInteractiveTransitioning`          交互性转场
 
 
 ## 表示动画上下文
 
- `UIViewControllerContextTransitioning`
+ `UIViewControllerContextTransitioning`             
+
+
+
+
+
+[Presenting a View Controller][1]
+
+[Customizing the Transition Animations][2]
+
+
+
+ [1]: https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/PresentingaViewController.html#//apple_ref/doc/uid/TP40007457-CH14-SW1
+
+ [2]: https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html#//apple_ref/doc/uid/TP40007457-CH16-SW1
