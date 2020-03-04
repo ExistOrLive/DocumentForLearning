@@ -30,14 +30,17 @@
 ### fastlane
 
 
+## 静态检查
+
 ## 测试阶段 （自动化测试工具，缺陷管理工具）
 
 ### JUnit
 
 ### Selenium
 
+### appium
 
-## 持续继承
+## 持续集成
 
 ### jenkins
 
