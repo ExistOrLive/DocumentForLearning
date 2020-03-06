@@ -11,6 +11,50 @@ brew install oclint
 
 ## OCLint 使用 
 
+- 首先使用 xcodebuild analyze 分析代码，在用xcpretty将分析报告解析为 compile_commands.json
+
+```sh
+
+xcodebuild analyze -workspace ZLGitHubClient.xcworkspace -scheme ZLGitHubClient | tee  $analyzeDirPath"/analyze.log" | xcpretty --report json-compilation-database -o $analyzeDirPath'/compile_commands.json'
+
+```
+
+- 使用oclint-json-compilation-database 将 compile_commands.json 转化为可视化的报告
+
+```sh
+
+oclint-json-compilation-database  -p $analyzeDirPath -- -report-type pmd -o $analyzeDirPath'/report.html'
+
+```
+
+
+## 问题 
+
+- oclint: error: `Not enough positional command line arguments specified!`
+
+解决办法 ： 
+
+在podfile中添加 
+
+```ruby
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['COMPILER_INDEX_STORE_ENABLE'] = "NO"
+        end
+    end
+end
+```
+
+在pod工程中将COMPILER_INDEX_STORE_ENABLE改为NO
+
+- `oclint: Not enough positional command line arguments specified!`
+
+解决办法：https://github.com/oclint/oclint/issues/478
+
+
+
+
 [OCLint的基础使用][1]
 
 [OCLint官方文档][2]
