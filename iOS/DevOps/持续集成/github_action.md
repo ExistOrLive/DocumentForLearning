@@ -28,7 +28,7 @@
 # action 语法 https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
 name: ZLGithub Build
 
-on:                               # 触发条件
+on:                                       # 触发条件 当master分支发生push和pr事件时，触发
   push:
     branches:
       - master
@@ -36,18 +36,18 @@ on:                               # 触发条件
     branches:
       - master
 
-jobs:
-  build:
-    name: build
-    runs-on: macos-latest # runner 系统 
-    steps:
-    - name: checkout
-      uses: actions/checkout@v2.0.0
+jobs:              
+  build:                                  # 仅有一个job build
+    name: build                           # job的name
+    runs-on: macos-latest                 # runner 运行系统 macos
+    steps:                                
+    - name: checkout                      # step的名字          
+      uses: actions/checkout@v2.0.0       # step使用的action 
       with: 
         ref: master 
     - name: construct build enviroment
-      working-directory: ./ZLGitHubClient          # 指定run 的工作目录
-      run: |
+      working-directory: ./ZLGitHubClient          # 指定step 的工作目录
+      run: |                              # step 执行的脚本
         gem cleanup
         gem install bundler
         bundle install
@@ -55,8 +55,8 @@ jobs:
         pod install
         echo "construct build enviroment success"
     - name: archive app
-      working-directory: ./ZLGitHubClient          # 指定run 的工作目录
-      env: 
+      working-directory: ./ZLGitHubClient          # 指定step 的工作目录
+      env:                                         # 指定step 执行脚本的环境变量
         MATCH_KEYCHAIN_NAME: ${{ secrets.MATCH_KEYCHAIN_NAME }}
         MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
         MATCH_GITHUB_URL: ${{ secrets.MATCH_GITHUB_URL }}
@@ -65,7 +65,7 @@ jobs:
         bundle exec fastlane github_action_adhoc
         echo "ipa build success"
     - name: upload github artifact
-      if: success()
+      if: success()                               # 当前step执行的条件是上一次step执行成功
       uses: actions/upload-artifact@v1.0.0
       with:
           # Artifact name
@@ -189,6 +189,10 @@ steps:
 
 ```
 
+- name 
+ 
+  name选型 step的名字
+
 - run 
   
   run选项 可以直接指定运行的指令
@@ -204,6 +208,10 @@ steps:
 - env
   
   env选项指定脚本执行的环境变量
+  
+- if
+  
+  if选项 指定当前step运行的条件
 
 
 ## Tips
