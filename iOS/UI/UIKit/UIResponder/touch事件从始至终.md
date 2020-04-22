@@ -1,7 +1,11 @@
 
 # Touch事件从始至终
 
-> 当点击屏幕时，iOS系统首先会收到touch事件，然后从UIWindow开始自下而上遍历图层，找到最上层touch事件点击的View，即first responder。如果first responder能够处理Touch事件，则触发事件响应的action；否则根据响应链寻找到能够处理Touch事件的Responder再处理事件。
+> iOS系统在运行过程中，会收到各种不同的事件，包括`touch事件`，`motion事件`，`remote control事件`以及`press 事件`。`motion事件`指的是设备运动相关的事件，例如摇一摇等;`remote control`事件指的是收到外设(例如耳机)发出的命令，例如耳机控制音视频的播放;`press 事件`指的是游戏手柄，apple TV遥控器等有物理按钮的设备间的交互。我们这里只讨论`touch事件`与iOS设备屏幕的交互。
+
+
+
+> 当点击屏幕时，iOS系统首先会收到touch事件并分派到相应的app，然后从UIWindow开始自下而上遍历图层，找到最上层touch事件点击的View，即first responder。如果first responder能够处理Touch事件，则触发事件响应的action；否则根据响应链寻找到能够处理Touch事件的Responder再处理事件。
 
 <div align="center"><img src="pic/touch_test.jpeg" alt="图1" width="200" height="400" align="top" /></div>
 
@@ -12,7 +16,7 @@
 
 ## 确定first responder
 
- 当点击屏幕上CustomView2区域时，首先系统会收到touch事件，然后调用UIWindow的方法`[UIWindow _targetWindowForPathIndex:atPoint:forEvent:windowServerHitTestWindow:]`,该方法会遍历UIWindow的子视图，并调用子视图的`hitTest:withEvent:`
+ 当点击屏幕上CustomView2区域时，首先系统会收到touch事件，然后调用UIWindow的方法`[UIWindow _targetWindowForPathIndex:atPoint:forEvent:windowServerHitTestWindow:]`,该方法会遍历UIWindow的子视图，并调用子视图的`hitTest:withEvent:`确定first responder。
 
 <div align="center"><img src="pic/touch_test_4.png" alt="图2" width="200" height="400" align="top" /></div>
 
@@ -47,8 +51,15 @@
 ![](pic/touch_test_8.png)
 
 
-## 手势
+## UIControl
 
+
+
+
+
+[Using Responders and the Responder Chain to Handle Events][1]
+
+[1]: https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc
 
 
 
