@@ -1,7 +1,7 @@
 
 ## 1
 
-event在responder chain中传递时，如果某个responder收到event，而且它实现了`touchesBegan:withEvent:`等方法,则代表responder能够处理该event，并拦截该event不再传递。
+event在responder chain中传递时，如果某个responder收到event，而且它实现了`touchesBegan:withEvent:`等方法且没有调用父类的`touchesBegan:withEvent:`,则代表responder能够处理该event，并拦截该event不再传递。
 
 `UIControl`类就重写了 `touchesBegan:withEvent:`等方法，会拦截event； 而`UIView`，`UIImageView`,`UILabel`没有重写，即便添加了手势，也不会拦截event的传递。
 

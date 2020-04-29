@@ -49,7 +49,7 @@
 
 ## Altering the Responder Chain
 
-> 您可以通过覆盖`UIResponder`对象的`nextResponder`属性来更改响应者链。许多UIkit类已经重写了这个方法。
+> 您可以通过覆盖`UIResponder`对象的`nextResponder`属性来更改响应者链。许多UIKit类已经重写了这个方法。
 
 - `UIView`: 如果view是VC的root view，next responder就是他的vc；否则是它的super view。
 
@@ -59,10 +59,7 @@
 
 - `UIApplication`: 当`AppDelegate` 是一个`UIResponder`实例，且不在responder chains中（即不是UIView，UIViewController，UIApplication对象），`UIApplication`的next responder就是`AppDelegate`
 
-  
-
-
-
+## 参考文档
 
 [Using Responders and the Responder Chain to Handle Events][1]
 
