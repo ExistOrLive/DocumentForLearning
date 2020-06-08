@@ -1,6 +1,14 @@
 # KVO的底层实现
 
-> KVO的底层实现原理其实就是利用OC的运行时机制，在运行时为被观察对象的类A创建一个子类B，并子类B重写被观察属性的setter方法，最后将被观察对象的类即isa指针修改为子类B
+ KVO的底层实现原理：
+ 
+1. 利用OC的运行时机制，在运行时为被观察对象的类A创建一个子类`NSKVONotifying_XXX`，
+
+2. 并修改子类`NSKVONotifying_XXX`被观察属性的setter方法实现，设置方法实现为`Foundation`的`_NSSetXXXValueAndNotify`函数。
+
+3. 最后将被观察对象的类即isa指针修改为子类`NSKVONotifying_XXX`
+
+4. 添加观察者后，调用对象的setter方法，实际上调用到`Foundation`的`_NSSetXXXValueAndNotify`函数，在函数中依次调用`willChangeValueForKey` , 父类原来的setter ,`didChangeValueForKey`
 
 ![KVO底层实现][1]
 
