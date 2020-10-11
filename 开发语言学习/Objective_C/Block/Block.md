@@ -50,7 +50,7 @@ int (*funcpter)(int) = &func;
 
 ![][2]
 
-> 如上图，打印了block中访问自动变量的地址，只有局部变量的地址是相同的。因此Block访问这些变量是将变量值做了一个浅拷贝，这样就没有办法修改原有的变量了。即`截获自动变量的瞬时值`
+> 如上图，打印了block中访问自动变量的地址，只有str的地址是相同的。因此Block访问这些变量是将变量值做了一个浅拷贝，这样就没有办法修改原有的变量了。即`截获自动变量的瞬时值`
 
 ## Block的实现
 
@@ -70,7 +70,7 @@ C语言实现如下：
 
 > 在`__main_block_impl_0`结构体中包括`__block_impl`结构体变量，`__main_block_desc_0`结构体指针，构造函数以及`e`,`str`,`c`等其他变量。
 
->`__block_impl`中保存的是Block的类型以及具体实现（函数指针）；`__main_block_desc_0`中记录的是block的附加信息；`e`,`str`,`c`等变量保存的是block捕获的自动变量，在ARC中是强引用。
+>`__block_impl`中保存的是Block的类型以及具体实现（函数指针）；`__main_block_desc_0`中记录的是block的附加信息；`e`,`str`,`c`等变量保存的是block捕获的自动变量。
 
 ### __block_impl
 
@@ -107,7 +107,7 @@ C语言实现如下：
 
 > 在 OC中，总共由三种block类型：
 
-1. _NSGlobalBlock,全局的静态block，不会访问任何的外部变量，它的生命周期是全局的。
+1. _NSGlobalBlock,全局的静态block，不会捕获局部变量，它的生命周期是全局的。
 
 2. _NSStackBlock,保存在栈上的block，当定义block的闭包结束，就会被销毁
 
@@ -131,7 +131,13 @@ C语言实现如下：
 
 ## 避免循环引用
 
-> 由于Block在访问自动变量时，比较容易造成循环引用。对于这个问题，需要将引用的一方变为weak，避免循环引用。
+Block在访问自动变量时，比较容易造成循环引用。
+
+Block事实上是一个OC对象，访问的自动变量会作为Block对象的成员变量被保存下来。 如果自动变量也是一个OC对象，且是强引用，则Block持有了该对象。如果该对象也持有了Block就会造成循环引用。
+
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2020-10-12%20%E4%B8%8A%E5%8D%884.43.27.png)
+
+对于这个问题，需要将引用的一方变为weak，避免循环引用。
 
 ```objc
 __weak __typeof__(self) weakSelf = self;    // 将引用一方变为weak
