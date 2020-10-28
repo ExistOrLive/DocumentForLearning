@@ -11,11 +11,19 @@
 > 创建新的右滑手势`UIScreenEdgePanGestureRecognizer`
 
 ```objc
+
     UIScreenEdgePanGestureRecognizer * recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
     recognizer.edges = UIRectEdgeLeft;
-    recognizer.delegate = self.interactivePopGestureRecognizer.delegate;
+    // 当NavigationController只有一个childVC，右滑会卡住整个应用
+    // recognizer.delegate = self.interactivePopGestureRecognizer.delegate;
+    recognizer.delegate = self;
     [self.view addGestureRecognizer:recognizer];
     [[super interactivePopGestureRecognizer] setEnabled:NO];
+
+    // 当NavigationController只有一个childVC 禁用手势
+    - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    return self.childViewControllers.count == 1 ? NO : YES;
+    }
 
 ```
 
