@@ -1,4 +1,4 @@
-# fastlane
+# Fastlane
 
 ## 1. fastlane 的安装
 
@@ -10,7 +10,7 @@
 1. ERROR:  Error installing fastlane:
    ERROR: Failed to build gem native extension.
 
-![][3]
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/fastlane_install_issue1.png)
 
 解决办法： 升级ruby，重新安装
 
@@ -20,7 +20,7 @@
 
 1. 使用  brew install fastlane 安装；安装位置在 `/usr/local/Cellar`
    
-![][4]
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/fastlane_install_Step1.png)
 
  
 2. 在环境变量中设置fastlane , 在`～/.bash_profile`中添加
@@ -54,10 +54,10 @@ fastlane init
 
  ```ruby
  app_identifier("com.zm.OCTest") # The bundle identifier of your app
-apple_id("18351927991@163.com") # Your Apple email address
+apple_id("*********") # Your Apple email address
 
-itc_team_id("121050685") # App Store Connect Team ID
-team_id("24LG5QVBPR") # Developer Portal Team ID
+itc_team_id("*******") # App Store Connect Team ID
+team_id("******") # Developer Portal Team ID
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
@@ -89,8 +89,6 @@ fastlane action actionName
 ```
 
 
-
-
 ## 3. 使用match管理证书
 
 > match(sync_code_signing) 在github仓库中加密保存证书和描述配置文件，用于开发成员之间共享
@@ -99,13 +97,13 @@ fastlane action actionName
 
 2. 在项目目录下执行`fastlane match init`,输入仓库地址；在fastlane目录下会生成`Matchfile`文件，包含match的配置信息
 
-![][5]
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/fastlane_match_init.png)
 
 3. 执行这些命令`fastlane match development`, `fastlane match adhoc`, `fastlane match enterprise`，`fastlane match appstore`，首次执行自动在`apple store connect`中创建provisioning file，证书并下载加密保存在git仓库，并上传.
 
-2. 其他开发者就可以使用`fastlane match`命令共享github中的证书和配置文件。
+4. 其他开发者就可以使用`fastlane match`命令共享github中的证书和配置文件。
 
-![][6]
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/fastlane_match_github.png)
 
 
 ### 在CI中使用match
@@ -163,7 +161,7 @@ lane :github_action_testFlight do
 end
 ```
 
-## 5. 使用上传testfight
+## 5. 使用pilot上传testfight
 
 ```ruby
 
@@ -215,7 +213,7 @@ lane :release do
   pilot(api_key: api_key)
 end
 ```
-
+---
 ## 7. 完整的CI配置
 
 ```ruby
