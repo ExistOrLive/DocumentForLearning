@@ -15,13 +15,61 @@ Swift中的变量或常量在使用前必须初始化，否则无法通过编译
 不会出现像C/C++中使用未初始化的变量导致未定义结果的问题。
 
 
-## 2. Swift中的类型不会发生隐式转换
-
-Swift的类型安全最重要的一点就是不会发生隐式的类型转换，在算术类型溢出时会直接报错。
+## 2. Swift中的类型转换
 
 C/C++，OC语言在算术运算中，会隐式地将运算对象转换为相同的类型才计算，溢出时也只会截取对应位数上的数据。所以经常会发生计算结果和预期不一致的情况。
 
 特别是C++，通过转换构造函数和转换运算符的重载，还支持类类型之间的隐式转换，更是增加了由于隐式类型转换导致错误的几率。
+
+
+C++/OC/swift 中具有继承关系的对象可以转换。
+
+C++/Objc中的类型转换，仅在编译器做检查，只要符合转换规则，就可以通过。
+而 Swift 中的类型转换在运行时做检查，判断能够转换成功。
+
+
+```c++
+class SuperClass{
+    void test(){
+        cout << "SuperClass";
+    }
+};
+
+class SubClass : public SuperClass{
+    void subtest(){
+        cout << "SubClass";
+    }
+};
+
+
+int main(){
+    SuperClass a;
+    SuperClass *aPoint = a;
+    ((SubClass *)aPoint)->subtest();  // 仅在编译期检查，运行时可能会出错
+}
+
+```
+
+
+```c++
+class SuperClass{
+    func test(){
+        print("SuperClass")
+    }
+};
+
+class SubClass : public SuperClass{
+    func subtest(){
+        print("SubClass")
+    }
+};
+
+let a = SuperClass();
+if let b = a as? SubClass{   // 运行时检查不会报错
+    b.subtest()
+}
+
+```
 
 
 ## 3. Swift在继承和重写上的安全

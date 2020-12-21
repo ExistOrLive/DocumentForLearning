@@ -30,13 +30,15 @@
     CALayer * blueLayer = [[CALayer alloc] init];
     blueLayer.frame = CGRectMake(50.0, 50.0, 100.0, 100.0);
     blueLayer.backgroundColor = [[UIColor blueColor] CGColor];
+    blueLayer.rasterizationScale = self.layerView.contentScaleFactor;
+    
     
     [self.layerView.layer addSublayer:blueLayer];
     
-//    UITapGestureRecognizer * gestureRecognizer = [[UITapGestureRecognizer alloc] init];
-//    [gestureRecognizer addTarget:self action:@selector(onClick)];
-//
-//    [self.layerView addGestureRecognizer:gestureRecognizer];
+    UITapGestureRecognizer * gestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    [gestureRecognizer addTarget:self action:@selector(onClick)];
+
+    [self.layerView addGestureRecognizer:gestureRecognizer];
     
 
     
@@ -49,13 +51,27 @@
     [self.view addSubview:self.graphicsView];
     
     
+    UIView *view =  [[GraphicsViewControllerView alloc] initWithFrame:CGRectMake(0, 0, 100, 200)];
+    [self.graphicsView addSubview:view];
 }
 
 - (void) onClick
 {
-    CATransform3D rotationMatrix = CATransform3DMakeRotation(M_PI / 4, 0, 1, 0);
     
+    [CATransaction begin];
+    [CATransaction setAnimationDuration:5];
+    
+    CATransform3D rotationMatrix = CATransform3DMakeRotation(M_PI / 4, 0, 1, 0);
     self.graphicsView.layer.transform = rotationMatrix;
+    [self.graphicsView setNeedsLayout];
+
+    //        [self.graphicsView setNeedsDisplay];
+    [CATransaction commit];
+    
+
+    
+
+    
 }
 
 - (void) onPan:(UIPanGestureRecognizer *)recognizer

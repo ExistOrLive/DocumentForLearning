@@ -10,6 +10,11 @@
 
 @implementation GraphicsViewControllerView
 
+//- (void)displayLayer:(CALayer *)layer{
+//   // [super displayLayer:layer];
+//    
+//}
+
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -25,5 +30,14 @@
 
 }
 
+
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    
+    for(UIView *view in self.subviews){
+        [view setNeedsLayout];
+    }
+}
 
 @end
