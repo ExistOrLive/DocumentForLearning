@@ -133,6 +133,8 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
 [UIEvent][3]
 
+[iOS|事件传递及响应链](https://juejin.cn/post/6894518925514997767https://juejin.cn/post/6894518925514997767)
+
 [1]: https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc
 
 [2]: https://developer.apple.com/documentation/uikit/uiresponder?language=objc
