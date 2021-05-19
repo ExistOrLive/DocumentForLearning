@@ -41,6 +41,22 @@ ldr xd, [Xs, #offset]
 
 ```
 
-   
+## 2. 比较指令 cmp
+
+
+## 3. 跳转指令
+
+```asm
+// 跳转到LGetIsaDone 
+b	LGetIsaDone
+
+// p9 != p1 , 跳转到 3
+cmp	p9, p1			
+b.ne	3f
+
+// 
+cmp	p13, p10			// } while (bucket >= buckets)
+b.hs	1b
+```
 
 
