@@ -48,3 +48,8 @@ image list ： 列出当前可执行文件的依赖的模块镜像
 ## bt 打印堆栈信息
 
 
+
+## watchpoint 
+
+
+
