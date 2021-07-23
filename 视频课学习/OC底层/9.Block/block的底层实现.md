@@ -115,6 +115,7 @@ void *_Block_copy(const void *arg) {
 
 - 当为stack block，则拷贝一份，并设置类型为 malloc block，再返回。
 
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Block_copy.png)
 
 ## 2.`_Block_release`
 
@@ -125,15 +126,17 @@ void *_Block_copy(const void *arg) {
 // API entry point to release a copied Block
 void _Block_release(const void *arg) {
     struct Block_layout *aBlock = (struct Block_layout *)arg;
+
     if (!aBlock) return;
     // gloabl block 直接返回
     if (aBlock->flags & BLOCK_IS_GLOBAL) return;
+    // stack block 返回 
     if (! (aBlock->flags & BLOCK_NEEDS_FREE)) return;
      
      // 减少引用计数
     if (latching_decr_int_should_deallocate(&aBlock->flags)) {
-        // 如果需要销毁block(引用计数为0)，则调用销毁的方法
-        _Block_call_dispose_helper(aBlock);
+        // 如果需要销毁block(引用计数为0)，则调用释放和销毁的方法
+        _Block_call_dispose_helper(aBlock); 
         _Block_destructInstance(aBlock);
         free(aBlock);
     }
@@ -167,8 +170,12 @@ struct Block_layout {
 `flag`是一块4字节的内存，不同的位保存不同的信息。
 
 - BLOCK_REFCOUNT_MASK （0xfffe） 保存了引用计数
-- BLOCK_NEEDS_FREE      
+- BLOCK_NEEDS_FREE     1 MallocBlock  0 Stack Block
 - BLOCK_DEALLOCATING    是否正在销毁
+- BLOCK_HAS_COPY_DISPOSE  是否存在拷贝销毁方法(是否存在descriptor2)
+- BLOCK_IS_GLOBAL     是否为global block
+- BLOCK_HAS_SIGNATURE  是否存在descriptor3
+  
 
 ```objc
 enum {
@@ -232,33 +239,29 @@ struct Block_descriptor_3 {
   NSDate *date = [NSDate date];
   __weak NSDate *weakdate = date;
   __block int num1 = 0;
-        
+  __block NSTimer * timer = nil;
+
   void(^a)() = ^{
       NSLog(@"%d,%@,%@",num,str,weakdate);
       num1 = num;
+      timer = nil;
   };
 ```
-以上OC代码改写为C语言，Block改写为对应的结构体实现
+`clang -rewrite-objc -fobjc-arc -fobjc-runtime=ios-14.5.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk`将以上OC代码改写为C语言，Block改写为对应的结构体实现
 
 ```c
 // 对应 Block_layout
 struct __main_block_impl_0 {
-  struct __block_impl impl;  // isa flags reserved invoke
-  struct __main_block_desc_0* Desc; // descriptor1 descriptor2 
-  
-  // 捕获的变量
+  struct __block_impl impl;
+  struct __main_block_desc_0* Desc;
   int num;
   NSString *__strong str;
   NSDate *__weak weakdate;
   __Block_byref_num1_0 *num1; // by ref
+  __Block_byref_timer_1 *timer; // by ref
 
-  __main_block_impl_0(void *fp,
-                      struct __main_block_desc_0 *desc,
-                      int _num,
-                      NSString *__strong _str,
-                      NSDate *__weak _weakdate,
-                      __Block_byref_num1_0 *_num1,
-                      int flags=0) : num(_num), str(_str), weakdate(_weakdate), num1(_num1->__forwarding) {
+
+  __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int _num, NSString *__strong _str, NSDate *__weak _weakdate, __Block_byref_num1_0 *_num1, __Block_byref_timer_1 *_timer, int flags=0) : num(_num), str(_str), weakdate(_weakdate), num1(_num1->__forwarding), timer(_timer->__forwarding) {
     impl.isa = &_NSConcreteStackBlock;
     impl.Flags = flags;
     impl.FuncPtr = fp;
@@ -269,18 +272,35 @@ struct __main_block_impl_0 {
 // 函数体
 static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
   __Block_byref_num1_0 *num1 = __cself->num1; // bound by ref
+  __Block_byref_timer_1 *timer = __cself->timer; // bound by ref
   int num = __cself->num; // bound by copy
   NSString *__strong str = __cself->str; // bound by copy
   NSDate *__weak weakdate = __cself->weakdate; // bound by copy
 
-            NSLog((NSString *)&__NSConstantStringImpl__var_folders_34_yg5lfpys2l1ghsm4rjr974qh0000gn_T_main_1e0e44_mii_1,num,str,weakdate);
-            (num1->__forwarding->num1) = num;
-        }
+  NSLog((NSString *)&__NSConstantStringImpl__var_folders_34_yg5lfpys2l1ghsm4rjr974qh0000gn_T_main_53f4b3_mii_1,num,str,weakdate);
+  (num1->__forwarding->num1) = num;
+  (timer->__forwarding->timer) = __null;
+}
 
 
-static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {_Block_object_assign((void*)&dst->str, (void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);_Block_object_assign((void*)&dst->weakdate, (void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);_Block_object_assign((void*)&dst->num1, (void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);}
+// copy dispose 方法 用于深度拷贝捕获的变量(引用类型，__block类型)
+static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {
+  
+  _Block_object_assign((void*)&dst->str, (void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_assign((void*)&dst->weakdate, (void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_assign((void*)&dst->num1, (void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);
+  _Block_object_assign((void*)&dst->timer, (void*)src->timer, 8/*BLOCK_FIELD_IS_BYREF*/);
 
-static void __main_block_dispose_0(struct __main_block_impl_0*src) {_Block_object_dispose((void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);_Block_object_dispose((void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);_Block_object_dispose((void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);}
+}
+
+static void __main_block_dispose_0(struct __main_block_impl_0*src) {
+
+  _Block_object_dispose((void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_dispose((void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_dispose((void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);
+  _Block_object_dispose((void*)src->timer, 8/*BLOCK_FIELD_IS_BYREF*/);
+
+}
 
 
 // 对应 Block_descriptor_1 Block_descriptor_2
@@ -289,7 +309,11 @@ static struct __main_block_desc_0 {
   size_t Block_size;
   void (*copy)(struct __main_block_impl_0*, struct __main_block_impl_0*);
   void (*dispose)(struct __main_block_impl_0*);
-} __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0), __main_block_copy_0, __main_block_dispose_0};
+} __main_block_desc_0_DATA = { 0, 
+                               sizeof(struct __main_block_impl_0), 
+                               __main_block_copy_0, 
+                               __main_block_dispose_0};
+
 ```
 
 `__main_block_impl_0`对应底层的`Block_Layout`; 
@@ -302,27 +326,27 @@ static struct __main_block_desc_0 {
 
 ```c
 static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {
-    
-    _Block_object_assign((void*)&dst->str, (void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);
-    
-    _Block_object_assign((void*)&dst->weakdate, (void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);
-    
-    _Block_object_assign((void*)&dst->num1, (void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);
+  
+  _Block_object_assign((void*)&dst->str, (void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_assign((void*)&dst->weakdate, (void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_assign((void*)&dst->num1, (void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);
+  _Block_object_assign((void*)&dst->timer, (void*)src->timer, 8/*BLOCK_FIELD_IS_BYREF*/);
+
 }
 
 static void __main_block_dispose_0(struct __main_block_impl_0*src) {
-    
-    _Block_object_dispose((void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);
-    
-    _Block_object_dispose((void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);
-    
-    _Block_object_dispose((void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);
+
+  _Block_object_dispose((void*)src->str, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_dispose((void*)src->weakdate, 3/*BLOCK_FIELD_IS_OBJECT*/);
+  _Block_object_dispose((void*)src->num1, 8/*BLOCK_FIELD_IS_BYREF*/);
+  _Block_object_dispose((void*)src->timer, 8/*BLOCK_FIELD_IS_BYREF*/);
+
 }
 ```
 
 由函数实现可见，`copy`和`dispose`函数是调用`_Block_object_assign`和`_Block_object_dispose`处理捕获变量。
 
-## 4. `_Block_object_assign`,`_Block_object_dispose`
+## 4. 拷贝捕获的变量 `_Block_object_assign`,`_Block_object_dispose`
 
 - 捕获变量为Block或者对象类型，先持有，再赋值
 - 捕获变量为__block变量，调用`_Block_byref_copy`
@@ -337,7 +361,8 @@ void _Block_object_assign(void *destArg, const void *object, const int flags) {
         id object = ...;
         [^{ object; } copy];
         ********/
-
+        
+        // 事实上，什么都没有做
         _Block_retain_object(object);
         *dest = object;
         break;
@@ -347,7 +372,7 @@ void _Block_object_assign(void *destArg, const void *object, const int flags) {
         void (^object)(void) = ...;
         [^{ object; } copy];
         ********/
-
+        
         *dest = _Block_copy(object);
         break;
     
@@ -427,7 +452,15 @@ void _Block_object_dispose(const void *object, const int flags) {
 
 ## 5. __block变量和`Block_byref`
 
+在底层**libclosure**的 **__block** 变量使用`Block_byref` 结构体表示：
+
+- isa          表示类型
+- forwarding   指向原始Block_byref的指针，通过该指针修改捕获的变量的值
+- flags        引用计数以及一些状态
+- size         Block_byref 的大小
+
 ```c
+// libclosure-78
 struct Block_byref {
     void * __ptrauth_objc_isa_pointer isa;
     struct Block_byref *forwarding;
@@ -447,7 +480,9 @@ struct Block_byref_3 {
 };
 ```
 
-拷贝和销毁__block变量
+当Block被拷贝或者释放时，捕获的__block变量(即Block_byref)也要拷贝`_Block_byref_copy`和释放`_Block_byref_release`
+
+### 5.1  `_Block_byref_copy`
 
 ```c
 static struct Block_byref *_Block_byref_copy(const void *arg) {
@@ -470,7 +505,8 @@ static struct Block_byref *_Block_byref_copy(const void *arg) {
             struct Block_byref_2 *copy2 = (struct Block_byref_2 *)(copy+1);
             copy2->byref_keep = src2->byref_keep;
             copy2->byref_destroy = src2->byref_destroy;
-
+            
+            // 如果需要深度拷贝
             if (src->flags & BLOCK_BYREF_LAYOUT_EXTENDED) {
                 struct Block_byref_3 *src3 = (struct Block_byref_3 *)(src2+1);
                 struct Block_byref_3 *copy3 = (struct Block_byref_3*)(copy2+1);
@@ -480,11 +516,13 @@ static struct Block_byref *_Block_byref_copy(const void *arg) {
             (*src2->byref_keep)(copy, src);
         }
         else {
+            // 不需要深度拷贝 
             // Bitwise copy.
             // This copy includes Block_byref_3, if any.
             memmove(copy+1, src+1, src->size - sizeof(*src));
         }
     }
+    // Block_byref已经在堆上，只需要操作引用计数
     // already copied to heap
     else if ((src->forwarding->flags & BLOCK_BYREF_NEEDS_FREE) == BLOCK_BYREF_NEEDS_FREE) {
         latching_incr_int(&src->forwarding->flags);
@@ -493,3 +531,89 @@ static struct Block_byref *_Block_byref_copy(const void *arg) {
     return src->forwarding;
 }
 ```
+
+`Block_byref_copy`主要作用：
+
+- 如果`Block_byref`存储在栈上，那么需要拷贝到堆上
+    
+    在堆上拷贝新的`Block_byref`，原本的`Block_byref`的`forwarding`需要指向新的`Block_byref`。这样__block变量的值由新的`Block_byref`在堆上维护，不会因为栈内存的释放而被销毁。
+
+- 如果`Block_byref`已经存储在堆上，只需要操作引用计数+1
+
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Block_byref_copy.png)
+
+### 5.1  `_Block_byref_release`
+
+```objc
+static void _Block_byref_release(const void *arg) {
+
+    struct Block_byref *byref = (struct Block_byref *)arg;
+
+    // dereference the forwarding pointer since the compiler isn't doing this anymore (ever?)
+    byref = byref->forwarding;
+    
+    if (byref->flags & BLOCK_BYREF_NEEDS_FREE) {
+        int32_t refcount = byref->flags & BLOCK_REFCOUNT_MASK;
+        os_assert(refcount);
+        // 引用计数减1
+        if (latching_decr_int_should_deallocate(&byref->flags)) {
+            if (byref->flags & BLOCK_BYREF_HAS_COPY_DISPOSE) {
+                struct Block_byref_2 *byref2 = (struct Block_byref_2 *)(byref+1);
+                (*byref2->byref_destroy)(byref);
+            }
+            // 销毁byref
+            free(byref);
+        }
+    }
+}
+```
+
+
+## 6. 总结
+
+- Block 分为 `NSGlobalBlock`，`NSStackBlock`，
+  `NSMallocBlock`. 
+  
+     - `NSGlobalBlock`的生命周期是全局的，不需要内存管理。
+     - `NSStackBlock` 只是一个初始的临时状态
+     - `NSMallocBlock` 使用引用计数来管理
+
+- `Block_Copy` 主要两个功能：
+  
+     - 对`NSMallocBlock` ，引用计数 + 1
+     - 将 `NSStackBlock` 拷贝为 `NSMallocBlock`
+
+- `Block_Release` 作用是引用计数减1，当引用计数为0时，销毁Block
+
+
+- Block 在底层使用`Block_layout`表示，捕获的变量将作为`Block_layout`的成员变量存储。在拷贝或者销毁Block时，也需要拷贝和释放捕获的变量
+
+- 有一些捕获的变量在拷贝或者释放时需要进一步操作，如retain，或者深度拷贝(引用类型，__block)。`Block_descriptor_2`中保存着相关的copy和dispose方法
+
+- **__Block**变量在底层的实现为`Block_byref`。 一般 `Block_byref`变量定义在栈上，在将Block拷贝为`NSMallocBlock`时，`Block_byref` 也会拷贝到堆上，相关方法`Block_byref_copy`和`Block_byref_release`.
+
+
+## 7. Example
+
+```objc
+  int num = 11;
+  NSString *str = @"dasda";
+  NSDate *date = [NSDate date];
+  __weak NSDate *weakdate = date;
+  __block int num1 = 0;
+  __block NSTimer * timer = nil;
+
+  void(^a)() = ^{
+      NSLog(@"%d,%@,%@",num,str,weakdate);
+      num1 = num;
+      timer = nil;
+  };
+
+  a();
+        
+  NSLog(@"%d",num1);
+```
+
+如上的代码改写为C语言，[main.cpp](../9.Block/main.cpp)
+
+![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Block_layout1.png)
