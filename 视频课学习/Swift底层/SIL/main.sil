@@ -1,0 +1,332 @@
+sil_stage canonical
+
+import Builtin
+import Swift
+import SwiftShims
+
+import Foundation
+
+class ZMTest {
+  @_hasStorage @_hasInitialValue var params1: Int { get set }
+  @_hasStorage @_hasInitialValue var params2: String { get set }
+  @objc deinit
+  init()
+}
+
+@_hasStorage @_hasInitialValue let test: ZMTest { get }
+
+// test
+sil_global hidden [let] @$s4main4testAA6ZMTestCvp : $ZMTest
+
+// main
+sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  alloc_global @$s4main4testAA6ZMTestCvp          // id: %2
+  %3 = global_addr @$s4main4testAA6ZMTestCvp : $*ZMTest // users: %14, %7
+  %4 = metatype $@thick ZMTest.Type               // user: %6
+  // function_ref ZMTest.__allocating_init()
+  %5 = function_ref @$s4main6ZMTestCACycfC : $@convention(method) (@thick ZMTest.Type) -> @owned ZMTest // user: %6
+  %6 = apply %5(%4) : $@convention(method) (@thick ZMTest.Type) -> @owned ZMTest // user: %7
+  store %6 to %3 : $*ZMTest                       // id: %7
+  %8 = integer_literal $Builtin.Word, 1           // user: %10
+  // function_ref _allocateUninitializedArray<A>(_:)
+  %9 = function_ref @$ss27_allocateUninitializedArrayySayxG_BptBwlF : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer) // user: %10
+  %10 = apply %9<Any>(%8) : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer) // users: %12, %11
+  %11 = tuple_extract %10 : $(Array<Any>, Builtin.RawPointer), 0 // user: %20
+  %12 = tuple_extract %10 : $(Array<Any>, Builtin.RawPointer), 1 // user: %13
+  %13 = pointer_to_address %12 : $Builtin.RawPointer to [strict] $*Any // user: %17
+  %14 = load %3 : $*ZMTest                        // users: %15, %16
+  %15 = class_method %14 : $ZMTest, #ZMTest.params2!getter : (ZMTest) -> () -> String, $@convention(method) (@guaranteed ZMTest) -> @owned String // user: %16
+  %16 = apply %15(%14) : $@convention(method) (@guaranteed ZMTest) -> @owned String // user: %18
+  %17 = init_existential_addr %13 : $*Any, $String // user: %18
+  store %16 to %17 : $*String                     // id: %18
+  // function_ref _finalizeUninitializedArray<A>(_:)
+  %19 = function_ref @$ss27_finalizeUninitializedArrayySayxGABnlF : $@convention(thin) <τ_0_0> (@owned Array<τ_0_0>) -> @owned Array<τ_0_0> // user: %20
+  %20 = apply %19<Any>(%11) : $@convention(thin) <τ_0_0> (@owned Array<τ_0_0>) -> @owned Array<τ_0_0> // users: %29, %26
+  // function_ref default argument 1 of print(_:separator:terminator:)
+  %21 = function_ref @$ss5print_9separator10terminatoryypd_S2StFfA0_ : $@convention(thin) () -> @owned String // user: %22
+  %22 = apply %21() : $@convention(thin) () -> @owned String // users: %28, %26
+  // function_ref default argument 2 of print(_:separator:terminator:)
+  %23 = function_ref @$ss5print_9separator10terminatoryypd_S2StFfA1_ : $@convention(thin) () -> @owned String // user: %24
+  %24 = apply %23() : $@convention(thin) () -> @owned String // users: %27, %26
+  // function_ref print(_:separator:terminator:)
+  %25 = function_ref @$ss5print_9separator10terminatoryypd_S2StF : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> () // user: %26
+  %26 = apply %25(%20, %22, %24) : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> ()
+  release_value %24 : $String                     // id: %27
+  release_value %22 : $String                     // id: %28
+  release_value %20 : $Array<Any>                 // id: %29
+  %30 = integer_literal $Builtin.Int32, 0         // user: %31
+  %31 = struct $Int32 (%30 : $Builtin.Int32)      // user: %32
+  return %31 : $Int32                             // id: %32
+} // end sil function 'main'
+
+// variable initialization expression of ZMTest.params1
+sil hidden [transparent] @$s4main6ZMTestC7params1Sivpfi : $@convention(thin) () -> Int {
+bb0:
+  %0 = integer_literal $Builtin.Int64, 1          // user: %1
+  %1 = struct $Int (%0 : $Builtin.Int64)          // user: %2
+  return %1 : $Int                                // id: %2
+} // end sil function '$s4main6ZMTestC7params1Sivpfi'
+
+// Int.init(_builtinIntegerLiteral:)
+sil public_external [transparent] [serialized] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
+// %0                                             // user: %2
+bb0(%0 : $Builtin.IntLiteral, %1 : $@thin Int.Type):
+  %2 = builtin "s_to_s_checked_trunc_IntLiteral_Int64"(%0 : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) // user: %3
+  %3 = tuple_extract %2 : $(Builtin.Int64, Builtin.Int1), 0 // user: %4
+  %4 = struct $Int (%3 : $Builtin.Int64)          // user: %5
+  return %4 : $Int                                // id: %5
+} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
+
+// ZMTest.params1.getter
+sil hidden [transparent] @$s4main6ZMTestC7params1Sivg : $@convention(method) (@guaranteed ZMTest) -> Int {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $ZMTest, #ZMTest.params1 // user: %3
+  %3 = begin_access [read] [dynamic] %2 : $*Int   // users: %4, %5
+  %4 = load %3 : $*Int                            // user: %6
+  end_access %3 : $*Int                           // id: %5
+  return %4 : $Int                                // id: %6
+} // end sil function '$s4main6ZMTestC7params1Sivg'
+
+// ZMTest.params1.setter
+sil hidden [transparent] @$s4main6ZMTestC7params1Sivs : $@convention(method) (Int, @guaranteed ZMTest) -> () {
+// %0 "value"                                     // users: %6, %2
+// %1 "self"                                      // users: %4, %3
+bb0(%0 : $Int, %1 : $ZMTest):
+  debug_value %0 : $Int, let, name "value", argno 1 // id: %2
+  debug_value %1 : $ZMTest, let, name "self", argno 2 // id: %3
+  %4 = ref_element_addr %1 : $ZMTest, #ZMTest.params1 // user: %5
+  %5 = begin_access [modify] [dynamic] %4 : $*Int // users: %6, %7
+  store %0 to %5 : $*Int                          // id: %6
+  end_access %5 : $*Int                           // id: %7
+  %8 = tuple ()                                   // user: %9
+  return %8 : $()                                 // id: %9
+} // end sil function '$s4main6ZMTestC7params1Sivs'
+
+// ZMTest.params1.modify
+sil hidden [transparent] @$s4main6ZMTestC7params1SivM : $@yield_once @convention(method) (@guaranteed ZMTest) -> @yields @inout Int {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $ZMTest, #ZMTest.params1 // user: %3
+  %3 = begin_access [modify] [dynamic] %2 : $*Int // users: %5, %8, %4
+  yield %3 : $*Int, resume bb1, unwind bb2        // id: %4
+
+bb1:                                              // Preds: bb0
+  end_access %3 : $*Int                           // id: %5
+  %6 = tuple ()                                   // user: %7
+  return %6 : $()                                 // id: %7
+
+bb2:                                              // Preds: bb0
+  end_access %3 : $*Int                           // id: %8
+  unwind                                          // id: %9
+} // end sil function '$s4main6ZMTestC7params1SivM'
+
+// variable initialization expression of ZMTest.params2
+sil hidden [transparent] @$s4main6ZMTestC7params2SSvpfi : $@convention(thin) () -> @owned String {
+bb0:
+  %0 = string_literal utf8 "Hello World"          // user: %5
+  %1 = integer_literal $Builtin.Word, 11          // user: %5
+  %2 = integer_literal $Builtin.Int1, -1          // user: %5
+  %3 = metatype $@thin String.Type                // user: %5
+  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+  %4 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %5
+  %5 = apply %4(%0, %1, %2, %3) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %6
+  return %5 : $String                             // id: %6
+} // end sil function '$s4main6ZMTestC7params2SSvpfi'
+
+// String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+sil [serialized] [always_inline] [readonly] [_semantics "string.makeUTF8"] @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String
+
+// ZMTest.params2.getter
+sil hidden [transparent] @$s4main6ZMTestC7params2SSvg : $@convention(method) (@guaranteed ZMTest) -> @owned String {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $ZMTest, #ZMTest.params2 // user: %3
+  %3 = begin_access [read] [dynamic] %2 : $*String // users: %4, %6
+  %4 = load %3 : $*String                         // users: %7, %5
+  retain_value %4 : $String                       // id: %5
+  end_access %3 : $*String                        // id: %6
+  return %4 : $String                             // id: %7
+} // end sil function '$s4main6ZMTestC7params2SSvg'
+
+// ZMTest.params2.setter
+sil hidden [transparent] @$s4main6ZMTestC7params2SSvs : $@convention(method) (@owned String, @guaranteed ZMTest) -> () {
+// %0 "value"                                     // users: %11, %8, %4, %2
+// %1 "self"                                      // users: %5, %3
+bb0(%0 : $String, %1 : $ZMTest):
+  debug_value %0 : $String, let, name "value", argno 1 // id: %2
+  debug_value %1 : $ZMTest, let, name "self", argno 2 // id: %3
+  retain_value %0 : $String                       // id: %4
+  %5 = ref_element_addr %1 : $ZMTest, #ZMTest.params2 // user: %6
+  %6 = begin_access [modify] [dynamic] %5 : $*String // users: %8, %7, %10
+  %7 = load %6 : $*String                         // user: %9
+  store %0 to %6 : $*String                       // id: %8
+  release_value %7 : $String                      // id: %9
+  end_access %6 : $*String                        // id: %10
+  release_value %0 : $String                      // id: %11
+  %12 = tuple ()                                  // user: %13
+  return %12 : $()                                // id: %13
+} // end sil function '$s4main6ZMTestC7params2SSvs'
+
+// ZMTest.params2.modify
+sil hidden [transparent] @$s4main6ZMTestC7params2SSvM : $@yield_once @convention(method) (@guaranteed ZMTest) -> @yields @inout String {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $ZMTest, #ZMTest.params2 // user: %3
+  %3 = begin_access [modify] [dynamic] %2 : $*String // users: %5, %8, %4
+  yield %3 : $*String, resume bb1, unwind bb2     // id: %4
+
+bb1:                                              // Preds: bb0
+  end_access %3 : $*String                        // id: %5
+  %6 = tuple ()                                   // user: %7
+  return %6 : $()                                 // id: %7
+
+bb2:                                              // Preds: bb0
+  end_access %3 : $*String                        // id: %8
+  unwind                                          // id: %9
+} // end sil function '$s4main6ZMTestC7params2SSvM'
+
+// ZMTest.deinit
+sil hidden @$s4main6ZMTestCfd : $@convention(method) (@guaranteed ZMTest) -> @owned Builtin.NativeObject {
+// %0 "self"                                      // users: %6, %2, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $ZMTest, #ZMTest.params2 // user: %3
+  %3 = begin_access [deinit] [static] %2 : $*String // users: %5, %4
+  destroy_addr %3 : $*String                      // id: %4
+  end_access %3 : $*String                        // id: %5
+  %6 = unchecked_ref_cast %0 : $ZMTest to $Builtin.NativeObject // user: %7
+  return %6 : $Builtin.NativeObject               // id: %7
+} // end sil function '$s4main6ZMTestCfd'
+
+// ZMTest.__deallocating_deinit
+sil hidden @$s4main6ZMTestCfD : $@convention(method) (@owned ZMTest) -> () {
+// %0 "self"                                      // users: %3, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  // function_ref ZMTest.deinit
+  %2 = function_ref @$s4main6ZMTestCfd : $@convention(method) (@guaranteed ZMTest) -> @owned Builtin.NativeObject // user: %3
+  %3 = apply %2(%0) : $@convention(method) (@guaranteed ZMTest) -> @owned Builtin.NativeObject // user: %4
+  %4 = unchecked_ref_cast %3 : $Builtin.NativeObject to $ZMTest // user: %5
+  dealloc_ref %4 : $ZMTest                        // id: %5
+  %6 = tuple ()                                   // user: %7
+  return %6 : $()                                 // id: %7
+} // end sil function '$s4main6ZMTestCfD'
+
+// ZMTest.__allocating_init()
+sil hidden [exact_self_class] @$s4main6ZMTestCACycfC : $@convention(method) (@thick ZMTest.Type) -> @owned ZMTest {
+// %0 "$metatype"
+bb0(%0 : $@thick ZMTest.Type):
+  %1 = alloc_ref $ZMTest                          // user: %3
+  // function_ref ZMTest.init()
+  %2 = function_ref @$s4main6ZMTestCACycfc : $@convention(method) (@owned ZMTest) -> @owned ZMTest // user: %3
+  %3 = apply %2(%1) : $@convention(method) (@owned ZMTest) -> @owned ZMTest // user: %4
+  return %3 : $ZMTest                             // id: %4
+} // end sil function '$s4main6ZMTestCACycfC'
+
+// ZMTest.init()
+sil hidden @$s4main6ZMTestCACycfc : $@convention(method) (@owned ZMTest) -> @owned ZMTest {
+// %0 "self"                                      // users: %6, %2, %14, %1
+bb0(%0 : $ZMTest):
+  debug_value %0 : $ZMTest, let, name "self", argno 1 // id: %1
+  %2 = ref_element_addr %0 : $ZMTest, #ZMTest.params1 // user: %5
+  %3 = integer_literal $Builtin.Int64, 1          // user: %4
+  %4 = struct $Int (%3 : $Builtin.Int64)          // user: %5
+  store %4 to %2 : $*Int                          // id: %5
+  %6 = ref_element_addr %0 : $ZMTest, #ZMTest.params2 // user: %13
+  %7 = string_literal utf8 "Hello World"          // user: %12
+  %8 = integer_literal $Builtin.Word, 11          // user: %12
+  %9 = integer_literal $Builtin.Int1, -1          // user: %12
+  %10 = metatype $@thin String.Type               // user: %12
+  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+  %11 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %12
+  %12 = apply %11(%7, %8, %9, %10) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %13
+  store %12 to %6 : $*String                      // id: %13
+  return %0 : $ZMTest                             // id: %14
+} // end sil function '$s4main6ZMTestCACycfc'
+
+// _allocateUninitializedArray<A>(_:)
+sil [serialized] [always_inline] [_semantics "array.uninitialized_intrinsic"] @$ss27_allocateUninitializedArrayySayxG_BptBwlF : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer)
+
+// _finalizeUninitializedArray<A>(_:)
+sil shared_external [serialized] [readnone] [_semantics "array.finalize_intrinsic"] @$ss27_finalizeUninitializedArrayySayxGABnlF : $@convention(thin) <Element> (@owned Array<Element>) -> @owned Array<Element> {
+// %0                                             // user: %2
+bb0(%0 : $Array<Element>):
+  %1 = alloc_stack $Array<Element>                // users: %6, %5, %4, %2
+  store %0 to %1 : $*Array<Element>               // id: %2
+  // function_ref Array._endMutation()
+  %3 = function_ref @$sSa12_endMutationyyF : $@convention(method) <τ_0_0> (@inout Array<τ_0_0>) -> () // user: %4
+  %4 = apply %3<Element>(%1) : $@convention(method) <τ_0_0> (@inout Array<τ_0_0>) -> ()
+  %5 = load %1 : $*Array<Element>                 // user: %7
+  dealloc_stack %1 : $*Array<Element>             // id: %6
+  return %5 : $Array<Element>                     // id: %7
+} // end sil function '$ss27_finalizeUninitializedArrayySayxGABnlF'
+
+// default argument 1 of print(_:separator:terminator:)
+sil shared_external [serialized] @$ss5print_9separator10terminatoryypd_S2StFfA0_ : $@convention(thin) () -> @owned String {
+bb0:
+  %0 = string_literal utf8 " "                    // user: %5
+  %1 = integer_literal $Builtin.Word, 1           // user: %5
+  %2 = integer_literal $Builtin.Int1, -1          // user: %5
+  %3 = metatype $@thin String.Type                // user: %5
+  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+  %4 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %5
+  %5 = apply %4(%0, %1, %2, %3) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %6
+  return %5 : $String                             // id: %6
+} // end sil function '$ss5print_9separator10terminatoryypd_S2StFfA0_'
+
+// default argument 2 of print(_:separator:terminator:)
+sil shared_external [serialized] @$ss5print_9separator10terminatoryypd_S2StFfA1_ : $@convention(thin) () -> @owned String {
+bb0:
+  %0 = string_literal utf8 "\n"                   // user: %5
+  %1 = integer_literal $Builtin.Word, 1           // user: %5
+  %2 = integer_literal $Builtin.Int1, -1          // user: %5
+  %3 = metatype $@thin String.Type                // user: %5
+  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+  %4 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %5
+  %5 = apply %4(%0, %1, %2, %3) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %6
+  return %5 : $String                             // id: %6
+} // end sil function '$ss5print_9separator10terminatoryypd_S2StFfA1_'
+
+// print(_:separator:terminator:)
+sil @$ss5print_9separator10terminatoryypd_S2StF : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> ()
+
+// Array._endMutation()
+sil shared_external [serialized] [_semantics "array.end_mutation"] @$sSa12_endMutationyyF : $@convention(method) <Element> (@inout Array<Element>) -> () {
+// %0                                             // users: %9, %1
+bb0(%0 : $*Array<Element>):
+  %1 = struct_element_addr %0 : $*Array<Element>, #Array._buffer // user: %2
+  %2 = struct_element_addr %1 : $*_ArrayBuffer<Element>, #_ArrayBuffer._storage // user: %3
+  %3 = struct_element_addr %2 : $*_BridgeStorage<__ContiguousArrayStorageBase>, #_BridgeStorage.rawValue // user: %4
+  %4 = load %3 : $*Builtin.BridgeObject           // user: %5
+  %5 = end_cow_mutation %4 : $Builtin.BridgeObject // user: %6
+  %6 = struct $_BridgeStorage<__ContiguousArrayStorageBase> (%5 : $Builtin.BridgeObject) // user: %7
+  %7 = struct $_ArrayBuffer<Element> (%6 : $_BridgeStorage<__ContiguousArrayStorageBase>) // user: %8
+  %8 = struct $Array<Element> (%7 : $_ArrayBuffer<Element>) // user: %9
+  store %8 to %0 : $*Array<Element>               // id: %9
+  %10 = tuple ()                                  // user: %11
+  return %10 : $()                                // id: %11
+} // end sil function '$sSa12_endMutationyyF'
+
+sil_vtable ZMTest {
+  #ZMTest.params1!getter: (ZMTest) -> () -> Int : @$s4main6ZMTestC7params1Sivg	// ZMTest.params1.getter
+  #ZMTest.params1!setter: (ZMTest) -> (Int) -> () : @$s4main6ZMTestC7params1Sivs	// ZMTest.params1.setter
+  #ZMTest.params1!modify: (ZMTest) -> () -> () : @$s4main6ZMTestC7params1SivM	// ZMTest.params1.modify
+  #ZMTest.params2!getter: (ZMTest) -> () -> String : @$s4main6ZMTestC7params2SSvg	// ZMTest.params2.getter
+  #ZMTest.params2!setter: (ZMTest) -> (String) -> () : @$s4main6ZMTestC7params2SSvs	// ZMTest.params2.setter
+  #ZMTest.params2!modify: (ZMTest) -> () -> () : @$s4main6ZMTestC7params2SSvM	// ZMTest.params2.modify
+  #ZMTest.init!allocator: (ZMTest.Type) -> () -> ZMTest : @$s4main6ZMTestCACycfC	// ZMTest.__allocating_init()
+  #ZMTest.deinit!deallocator: @$s4main6ZMTestCfD	// ZMTest.__deallocating_deinit
+}
+
+
+
+// Mappings from '#fileID' to '#filePath':
+//   'main/main.swift' => 'main.swift'
+
+

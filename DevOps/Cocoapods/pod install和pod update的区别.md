@@ -71,8 +71,10 @@
 ## 总结
 
 1. 无论在podfile中，增加，删除还是修改pod，都是执行 pod install
+     
+        pod install 首先确认当前是否已经下载了对应的库，库是否满足podfile中对版本的限制。如果满足则不再下载。
 
-2. 只有在需要将某个pod更新至最新版本时，才执行 pod update
+2. 只有在需要将某个pod更新至满足podfile中版本限制的最新版本时，才执行 pod update
 
 ## 参考文档
 
