@@ -113,6 +113,22 @@ s.source_files = 'SYDCentralPivot/Classes/**/*'
 - dependency
 
           对于其他pod库的依赖
+
+- frameworks 
+          
+          依赖的系统框架
+
+- vendored_frameworks
+ 
+           依赖的非系统框架
+
+- libraries 
+
+           依赖的系统库
+
+- vendored_libraries
+
+           依赖的非系统的静态库
         
 
 
@@ -237,19 +253,15 @@ let configPath = bundle.path(forResource: "ZLServiceConfig", ofType: "plist")
 
 ## 7. 创建 subspec
 
+`subspec` 需要指定子库的源文件和头文件
 
-
-
-
-
-
-
-
-
-
-
-
-
+```ruby
+ s.subspec 'Core' do |core| 
+    core.ios.deployment_target = '9.0'
+    core.source_files = 'SYDCentralPivot/Classes/Core/*'
+    core.public_header_files = 'SYDCentralPivot/Classes/Core/*.h'
+  end
+```
 
 ## 参考文档
 
