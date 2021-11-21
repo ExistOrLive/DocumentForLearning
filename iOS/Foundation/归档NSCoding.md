@@ -64,8 +64,11 @@
 NSKeyedArchiver 使用这两个方法将对象归档为NSData
 
 ```objc
+
+// 该方法iOS12废弃
 + (NSData *)archivedDataWithRootObject:(id)rootObject API_DEPRECATED("Use +archivedDataWithRootObject:requiringSecureCoding:error: instead", macosx(10.2,10.14), ios(2.0,12.0), watchos(2.0,5.0), tvos(9.0,12.0));
 
+// 使用该方法归档，要求类实现 NSSecureCoding 
 + (nullable NSData *)archivedDataWithRootObject:(id)object requiringSecureCoding:(BOOL)requiresSecureCoding error:(NSError **)error API_AVAILABLE(macos(10.13), ios(11.0), watchos(4.0), tvos(11.0));
 
 ```
@@ -73,8 +76,12 @@ NSKeyedArchiver 使用这两个方法将对象归档为NSData
 NSKeyedUnArchiver 使用以下方法使用NSData的反序列化
 
 ```objc
+
+// 该方法iOS12废弃
 + (nullable id)unarchiveObjectWithData:(NSData *)data API_DEPRECATED("Use +unarchivedObjectOfClass:fromData:error: instead", macosx(10.2,10.14), ios(2.0,12.0), watchos(2.0,5.0), tvos(9.0,12.0));
 
+// 使用该方法反序列化，要求 class 实现 NSSecureCoding
+// 还需要指定反序列化的 类型
 + (nullable id)unarchivedObjectOfClass:(Class)cls fromData:(NSData *)data error:(NSError **)error API_AVAILABLE(macos(10.13), ios(11.0), watchos(4.0), tvos(11.0)) NS_REFINED_FOR_SWIFT;
 
 ```
