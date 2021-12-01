@@ -22,6 +22,13 @@
 
 ```
 
+3. 设置环境变量
+
+
+```bash
+source /Users/[user]/.rvm/scripts/rvm
+```
+
 
 
 ## 使用RVM
