@@ -32,11 +32,20 @@ Apollo-iOS Framework 可以通过 **Swift Package**，**Cocoapods** 和 **Cartha
 
 这里以 Github Graphql API 为例，你可以从[Github Public Schema](https://docs.github.com/en/free-pro-team@latest/graphql/overview/public-schema)下载
 
-- 你可以使用[Apollo Cli](https://github.com/apollographql/rover)下载
+- 你可以使用[Apollo Cli](https://www.apollographql.com/docs/devtools/cli/)下载
 
 ```sh
 apollo schema:download --endpoint=http://localhost:8080/graphql schema.json --header="Authorization: Bearer <token>"
 ```
+
+- 也可以使用`run-bundled-codegen.sh` 下载
+`run-bundled-codegen.sh`在下载的apollo源码中可以找到
+
+```sh
+sh run-bundled-codegen.sh schema:download --endpoint=https://api.github.com/graphql schema.json --header="Authorization: Bearer <token>"  
+```
+
+
 
 ### 4. 创建 .graphql 文件
 
