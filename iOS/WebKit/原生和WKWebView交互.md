@@ -53,6 +53,7 @@ class ScriptMessageHandler: WKScriptMessageHandler {
 ```swift 
  let configuration = WKWebViewConfiguration()
  let userContentController = WKUserContentController()
+ // 注意此处传入self会强引用
  userContentController.add(self,name:"CallBack")
  configuration.userContentController = userContentController
 ```
