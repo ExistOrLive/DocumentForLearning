@@ -6,15 +6,40 @@
     * Python
         * [0.概述](开发语言学习/Python/0.概述.md)
         * [1.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
-        * [2.变量](开发语言学习/Python/2. 变量.md)
-        * [3.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
-        * [4.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
-        * [5.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
-        * [6.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
-        * [7.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
+        * [2.变量](开发语言学习/Python/2.变量.md)
+        * [3.函数](开发语言学习/Python/3.函数.md)
+        * [4.运算符](开发语言学习/Python/4.运算符.md)
+        * [5.字符串](开发语言学习/Python/5.字符串.md)
+        * [6.列表](开发语言学习/Python/6.列表.md)
+        * [7.元组](开发语言学习/Python/7.元组.md)
+        * [8.集合](开发语言学习/Python/8.集合.md)
+        * [9.字典](开发语言学习/Python/9.字典.md)
+        * [10.流程控制](开发语言学习/Python/10.流程控制.md)
+        * [12.函数](开发语言学习/Python/12.函数.md)
+        * [13.模块](开发语言学习/Python/13.模块.md)
+        * [14.输入输出格式化](开发语言学习/Python/14.输入输出格式化.md)
+        * [15.面向对象](开发语言学习/Python/15.面向对象.md)
     * Swift
         * 1.基础部分
             * [1.常量和变量以及基本类型_1](开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md)
             * [2.常量和变量以及基本类型_2](开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_2.md)
         * 2.基本运算符
             * [基本运算符](开发语言学习/Swift/2.基本运算符/1.基本运算符.md)
+    * Shell
+        * [Shell变量和基本类型](开发语言学习/Shell/Shell变量和基本类型.md)
+        * [Shell函数](开发语言学习/Shell/Shell函数.md)
+        * [Shell基本运算符](开发语言学习/Shell/Shell基本运算符.md)
+        * [Shell脚本的参数](开发语言学习/Shell/Shell脚本的参数.md)
+        * [Shell流程控制](开发语言学习/Shell/Shell流程控制.md)
+        * [Shell输入输出](开发语言学习/Shell/Shell输入输出.md)
+        * [Shell文件包含](开发语言学习/Shell/Shell文件包含.md)
+
+* iOS
+    * UI
+        * UIKit
+            * UIView
+                * [UIView](iOS/UI/UIKit/UIView/UIView.md)
+                * [drawRect](iOS/UI/UIKit/UIView/drawRect.md)
+            * UITableView
+                * [UITableView](iOS/UI/UIKit/UITableView/UITableView.md)
+                * [UITableView的加载过程](iOS/UI/UIKit/UITableView/UITableView的加载过程.md)
