@@ -15,9 +15,8 @@ source filename
 - sh filename 重新建立一个子shell，在子shell中执行脚本里面的语句，该子shell继承父shell的环境变量，但子shell新建的、改变的变量不会被带回父shell。
 - source filename：这个命令其实只是简单地读取脚本里面的语句依次在当前shell里面执行，没有建立新的子shell。那么脚本里面所有新建、改变变量的语句都会保存在当前shell里面。
 
-[
+[](https://blog.csdn.net/violet_echo_0908/article/details/52056071)
 
-](https://blog.csdn.net/violet_echo_0908/article/details/52056071)
 ```shell
 # test1.sh
 #/bin/zsh
