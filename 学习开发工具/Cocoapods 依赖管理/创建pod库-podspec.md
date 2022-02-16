@@ -265,6 +265,8 @@ let configPath = bundle.path(forResource: "ZLServiceConfig", ofType: "plist")
 
 ## 参考文档
 
+[podspec 语法](https://guides.cocoapods.org/syntax/podspec.html)
+
 [制作Cocoapods库](https://www.cnblogs.com/strengthen/p/10639115.html)
 
 [使用pod lib创建pod库](https://www.cnblogs.com/strengthen/p/10639183.html)
