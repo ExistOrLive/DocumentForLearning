@@ -212,5 +212,7 @@ LastEnumerated|0x7FF
 ![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/FieldDescriptor.png)
 
 
+[Swift 5 Type Metadata 详解](https://juejin.cn/post/6844903783449755655)
+
 
 
