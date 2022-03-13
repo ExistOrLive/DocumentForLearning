@@ -55,6 +55,11 @@ echo $your_name
 ```shell
 # env 命令可以打印当前shell的所有环境变量
 env 
+
+# 常用环境变量
+PATH    # 命令的搜索路径
+SHELL   # 当前使用的shell
+
 ```
 ​
 
