@@ -40,7 +40,7 @@ world
 ```
 执行命令后，得到如下报错：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/202203181510378.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/202203181510378.png)
 
 > BSD/MacOS的sed命令要求 a\ 后跟一个真实的换行符
 
@@ -53,7 +53,7 @@ sed -e "/hello/a\\
 newline" testfile
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/202203181513803.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/202203181513803.png)
 
 
 - 指定行号
@@ -76,9 +76,9 @@ sed -e '2,3d' testfile
 # 删除第二行开始的所有行
 sed -e '2,$d' testfile 
 ```
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/202203181532146.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/202203181532146.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/202203181533045.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/202203181533045.png)
 
 
 ### 2.2 脚本命令 c
@@ -111,7 +111,7 @@ sed -e "3i\\
 newline" testfile
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/202203181542676.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/202203181542676.png)
 
 ### 2.5 脚本命令s
 

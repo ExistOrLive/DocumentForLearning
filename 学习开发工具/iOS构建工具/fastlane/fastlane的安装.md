@@ -13,7 +13,7 @@ sudo gem install fastlane -NV
 1. ERROR:  Error installing fastlane:
    ERROR: Failed to build gem native extension.
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/fastlane_install_issue1.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/fastlane_install_issue1.png)
 
 解决办法： 升级ruby，重新安装
 
@@ -26,7 +26,7 @@ brew install fastlane
 
 1. 使用  brew install fastlane 安装；安装位置在 `/usr/local/Cellar`
    
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/fastlane_install_Step1.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/fastlane_install_Step1.png)
 
  
 2. 在环境变量中设置fastlane , 在`～/.bash_profile`中添加

@@ -71,7 +71,7 @@ struct HeapObject {
 
 不同的枚举值关联值所需的内存不同，按照最多的来计算
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Low_Level_Structure_Object.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/Low_Level_Structure_Object.png)
 
 输出以上`LGTeacher`,`LGStudent`,`LGSex`,`Result`的内存占用：
 
@@ -89,7 +89,7 @@ print("enum Result Size : \(MemoryLayout<Result>.size)")
 print("enum Result Stride : \(MemoryLayout<Result>.stride)")
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%888.40.11.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%888.40.11.png)
 
 ```swift
 var teacher = LGTeacher()
@@ -102,13 +102,13 @@ let studentPtr = withUnsafePointer(to: &student) { $0}
 let sexPtr = withUnsafePointer(to: &sex) { $0}
 let resultPtr = withUnsafePointer(to: &result) { $0}
 ```
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.12.27.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.12.27.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.13.17.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.13.17.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.13.46.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.13.46.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.15.36.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-12%20%E4%B8%8B%E5%8D%889.15.36.png)
 
 ## 2. Metadata的结构
 
@@ -120,7 +120,7 @@ let resultPtr = withUnsafePointer(to: &result) { $0}
 
 **Metadata**的大致结构如下：具体的结构以及继承关系请查看**Swift源码 Metadata.h**
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/MetaData_Structure.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/MetaData_Structure.png)
 
 
 ###  `ClassMetadata`
@@ -177,7 +177,7 @@ LastEnumerated|0x7FF
 
 - `Description` ：保存了类型的具体信息，包括类型名，字段偏移等（`ClassDescriptor`/`StructDescriptor`/`EnumDescriptor`）
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-22%20%E4%B8%8B%E5%8D%884.17.54.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-22%20%E4%B8%8B%E5%8D%884.17.54.png)
 
 
 
@@ -191,7 +191,7 @@ LastEnumerated|0x7FF
 
 **EnumMetadata**对应**EnumDescriptor**
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Descriptor1.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/Descriptor1.png)
 
 - `Name` 保存类型的名字
   
@@ -209,7 +209,7 @@ LastEnumerated|0x7FF
 
 `FieldRecord`保存在紧接着`FieldDescriptor`的一块连续内存中。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/FieldDescriptor.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/FieldDescriptor.png)
 
 
 [Swift 5 Type Metadata 详解](https://juejin.cn/post/6844903783449755655)

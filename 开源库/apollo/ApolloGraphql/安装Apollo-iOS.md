@@ -57,7 +57,7 @@ sh run-bundled-codegen.sh schema:download --endpoint=https://api.github.com/grap
 
 #### 4.2 创建 .graphql 文件 
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-01-04%20%E4%B8%8A%E5%8D%881.29.49.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-01-04%20%E4%B8%8A%E5%8D%881.29.49.png)
 
 
 ### 5 生成代码
@@ -66,7 +66,7 @@ sh run-bundled-codegen.sh schema:download --endpoint=https://api.github.com/grap
 
 代码生成是Xcode构建过程的一部分，你需要在 **Build Phases** 中，在**Compile Sources**之前添加一个构建步骤执行生成代码的脚本。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-01-04%20%E4%B8%8A%E5%8D%881.38.24.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-01-04%20%E4%B8%8A%E5%8D%881.38.24.png)
 
 - 在 **Build Phases** 中，点击 **+** 按钮，选择 **New Run Script Phase**
 
@@ -90,7 +90,7 @@ fi
 
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-01-04%20%E4%B8%8A%E5%8D%882.23.28.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-01-04%20%E4%B8%8A%E5%8D%882.23.28.png)
 
 ### 6 将 API.swift 加入工程
 

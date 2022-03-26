@@ -63,7 +63,7 @@ App Thinning 有三种方式，包括：**App Slicing**、**Bitcode**、**On-Dem
 
 获取 LinkMap 可以通过将 **Build Setting** 里的 **Write Link Map File** 设置为 Yes，然后指定 **Path to Link Map File** 的路径就可以得到每次编译后的 LinkMap 文件了。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-08-29%20%E4%B8%8B%E5%8D%884.16.02.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-08-29%20%E4%B8%8B%E5%8D%884.16.02.png)
 
 
 

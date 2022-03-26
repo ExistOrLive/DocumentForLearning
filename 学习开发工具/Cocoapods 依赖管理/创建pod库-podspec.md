@@ -2,7 +2,7 @@
 
 这里以[SYDCentralPivot](https://github.com/ExistOrLive/SYDCentralPivot) 为例，阐述pod库从创建到发布的过程。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-27%20%E4%B8%8B%E5%8D%8810.21.48.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-27%20%E4%B8%8B%E5%8D%8810.21.48.png)
 
 ## 1. pod lib
 
@@ -19,13 +19,13 @@
 ```ruby
 pod lib create [podname]
 ```
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8810.00.18.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8810.00.18.png)
 
 经过一系列的配置(平台，开发语言，测试框架，是否创建Demo),就完成了pod库的创建。
 
 在项目目录下，生成了Demo,源码目录以及配置文件：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-03%20%E4%B8%8A%E5%8D%889.20.23.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-03%20%E4%B8%8A%E5%8D%889.20.23.png)
 
 - *.podspec
    
@@ -49,7 +49,7 @@ pod lib create [podname]
 
 ## 3. 打开Demo 工程
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8810.50.20.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8810.50.20.png)
 
 在`podfile`中可以看到Demo工程以相对路径的方式引入了`SYDCentralPivot`库。此时，`SYDCentralPivot`属于 `Development Pod`,在 `Development Pods`目录下，而不是在`Pods` 目录下。
 
@@ -67,12 +67,12 @@ s.source_files = 'SYDCentralPivot/Classes/**/*'
 
 执行`pod install`后，源文件就会出现在 `Development Pods`目录下：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8811.04.55.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8811.04.55.png)
 
 
 在 Demo 工程中，调用pod库的代码
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8811.08.47.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8A%E5%8D%8811.08.47.png)
 
 ## 5. podspec文件
 
@@ -230,11 +230,11 @@ let configPath = bundle.path(forResource: "ZLServiceConfig", ofType: "plist")
 
 `pod trunk [COMMAND]` 是用来和 `Cocoapods API` 交互的命令.
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%883.13.00.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%883.13.00.png)
 
 - 首次推送pod，需要注册账号
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%883.16.43.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%883.16.43.png)
 
 - `pod trunk push [PATH]`
 
@@ -242,7 +242,7 @@ let configPath = bundle.path(forResource: "ZLServiceConfig", ofType: "plist")
 
   在推送之前，pod 还会验证 `podspec` 文件是够有效。如果不通过的话，就无法推送上去
 
-  ![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%883.27.39.png)
+  ![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%883.27.39.png)
 
   因此在推送之前必须使用 `pod lib lint` 或则 `pod spec lint` 去验证 `podspec` 文件 
 

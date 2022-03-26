@@ -116,9 +116,9 @@ _dispatch_barrier_sync_f_inline(dispatch_queue_t dq, void *ctxt,
 
 也就是说任务需要等待的话，调用`_dispatch_sync_f_slow`,不需要等待调用`_dispatch_lane_barrier_sync_invoke_and_complete`
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%882.43.19.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%882.43.19.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.39.27.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.39.27.png)
 
 
 最终都会调用`_dispatch_client_callout`执行任务block
@@ -254,9 +254,9 @@ _dispatch_lock_is_locked_by(dispatch_lock lock_value, dispatch_tid tid)
 
 #### 死锁Example
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%888.27.09.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%888.27.09.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%888.25.49.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%888.25.49.png)
 
 
 
@@ -298,9 +298,9 @@ _dispatch_sync_f_inline(dispatch_queue_t dq, void *ctxt,
 
 全局并发队列将会调用`_dispatch_sync_f_slow`; 私有并发队列将调用`_dispatch_sync_invoke_and_complete`，最终都会调用`_dispatch_client_callout`执行任务block。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.34.09.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.34.09.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%888.47.05.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%888.47.05.png)
 
 
 

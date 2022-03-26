@@ -47,7 +47,7 @@ OC中，对象的`方法调用`实际上是对 `objc_msgSend` 函数的静态调
   #import <objc/runtime.h>
   #import <objc/message.h>
   ```
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-05-07%20%E4%B8%8B%E5%8D%886.27.31.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-05-07%20%E4%B8%8B%E5%8D%886.27.31.png)
 
 
 

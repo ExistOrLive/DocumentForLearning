@@ -26,13 +26,13 @@ for(int i = 0; i < 10 ; i ++) {
 
 我们通过断点调试，并查看断点处的汇编代码：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%887.47.21.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%887.47.21.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%887.47.15.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%887.47.15.png)
 
 `@synchronized`代码块其实就是`objc_sync_enter`和`objc_sync_exit`两个函数包围起来的。进一步调试发现两个函数的实现是**libobjc**中。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%887.49.33.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-08%20%E4%B8%8B%E5%8D%887.49.33.png)
 
 
 ### 1.1 `objc_sync_enter` `objc_sync_exit`

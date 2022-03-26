@@ -22,7 +22,7 @@
 
 > 在ARC中，当Block被定义后，传给一个OC变量，会自动调用Block的copy方法，这个时候Block就会变为_NSMallocBlock类型。在MRC，则需要手动调用Copy
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%887.59.58.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%887.59.58.png)
 
 ## 2. 避免循环引用
 
@@ -30,7 +30,7 @@ Block在自动捕获变量时，比较容易造成循环引用。
 
 Block事实上是一个OC对象，访问的自动变量会作为Block对象的成员变量被保存下来。 如果变量也是一个OC对象，且是强引用，则Block持有了该对象。如果该对象也持有了Block就会造成循环引用。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2020-10-12%20%E4%B8%8A%E5%8D%884.43.27.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-10-12%20%E4%B8%8A%E5%8D%884.43.27.png)
 
 对于这个问题，需要将引用的一方变为weak，避免循环引用。
 

@@ -109,7 +109,7 @@ Swift引入`指定构造器`和`便利构造器`，同时会对自定的构造�
 - 便利构造器最后必须调用指定构造器。
 
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/initializerDelegation01_2x.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/initializerDelegation01_2x.png)
 
 安全检查：
 

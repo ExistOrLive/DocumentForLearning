@@ -38,35 +38,35 @@
 
 ### 1. 用户A首次pod install
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.40.57.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.40.57.png)
 
 可以看到 AFNetworking 被限制在 3.1.0
 
 ### 2. 用户B同步代码后，pod install
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.41.02.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.41.02.png)
 
 用户B按照 podfile.lock 中限制的版本下载pod
 
 ### 3. 在 TestPod 最新版本升级到 0.1.1，用户A执行pod update 
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.41.09.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.41.09.png)
 
 执行 pod update， 所有的pod库都会试图更新至最新版本，TestPod更新到0.1.1，YYKit 已经是最新，AFNetworking 仍被限制在 3.1.0
 
 ### 4. 用户A执行pod update后,用户B执行pod install同步pod 版本
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.41.14.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.41.14.png)
 
 
 ### 5. 用户B 删除 Aspect , 指向pod install
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.43.51.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.43.51.png)
 
 
 ### 6. 用户A 限制 AFNetworking ，执行 pod install
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.46.40.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-02-02%20%E4%B8%8B%E5%8D%885.46.40.png)
 
 ## 总结
 

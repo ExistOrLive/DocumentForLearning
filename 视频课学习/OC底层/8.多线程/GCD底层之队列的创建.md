@@ -63,7 +63,7 @@ struct dispatch_queue_static_s {
 
 在之前类的加载中，我们了解到动态库中首先初始化的是**libsystem**库，会调用到`libSystem_initializer`函数，在该函数中会调用到`libdispatch_init`函数，即是**libdispatch**库的初始化函数。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-05-28%20%E4%B8%8A%E5%8D%883.55.31.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-05-28%20%E4%B8%8A%E5%8D%883.55.31.png)
 
 ```objc
 DISPATCH_EXPORT DISPATCH_NOTHROW
@@ -599,13 +599,13 @@ dq->do_targetq = tq;
 
 我们直接通过Xcode看到不同队列的类型：全局并发队列和私有的并发队列事实上也是不同的类型。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.22.40.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.22.40.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.23.25.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.23.25.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.24.43.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.24.43.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.25.12.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-03%20%E4%B8%8B%E5%8D%8810.25.12.png)
 
 我们直接在**libdispatch**源码中直接搜索这些类型, 只能搜索到相关符号的存在。
 
@@ -682,7 +682,7 @@ _OS_dispatch_queue_serial_vtable = {
 
 `dq_push(入队)`，`dq_wakeup(唤醒线程)`,`do_invoke(调用block)`,`dq_dispose(释放)`，显然是一个队列在创建，运行以及释放过程中的必要方法。我们可以把它们认为是队列的成员方法。同上文提供`do_targetq`，就构造出不同于继承树的结构：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/OS_dispatch_queue.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/OS_dispatch_queue.png)
 
 这样的结构具体是怎样实现`dispatch_queue_t`的动态性的呢？请看下文。
 

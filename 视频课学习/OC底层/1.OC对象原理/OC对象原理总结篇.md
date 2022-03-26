@@ -43,7 +43,7 @@ typedef struct objc_object* id;
 
 通过调试 objc4-818.2 源码，我们找到创建OC对象的堆栈信息和基本步骤。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-04-19%20%E4%B8%8A%E5%8D%888.57.32.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-04-19%20%E4%B8%8A%E5%8D%888.57.32.png)
 
 经过调试，`alloc` 方法的底层实现及调用堆栈如下：
 
@@ -57,7 +57,7 @@ callAlloc(objc_class*,bool,bool)
 objc_alloc
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png)
 
 ### 2.1 _class_createInstanceFromZone
 
@@ -186,9 +186,9 @@ OC对象前8字节由`isa`属性占用，剩余的内存由其他存储属性或
 
 以`KCTestObject`为例创建对象后，通过LLDB命令打印出对象的内存占用。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-04-22%20%E4%B8%8B%E5%8D%883.55.07.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-04-22%20%E4%B8%8B%E5%8D%883.55.07.png)
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-04-23%20%E4%B8%8B%E5%8D%882.16.02.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-04-23%20%E4%B8%8B%E5%8D%882.16.02.png)
 
 
 由上面截图可以看出，属性的排列不一定按照定义的顺序经过了重排优化。
@@ -214,10 +214,10 @@ public:
 };
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/isa64%E6%83%85%E5%86%B5.jpeg)
+![](https://github.com/existorlive/existorlivepic/raw/master/isa64%E6%83%85%E5%86%B5.jpeg)
 
 `isa_t` 中的`shiftcls` 才是实际保存类地址的部分，仅占用`isa`的一部分。其他部分则保存着对象的信息(如`extra_rc` 引用计数)。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-04-22%20%E4%B8%8B%E5%8D%888.56.49.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-04-22%20%E4%B8%8B%E5%8D%888.56.49.png)
 
 

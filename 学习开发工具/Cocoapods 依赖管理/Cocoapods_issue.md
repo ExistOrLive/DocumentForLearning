@@ -2,11 +2,11 @@
 
 ## 引入swift编写的库的问题
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Cocoapods_issue_1_1.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/Cocoapods_issue_1_1.png)
 
 > 如上图所示*Pods written in Swift can only be integrated as frameworks;add use_frameworks! to your Podfile or target to opt into using it*；因此需要在podfile文件中添加use_frameworks!，使得pod库作为framework引入
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Cocoapods_issue_1_2.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/Cocoapods_issue_1_2.png)
 
 ----
 
@@ -22,11 +22,11 @@
 
 以下为某个podspec文件：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-09-13%20%E4%B8%8B%E5%8D%881.30.14.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-09-13%20%E4%B8%8B%E5%8D%881.30.14.png)
 
 执行`pod install`后得到报错：
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-09-13%20%E4%B8%8B%E5%8D%881.29.59.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-09-13%20%E4%B8%8B%E5%8D%881.29.59.png)
 
 原因： 在 **podspec** 文件中设置 **dependency**时，只能简单设置pod库名字和版本号
 

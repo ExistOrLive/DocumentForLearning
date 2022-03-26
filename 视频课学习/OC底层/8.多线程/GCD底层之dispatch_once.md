@@ -137,7 +137,7 @@ _dispatch_once_wait(dispatch_once_gate_t dgo)
 }
 ```
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/Dispatch_once.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/Dispatch_once.png)
 
 
 ## 注意点
@@ -189,7 +189,7 @@ _dispatch_once_wait(dispatch_once_gate_t dgo)
 ```
 以上的代码互相需要对方的单例，会导致一种情况，`SingletonA`的单例方法又调用了`SingletonA`的单例方法。
 
-![](https://gitee.com/existorlive/exist-or-live-pic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%888.38.47.png)
+![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%888.38.47.png)
 
 报错对应到`_dispatch_once_wait`中
 
