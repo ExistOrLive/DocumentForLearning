@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "1b3586faed2ea41a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e882d2c484af9499",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4f5dd999904874aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca20b6f353db6d90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d8e8999fc6546c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4b87c1b78009ade6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6c6178ecff0fdf5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f2970bee15cf784",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "374440e8f495b087",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "e882d2c484af9499",
+  "lastOpenFiles": [
+    "视频课学习/Swift底层/4. 属性.md",
+    "iOS/UI/UIKit/UIView/UIView.md",
+    "2.md",
+    "iOS/UI/Core Text/CoreText以及排版引擎.md",
+    "iOS/UI/性能优化/性能优化.md",
+    "iOS/UI/界面适配/刘海屏适配.md",
+    "1.md",
+    "iOS/UI/性能优化/圆角与离屏渲染.md",
+    "iOS/UI/性能优化/屏幕显像原理.png",
+    "操作系统/2.进程和线程/1.进程/5.进程的创建,加载,运行,等待,终止以及其系统调用.md"
+  ]
+}
