@@ -1,0 +1,141 @@
+{
+  "workspaces": {
+    "左右": {
+      "main": {
+        "id": "1b3586faed2ea41a",
+        "type": "split",
+        "children": [
+          {
+            "id": "ea8590ad14f5953e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习开发工具/笔记及知识管理工具/Obsidian.md.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a9efec8c4d12407",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "学习开发工具/笔记及知识管理工具/pic/20220413123631.png"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "4f5dd999904874aa",
+        "type": "split",
+        "children": [
+          {
+            "id": "ca20b6f353db6d90",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3d8e8999fc6546c0",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "4b87c1b78009ade6",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 352.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "6c6178ecff0fdf5c",
+        "type": "split",
+        "children": [
+          {
+            "id": "0f2970bee15cf784",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "374440e8f495b087",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "学习开发工具/笔记及知识管理工具/Obsidian.md.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "a1fe3d781f9db403",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "b22312e41e774395",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "学习开发工具/笔记及知识管理工具/Obsidian.md.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9ac84ebd5bc87e35",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "学习开发工具/笔记及知识管理工具/Obsidian.md.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "ea8590ad14f5953e"
+    }
+  },
+  "active": "左右"
+}

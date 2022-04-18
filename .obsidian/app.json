@@ -1,4 +1,10 @@
 {
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "newFileLocation": "folder",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }

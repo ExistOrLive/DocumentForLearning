@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e882d2c484af9499",
+        "id": "4e973ccb7f807bf7",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "编译相关/CMake.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#swiftlint",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -44,12 +48,20 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "58cbf07189e23ce5",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 352.5
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -65,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "编译相关/CMake.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -74,24 +87,59 @@
                 "unlinkedCollapsed": false
               }
             }
+          },
+          {
+            "id": "a1fe3d781f9db403",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b22312e41e774395",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "编译相关/CMake.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9ac84ebd5bc87e35",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "编译相关/CMake.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "e882d2c484af9499",
+  "active": "4e973ccb7f807bf7",
   "lastOpenFiles": [
-    "视频课学习/Swift底层/4. 属性.md",
-    "iOS/UI/UIKit/UIView/UIView.md",
-    "2.md",
-    "iOS/UI/Core Text/CoreText以及排版引擎.md",
-    "iOS/UI/性能优化/性能优化.md",
-    "iOS/UI/界面适配/刘海屏适配.md",
-    "1.md",
-    "iOS/UI/性能优化/圆角与离屏渲染.md",
-    "iOS/UI/性能优化/屏幕显像原理.png",
-    "操作系统/2.进程和线程/1.进程/5.进程的创建,加载,运行,等待,终止以及其系统调用.md"
+    "编译相关/CMake.md",
+    "编译相关/Makefile.md",
+    "Linux/linux命令和工具/sed.md",
+    "Linux/linux命令和工具/ssh.md",
+    "Linux/linux命令和工具/systemctl.md",
+    "Linux/Centos/yum.md",
+    "Linux/shell脚本/Tip.md",
+    "开发环境搭建/Ruby环境/RVM安装.md",
+    "开发环境搭建/Ruby环境/Ruby.md",
+    "开发环境搭建/包管理工具/node.md"
   ]
 }

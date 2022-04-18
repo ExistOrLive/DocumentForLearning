@@ -1,0 +1,206 @@
+{
+  "recentFiles": [
+    {
+      "basename": "CMake",
+      "path": "编译相关/CMake.md"
+    },
+    {
+      "basename": "Makefile",
+      "path": "编译相关/Makefile.md"
+    },
+    {
+      "basename": "sed",
+      "path": "Linux/linux命令和工具/sed.md"
+    },
+    {
+      "basename": "ssh",
+      "path": "Linux/linux命令和工具/ssh.md"
+    },
+    {
+      "basename": "systemctl",
+      "path": "Linux/linux命令和工具/systemctl.md"
+    },
+    {
+      "basename": "yum",
+      "path": "Linux/Centos/yum.md"
+    },
+    {
+      "basename": "RVM安装",
+      "path": "开发环境搭建/Ruby环境/RVM安装.md"
+    },
+    {
+      "basename": "Ruby",
+      "path": "开发环境搭建/Ruby环境/Ruby.md"
+    },
+    {
+      "basename": "node",
+      "path": "开发环境搭建/包管理工具/node.md"
+    },
+    {
+      "basename": "bundle",
+      "path": "开发环境搭建/包管理工具/bundle.md"
+    },
+    {
+      "basename": "HomeBrew",
+      "path": "开发环境搭建/包管理工具/HomeBrew.md"
+    },
+    {
+      "basename": "DevOps工具",
+      "path": "学习工具及开发工具/DevOps工具.md"
+    },
+    {
+      "basename": "xcodebuild",
+      "path": "学习工具及开发工具/iOS构建工具/xcodebuild.md"
+    },
+    {
+      "basename": "自动化测试",
+      "path": "学习工具及开发工具/自动化测试/自动化测试.md"
+    },
+    {
+      "basename": "加密工具",
+      "path": "学习工具及开发工具/其他工具/加密工具.md"
+    },
+    {
+      "basename": "OCLint",
+      "path": "学习工具及开发工具/静态分析及代码风格/OCLint.md"
+    },
+    {
+      "basename": "SwiftLint",
+      "path": "学习工具及开发工具/静态分析及代码风格/SwiftLint.md"
+    },
+    {
+      "basename": "Swiftlint源码学习",
+      "path": "开源库/Tool/Swiftlint源码学习.md"
+    },
+    {
+      "basename": "1. iOS开发环境",
+      "path": "开发环境搭建/iOS开发环境/1. iOS开发环境.md"
+    },
+    {
+      "basename": "iTerm",
+      "path": "开发环境搭建/常用工具/iTerm.md"
+    },
+    {
+      "basename": "launchd",
+      "path": "开发环境搭建/Mac系统环境/launchd.md"
+    },
+    {
+      "basename": "环境变量配置",
+      "path": "开发环境搭建/Mac系统环境/环境变量配置.md"
+    },
+    {
+      "basename": "APM 相关文章",
+      "path": "APM/APM 相关文章.md"
+    },
+    {
+      "basename": "iOS启动流程原理",
+      "path": "APM/启动优化/iOS启动流程原理.md"
+    },
+    {
+      "basename": "1. 2021.06.02HarmonyOS发布会",
+      "path": "HarmonyOS/1. 2021.06.02HarmonyOS发布会.md"
+    },
+    {
+      "basename": "归档NSCoding",
+      "path": "iOS/Foundation/归档NSCoding.md"
+    },
+    {
+      "basename": "SUMMARY",
+      "path": "SUMMARY.md"
+    },
+    {
+      "basename": "infer",
+      "path": "学习工具及开发工具/静态分析及代码风格/infer.md"
+    },
+    {
+      "basename": "clang-format",
+      "path": "学习工具及开发工具/静态分析及代码风格/clang-format.md"
+    },
+    {
+      "basename": "Travis_CI",
+      "path": "学习工具及开发工具/持续集成服务/Travis_CI.md"
+    },
+    {
+      "basename": "iOS_CI",
+      "path": "学习工具及开发工具/持续集成服务/iOS_CI.md"
+    },
+    {
+      "basename": "github_action",
+      "path": "学习工具及开发工具/持续集成服务/github_action.md"
+    },
+    {
+      "basename": "Jenkins的常用插件",
+      "path": "学习工具及开发工具/持续集成服务/Jenkins/Jenkins的常用插件.md"
+    },
+    {
+      "basename": "Pipeline",
+      "path": "学习工具及开发工具/持续集成服务/Jenkins/Pipeline.md"
+    },
+    {
+      "basename": "Obsidian",
+      "path": "学习工具及开发工具/笔记及知识管理工具/Obsidian.md"
+    },
+    {
+      "basename": "git merge",
+      "path": "学习工具及开发工具/版本控制工具/git merge.md"
+    },
+    {
+      "basename": "git rebase",
+      "path": "学习工具及开发工具/版本控制工具/git rebase.md"
+    },
+    {
+      "basename": "1.制作framework",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/实践/1.制作framework.md"
+    },
+    {
+      "basename": "创建pod库-podspec",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/创建pod库-podspec.md"
+    },
+    {
+      "basename": "安装pod库-podfile",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md"
+    },
+    {
+      "basename": "3.ZLGitRemoteService库实践",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/实践/3.ZLGitRemoteService库实践.md"
+    },
+    {
+      "basename": "iOS 动态库 静态库 framework",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/实践/iOS 动态库 静态库 framework.md"
+    },
+    {
+      "basename": "tbd",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/实践/tbd.png"
+    },
+    {
+      "basename": "2.Swift和OC在Framework和Library中混编",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/实践/2.Swift和OC在Framework和Library中混编.md"
+    },
+    {
+      "basename": "OC工程引入Swift代码",
+      "path": "开发语言学习/Swift/Swift与OC混编/OC工程引入Swift代码.md"
+    },
+    {
+      "basename": "Swift_Package_Manager",
+      "path": "开发语言学习/Swift/Swift_Package_Manager/Swift_Package_Manager.md"
+    },
+    {
+      "basename": "1.GCC和LLVM",
+      "path": "编译相关/1.GCC和LLVM.md"
+    },
+    {
+      "basename": "SourceKit",
+      "path": "iOS/SourceKit/SourceKit.md"
+    },
+    {
+      "basename": "2.交叉编译",
+      "path": "编译相关/2.交叉编译.md"
+    },
+    {
+      "basename": "20220413123631",
+      "path": "学习工具及开发工具/笔记及知识管理工具/pic/20220413123631.png"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null
+}
