@@ -1,3 +1,96 @@
 # DocumentForLearning
 
-平时学习时的记录
+#### 学习笔记
+
+* 开发语言学习
+    * Python
+        * [0.概述](开发语言学习/Python/0.概述.md)
+        * [1.基本数据类型](开发语言学习/Python/1.基本数据类型.md)
+        * [2.变量](开发语言学习/Python/2.变量.md)
+        * [3.函数](开发语言学习/Python/3.函数.md)
+        * [4.运算符](开发语言学习/Python/4.运算符.md)
+        * [5.字符串](开发语言学习/Python/5.字符串.md)
+        * [6.列表](开发语言学习/Python/6.列表.md)
+        * [7.元组](开发语言学习/Python/7.元组.md)
+        * [8.集合](开发语言学习/Python/8.集合.md)
+        * [9.字典](开发语言学习/Python/9.字典.md)
+        * [10.流程控制](开发语言学习/Python/10.流程控制.md)
+        * [12.函数](开发语言学习/Python/12.函数.md)
+        * [13.模块](开发语言学习/Python/13.模块.md)
+        * [14.输入输出格式化](开发语言学习/Python/14.输入输出格式化.md)
+        * [15.面向对象](开发语言学习/Python/15.面向对象.md)
+    * Swift
+        * 1.基础部分
+            * [常量和变量以及基本类型_1](开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md)
+            * [常量和变量以及基本类型_2](开发语言学习/Swift/1.基础部分/2.常量和变量以及基本类型_2.md)
+        * 2.基本运算符
+            * [基本运算符](开发语言学习/Swift/2.基本运算符/1.基本运算符.md)
+        * 3.字符串和字符
+            * [字符串](开发语言学习/Swift/3.字符串和字符/1.字符串.md)
+            * [字符串操作](开发语言学习/Swift/3.字符串和字符/2.字符串操作.md)
+        * 4.集合类型
+            * [概述](开发语言学习/Swift/4.集合类型/1.概述.md)
+            * [Array](开发语言学习/Swift/4.集合类型/2.Array.md)
+            * [Set](开发语言学习/Swift/4.集合类型/3.Set.md)
+            * [Dictionary](开发语言学习/Swift/4.集合类型/4.Dictionary.md)
+        * 6.函数
+            * [函数](开发语言学习/Swift/6.函数/1.函数.md)
+            * [函数返回值](开发语言学习/Swift/6.函数/2.函数返回值.md)
+            * [函数类型](开发语言学习/Swift/6.函数/3.函数类型.md)
+        * 7.闭包
+            * [闭包](开发语言学习/Swift/7.闭包/1.闭包.md)
+            * [闭包表达式](开发语言学习/Swift/7.闭包/2.闭包表达式.md)
+            * [尾随闭包](开发语言学习/Swift/7.闭包/3.尾随闭包.md)
+            * [捕获变量或常量](开发语言学习/Swift/7.闭包/4.捕获变量或常量.md)
+            * [闭包是引用类型](开发语言学习/Swift/7.闭包/5.闭包是引用类型.md)
+            * [逃逸闭包](开发语言学习/Swift/7.闭包/6.逃逸闭包.md)
+            * [自动闭包](开发语言学习/Swift/7.闭包/7.自动闭包.md)
+        * 8.枚举
+            * [枚举](开发语言学习/Swift/8.枚举/1.枚举.md)
+            * [枚举与switch语句](开发语言学习/Swift/8.枚举/2.枚举与switch语句.md)
+        * 9.类和结构体
+            * [类和结构体](开发语言学习/Swift/9.类和结构体/1.类和结构体.md)
+            * 属性
+                * [属性](开发语言学习/Swift/9.类和结构体/2.属性/2.1属性.md)
+                * [属性观察器](开发语言学习/Swift/9.类和结构体/2.属性/2.2属性观察器.md)
+                * [属性包装器](开发语言学习/Swift/9.类和结构体/2.属性/2.3属性包装器.md)
+                * [全局变量和局部变量](开发语言学习/Swift/9.类和结构体/2.属性/2.4全局变量和局部变量.md)
+                * [类属性](开发语言学习/Swift/9.类和结构体/2.属性/2.5类属性.md)
+            * [方法](开发语言学习/Swift/6.函数/3.方法.md)
+    * Shell
+        * [Shell变量和基本类型](开发语言学习/Shell/Shell变量和基本类型.md)
+        * [Shell函数](开发语言学习/Shell/Shell函数.md)
+        * [Shell基本运算符](开发语言学习/Shell/Shell基本运算符.md)
+        * [Shell脚本的参数](开发语言学习/Shell/Shell脚本的参数.md)
+        * [Shell流程控制](开发语言学习/Shell/Shell流程控制.md)
+        * [Shell输入输出](开发语言学习/Shell/Shell输入输出.md)
+        * [Shell文件包含](开发语言学习/Shell/Shell文件包含.md)
+
+* iOS
+    * UI
+        * UIKit
+            * UIView
+                * [UIView](iOS/UI/UIKit/UIView/UIView.md)
+                * [drawRect](iOS/UI/UIKit/UIView/drawRect.md)
+            * UITableView
+                * [UITableView](iOS/UI/UIKit/UITableView/UITableView.md)
+                * [UITableView的加载过程](iOS/UI/UIKit/UITableView/UITableView的加载过程.md)
+
+* 学习开发工具
+    * 静态分析
+        * [OCLint](学习工具及开发工具/静态分析及代码风格/OCLint.md) 
+        * [infer](学习工具及开发工具/静态分析及代码风格/infer.md) 
+        * [SwiftLint](学习工具及开发工具/静态分析及代码风格/SwiftLint.md) 
+    * iOS构建工具
+        * fastlane
+            * [fastlane](学习工具及开发工具/iOS构建工具/fastlane/fastlane.md)
+            * [fastlane的安装](学习工具及开发工具/iOS构建工具/fastlane/fastlane的安装.md)
+            * [fastlane一键打包](学习工具及开发工具/iOS构建工具/fastlane/fastlane一键打包.md)
+            * [fastlane证书管理](学习工具及开发工具/iOS构建工具/fastlane/fastlane证书管理.md)
+    - Cocoapods
+	    - [安装pod库-podfile](学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md)
+	    - [创建pod库-podspec](学习工具及开发工具/Cocoapods依赖管理/创建pod库-podspec.md)
+	
+- 开源库
+    - Tool
+       - [Swiftlint源码学习](开源库/Tool/Swiftlint源码学习.md)

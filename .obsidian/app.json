@@ -6,5 +6,6 @@
   "spellcheck": false,
   "newFileLocation": "folder",
   "newLinkFormat": "relative",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "autoConvertHtml": false
 }

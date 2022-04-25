@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "4e973ccb7f807bf7",
+        "id": "a64c5f1d65990eea",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "编译相关/CMake.md",
+            "file": "README.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#swiftlint",
+                "query": "swiftlint的",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 352.5
+    "width": 230.5
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "编译相关/CMake.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "编译相关/CMake.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "编译相关/CMake.md"
+                "file": "README.md"
               }
             }
           }
@@ -129,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4e973ccb7f807bf7",
+  "active": "a64c5f1d65990eea",
   "lastOpenFiles": [
-    "编译相关/CMake.md",
-    "编译相关/Makefile.md",
-    "Linux/linux命令和工具/sed.md",
-    "Linux/linux命令和工具/ssh.md",
-    "Linux/linux命令和工具/systemctl.md",
-    "Linux/Centos/yum.md",
-    "Linux/shell脚本/Tip.md",
-    "开发环境搭建/Ruby环境/RVM安装.md",
-    "开发环境搭建/Ruby环境/Ruby.md",
-    "开发环境搭建/包管理工具/node.md"
+    "README.md",
+    "SUMMARY.md",
+    "开源库/Tool/Swiftlint源码学习.md",
+    "To Do.md",
+    "操作系统/操作系统.png",
+    "操作系统/2.进程和线程/6.进程间通信/4.消息队列.md",
+    "操作系统/2.进程和线程/6.进程间通信/5.共享内存.md",
+    "操作系统/2.进程和线程/6.进程间通信/3.管道.md",
+    "操作系统/2.进程和线程/6.进程间通信/2.信号机制.md",
+    "操作系统/2.进程和线程/6.进程间通信/1.进程间通信IPC.md"
   ]
 }
