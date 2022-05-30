@@ -1,6 +1,7 @@
 
 # fatslane 证书管理
-
+#fastlane
+#证书管理
 ## 1. 证书同步
 
 `fastlane match <type>  --readonly` 从仓库中同步对应的证书

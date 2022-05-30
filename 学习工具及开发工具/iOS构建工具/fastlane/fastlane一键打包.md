@@ -1,4 +1,6 @@
 # Fastlane
+#fastlane 
+#持续集成
 
 ## 1. 初始化fastlane
 

@@ -614,6 +614,6 @@ static void _Block_byref_release(const void *arg) {
   NSLog(@"%d",num1);
 ```
 
-如上的代码改写为C语言，[main.cpp](../9.Block/main.cpp)
+如上的代码改写为C语言，[main.cpp](main.cpp)
 
 ![](https://github.com/existorlive/existorlivepic/raw/master/Block_layout1.png)

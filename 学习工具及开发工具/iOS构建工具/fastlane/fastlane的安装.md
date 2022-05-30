@@ -1,5 +1,6 @@
 # Fastlane 的安装
 
+#fastlane
 ##  1. 使用ruby的包管理工具Gem 安装
 
 **Fastlane** 是基于 **Ruby** 开发的工具，因此可以使用**Gem** 来安装
