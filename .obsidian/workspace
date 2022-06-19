@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "13586d29d6bab527",
+        "id": "651831b6d6a60a54",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "开发语言学习/Swift/访问控制/访问控制符.md",
+            "file": "开发语言学习/HTML/2.HTML排版标签.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "访问控制",
+                "query": "Swift_Package_Manager",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,12 +57,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 208.5
+    "width": 100,
+    "collapsed": true
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/Swift/访问控制/访问控制符.md",
+                "file": "开发语言学习/HTML/2.HTML排版标签.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/Swift/访问控制/访问控制符.md",
+                "file": "开发语言学习/HTML/2.HTML排版标签.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/Swift/访问控制/访问控制符.md"
+                "file": "开发语言学习/HTML/2.HTML排版标签.md"
               }
             }
           }
@@ -130,17 +130,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "13586d29d6bab527",
+  "active": "651831b6d6a60a54",
   "lastOpenFiles": [
-    "开发语言学习/Swift/访问控制/访问控制符.md",
-    "开发语言学习/Swift/4.集合类型/5.Swift集合高级知识.md",
+    "开发语言学习/HTML/2.HTML排版标签.md",
+    "开发语言学习/HTML/1.概述.md",
+    "To Do.md",
     "SUMMARY.md",
-    "开发语言学习/Swift/4.集合类型/1.概述.md",
-    "开发语言学习/C++/10.关联容器/1. 关联容器概述.md",
-    "开发语言学习/Swift/Swift底层/8. 反射.md",
-    "开发语言学习/Swift/Swift底层/10. 闭包.md",
-    "开发语言学习/Swift/Swift底层/9. 枚举.md",
-    "开发语言学习/Swift/Swift底层/7. 内存管理.md",
-    "开发语言学习/Swift/Swift底层/11. 可选类型.md"
+    "iOS_APM/4.崩溃监控/崩溃监控.md",
+    "iOS_APM/5.耗电优化/耗电优化.md",
+    "iOS_APM/APM 相关文章.md",
+    "WWDC/2022/todo.md",
+    "[.md",
+    "iOS_Framework/苹果官方文档.md"
   ]
 }

@@ -1,88 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "访问控制符",
-      "path": "开发语言学习/Swift/访问控制/访问控制符.md"
+      "basename": "2.HTML排版标签",
+      "path": "开发语言学习/HTML/2.HTML排版标签.md"
     },
     {
-      "basename": "5.Swift集合高级知识",
-      "path": "开发语言学习/Swift/4.集合类型/5.Swift集合高级知识.md"
+      "basename": "1.概述",
+      "path": "开发语言学习/HTML/1.概述.md"
+    },
+    {
+      "basename": "To Do",
+      "path": "To Do.md"
     },
     {
       "basename": "SUMMARY",
       "path": "SUMMARY.md"
     },
     {
-      "basename": "1.概述",
-      "path": "开发语言学习/Swift/4.集合类型/1.概述.md"
+      "basename": "崩溃监控",
+      "path": "iOS_APM/4.崩溃监控/崩溃监控.md"
     },
     {
-      "basename": "1. 关联容器概述",
-      "path": "开发语言学习/C++/10.关联容器/1. 关联容器概述.md"
+      "basename": "耗电优化",
+      "path": "iOS_APM/5.耗电优化/耗电优化.md"
     },
     {
-      "basename": "8. 反射",
-      "path": "开发语言学习/Swift/Swift底层/8. 反射.md"
+      "basename": "APM 相关文章",
+      "path": "iOS_APM/APM 相关文章.md"
     },
     {
-      "basename": "10. 闭包",
-      "path": "开发语言学习/Swift/Swift底层/10. 闭包.md"
+      "basename": "todo",
+      "path": "WWDC/2022/todo.md"
     },
     {
-      "basename": "9. 枚举",
-      "path": "开发语言学习/Swift/Swift底层/9. 枚举.md"
+      "basename": "iOS的通知",
+      "path": "iOS_Framework/UserNotication和PushKit/iOS的通知.md"
     },
     {
-      "basename": "7. 内存管理",
-      "path": "开发语言学习/Swift/Swift底层/7. 内存管理.md"
+      "basename": "1. 卡顿检测原理以及解决方案",
+      "path": "iOS_APM/1.卡顿检测及优化/1. 卡顿检测原理以及解决方案.md"
     },
     {
-      "basename": "11. 可选类型",
-      "path": "开发语言学习/Swift/Swift底层/11. 可选类型.md"
+      "basename": "快手启动优化-动态库懒加载",
+      "path": "iOS_APM/2.启动优化/快手启动优化-动态库懒加载.md"
     },
     {
-      "basename": "iOS内存结构",
-      "path": "开发语言学习/Swift/Swift底层/iOS内存结构.md"
+      "basename": "iOS启动流程原理",
+      "path": "iOS_APM/2.启动优化/iOS启动流程原理.md"
     },
     {
-      "basename": "Swift底层结构",
-      "path": "开发语言学习/Swift/Swift底层/Swift底层结构.md"
+      "basename": " 原理",
+      "path": "iOS_APM/2.启动优化/ 原理.md"
     },
     {
-      "basename": "Swift源码编译",
-      "path": "开发语言学习/Swift/Swift底层/Swift源码编译.pdf"
+      "basename": "DocC和Cocoapods",
+      "path": "学习工具及开发工具/文档生成工具/DocC/DocC和Cocoapods.md"
     },
     {
-      "basename": "1.GCC和LLVM",
-      "path": "编译相关/1.GCC和LLVM.md"
+      "basename": "DocC的安装和使用",
+      "path": "学习工具及开发工具/文档生成工具/DocC/DocC的安装和使用.md"
     },
     {
-      "basename": "2.Swift和OC在Framework和Library中混编",
-      "path": "iOS_工程架构/4.架构实践/2.Swift和OC在Framework和Library中混编.md"
+      "basename": "Swift_Package_Manager",
+      "path": "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md"
     },
     {
-      "basename": "3.ZLGitRemoteService库实践",
-      "path": "iOS_工程架构/4.架构实践/3.ZLGitRemoteService库实践.md"
+      "basename": "DocC文档",
+      "path": "学习工具及开发工具/文档生成工具/DocC/DocC文档.md"
     },
     {
-      "basename": "OC工程引入Swift代码",
-      "path": "iOS_工程架构/Swift与OC混编/OC工程引入Swift代码.md"
+      "basename": "Swift_Package_Manager发布构建产物",
+      "path": "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager发布构建产物.md"
     },
     {
-      "basename": "2.Array",
-      "path": "开发语言学习/Swift/4.集合类型/2.Array.md"
+      "basename": "Xcode中的概念",
+      "path": "iOS_工程架构/1.Xcode/Xcode中的概念.md"
     },
     {
-      "basename": "3.Set",
-      "path": "开发语言学习/Swift/4.集合类型/3.Set.md"
+      "basename": "1. 组件化",
+      "path": "iOS_工程架构/2.组件化/1. 组件化.md"
     },
     {
-      "basename": "4.Dictionary",
-      "path": "开发语言学习/Swift/4.集合类型/4.Dictionary.md"
+      "basename": "1. 架构设计",
+      "path": "iOS_工程架构/3.架构/1. 架构设计.md"
     },
     {
-      "basename": "fastlane证书管理",
-      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane证书管理.md"
+      "basename": "OCLint",
+      "path": "学习工具及开发工具/静态分析及代码风格/OCLint.md"
+    },
+    {
+      "basename": "infer",
+      "path": "学习工具及开发工具/静态分析及代码风格/infer.md"
+    },
+    {
+      "basename": "SwiftLint",
+      "path": "学习工具及开发工具/静态分析及代码风格/SwiftLint.md"
     },
     {
       "basename": "xcodebuild",
@@ -93,96 +105,64 @@
       "path": "学习工具及开发工具/iOS构建工具/xcpretty.md"
     },
     {
-      "basename": "fastlane一键打包",
-      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane一键打包.md"
+      "basename": "Invalid_parameter_not_satisfying_pos",
+      "path": "iOS_Crash/Case/Invalid_parameter_not_satisfying_pos.md"
     },
     {
-      "basename": "fastlane的安装",
-      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane的安装.md"
-    },
-    {
-      "basename": "Obsidian",
-      "path": "学习工具及开发工具/笔记及知识管理工具/Obsidian.md"
-    },
-    {
-      "basename": "20220413003521",
-      "path": "学习工具及开发工具/笔记及知识管理工具/pic/20220413003521.png"
-    },
-    {
-      "basename": "20220413123631",
-      "path": "学习工具及开发工具/笔记及知识管理工具/pic/20220413123631.png"
-    },
-    {
-      "basename": "git merge",
-      "path": "学习工具及开发工具/版本控制工具/git merge.md"
-    },
-    {
-      "basename": "git rebase",
-      "path": "学习工具及开发工具/版本控制工具/git rebase.md"
-    },
-    {
-      "basename": "To Do",
-      "path": "To Do.md"
-    },
-    {
-      "basename": "树和森林",
-      "path": "数据结构与算法/3.二叉树/树和森林.md"
-    },
-    {
-      "basename": "线索二叉树",
-      "path": "数据结构与算法/3.二叉树/线索二叉树.md"
-    },
-    {
-      "basename": "哈夫曼树及其应用",
-      "path": "数据结构与算法/3.二叉树/哈夫曼树及其应用.md"
-    },
-    {
-      "basename": "二叉树的遍历",
-      "path": "数据结构与算法/3.二叉树/二叉树的遍历.md"
-    },
-    {
-      "basename": "二叉树",
-      "path": "数据结构与算法/3.二叉树/二叉树.md"
-    },
-    {
-      "basename": "Xcode中的概念",
-      "path": "iOS_工程架构/1.Xcode/Xcode中的概念.md"
-    },
-    {
-      "basename": "Swift_Package_Manager",
-      "path": "开发语言学习/Swift/Swift_Package_Manager/Swift_Package_Manager.md"
-    },
-    {
-      "basename": "1. Mach-O格式",
-      "path": "开发语言学习/Objective_C/OC底层/4.应用程序和类的加载/1. Mach-O格式.md"
-    },
-    {
-      "basename": "ZLGithubClient组件化",
-      "path": "iOS_工程架构/4.架构实践/ZLGithubClient组件化.md"
-    },
-    {
-      "basename": "1.制作framework",
-      "path": "iOS_工程架构/4.架构实践/1.制作framework.md"
-    },
-    {
-      "basename": "Makefile",
-      "path": "编译相关/Makefile.md"
-    },
-    {
-      "basename": "CMake",
-      "path": "编译相关/CMake.md"
+      "basename": "7.自动闭包",
+      "path": "开发语言学习/Swift/7.闭包/7.自动闭包.md"
     },
     {
       "basename": "README",
       "path": "README.md"
     },
     {
-      "basename": "1. LLVM",
-      "path": "视频课学习/高级开发/1. LLVM.md"
+      "basename": "CMake",
+      "path": "编译相关/CMake.md"
     },
     {
-      "basename": "苹果官方文档",
-      "path": "iOS_Framework/苹果官方文档.md"
+      "basename": "2.交叉编译",
+      "path": "编译相关/2.交叉编译.md"
+    },
+    {
+      "basename": "1.GCC和LLVM",
+      "path": "编译相关/1.GCC和LLVM.md"
+    },
+    {
+      "basename": "WKWebView处理window.open",
+      "path": "iOS跨平台/WebKit/issue/WKWebView处理window.open.md"
+    },
+    {
+      "basename": "WKWebView处理白屏",
+      "path": "iOS跨平台/WebKit/issue/WKWebView处理白屏.md"
+    },
+    {
+      "basename": "苹果各机型屏幕尺寸信息",
+      "path": "iOS_Framework/Apple设备信息/苹果各机型屏幕尺寸信息.md"
+    },
+    {
+      "basename": "app包瘦身",
+      "path": "iOS_APM/3.App包大小优化/app包瘦身.md"
+    },
+    {
+      "basename": "1. 2021.06.02HarmonyOS发布会",
+      "path": "HarmonyOS/1. 2021.06.02HarmonyOS发布会.md"
+    },
+    {
+      "basename": "4.Dictionary",
+      "path": "开发语言学习/Swift/4.集合类型/4.Dictionary.md"
+    },
+    {
+      "basename": "2.Array",
+      "path": "开发语言学习/Swift/4.集合类型/2.Array.md"
+    },
+    {
+      "basename": "1.概述",
+      "path": "开发语言学习/Swift/4.集合类型/1.概述.md"
+    },
+    {
+      "basename": "3.Set",
+      "path": "开发语言学习/Swift/4.集合类型/3.Set.md"
     },
     {
       "basename": "WKWebView",
@@ -199,6 +179,26 @@
     {
       "basename": "原生和WKWebView交互",
       "path": "iOS跨平台/WebKit/原生和WKWebView交互.md"
+    },
+    {
+      "basename": "2.字符串操作",
+      "path": "开发语言学习/Swift/3.字符串和字符/2.字符串操作.md"
+    },
+    {
+      "basename": "1.字符串",
+      "path": "开发语言学习/Swift/3.字符串和字符/1.字符串.md"
+    },
+    {
+      "basename": "1.Swift集合-集合协议",
+      "path": "开发语言学习/Swift/Swift标准库协议/1.Swift集合-集合协议.md"
+    },
+    {
+      "basename": "2.Swift集合-迭代器及索引协议",
+      "path": "开发语言学习/Swift/Swift标准库协议/2.Swift集合-迭代器及索引协议.md"
+    },
+    {
+      "basename": "3.Comparable协议",
+      "path": "开发语言学习/Swift/Swift标准库协议/3.Comparable协议.md"
     }
   ],
   "omittedPaths": [],

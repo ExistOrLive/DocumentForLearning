@@ -214,6 +214,7 @@ let package = Package(
 
 Xcode 可以直接打开Swift Package Manager 管理的项目, 打开后会自动下载项目的依赖，生成 Xcode 的 target 和 scheme 
 
+
 ## 参考文档
 
 [Using the Package Manager](https://www.swift.org/getting-started/#using-the-package-manager)

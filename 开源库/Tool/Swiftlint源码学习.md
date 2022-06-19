@@ -3,7 +3,7 @@
 #swiftlint 
 #开源库
 
-[Swiftlint](https://github.com/realm/SwiftLint) 是统一Swift代码风格的工具，本身就是使用Swift语言编写。Swiftlint 使用 [Swift_Package_Manager](../../开发语言学习/Swift/Swift_Package_Manager/Swift_Package_Manager.md)来组织源代码，可以直接用 Xcode打开。
+[Swiftlint](https://github.com/realm/SwiftLint) 是统一Swift代码风格的工具，本身就是使用Swift语言编写。Swiftlint 使用 [Swift_Package_Manager](../../学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md)来组织源代码，可以直接用 Xcode打开。
 
 ![](pic/swiftlint-xcode.png)
 
