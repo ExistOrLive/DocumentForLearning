@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "开发语言学习/HTML/2.HTML排版标签.md",
+            "file": "开发语言学习/HTML/9.HTML表单标签.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Swift_Package_Manager",
+                "query": "tag:#开发语言学习",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100,
-    "collapsed": true
+    "width": 146.5
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/HTML/2.HTML排版标签.md",
+                "file": "开发语言学习/HTML/9.HTML表单标签.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/HTML/2.HTML排版标签.md",
+                "file": "开发语言学习/HTML/9.HTML表单标签.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/HTML/2.HTML排版标签.md"
+                "file": "开发语言学习/HTML/9.HTML表单标签.md"
               }
             }
           }
@@ -132,15 +131,15 @@
   },
   "active": "651831b6d6a60a54",
   "lastOpenFiles": [
-    "开发语言学习/HTML/2.HTML排版标签.md",
+    "开发语言学习/HTML/9.HTML表单标签.md",
+    "开发语言学习/HTML/8.HTML框架标签.md",
+    "开发语言学习/HTML/7.HTML表格标签.md",
+    "开发语言学习/HTML/4.HTML字体标签和超链接.md",
+    "开发语言学习/HTML/5.HTML图片标签.md",
+    "开发语言学习/HTML/6.HTML列表标签.md",
     "开发语言学习/HTML/1.概述.md",
-    "To Do.md",
-    "SUMMARY.md",
-    "iOS_APM/4.崩溃监控/崩溃监控.md",
-    "iOS_APM/5.耗电优化/耗电优化.md",
-    "iOS_APM/APM 相关文章.md",
-    "WWDC/2022/todo.md",
-    "[.md",
-    "iOS_Framework/苹果官方文档.md"
+    "开发语言学习/HTML/2.HTML排版标签.md",
+    "学习工具及开发工具/文档生成工具/DocC/DocC文档.md",
+    "学习工具及开发工具/文档生成工具/DocC/DocC和Cocoapods.md"
   ]
 }

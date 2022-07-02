@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "tag:#开发语言学习",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -13,10 +13,10 @@
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.31042106268579406,
+  "centerStrength": 0.565476190476191,
+  "repelStrength": 8.9750744047619,
+  "linkStrength": 0.663457961309524,
+  "linkDistance": 284,
+  "scale": 2.1296665743834704,
   "close": false
 }

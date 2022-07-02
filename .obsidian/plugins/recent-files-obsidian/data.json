@@ -1,12 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "2.HTML排版标签",
-      "path": "开发语言学习/HTML/2.HTML排版标签.md"
+      "basename": "9.HTML表单标签",
+      "path": "开发语言学习/HTML/9.HTML表单标签.md"
+    },
+    {
+      "basename": "8.HTML框架标签",
+      "path": "开发语言学习/HTML/8.HTML框架标签.md"
+    },
+    {
+      "basename": "7.HTML表格标签",
+      "path": "开发语言学习/HTML/7.HTML表格标签.md"
+    },
+    {
+      "basename": "4.HTML字体标签和超链接",
+      "path": "开发语言学习/HTML/4.HTML字体标签和超链接.md"
+    },
+    {
+      "basename": "5.HTML图片标签",
+      "path": "开发语言学习/HTML/5.HTML图片标签.md"
+    },
+    {
+      "basename": "6.HTML列表标签",
+      "path": "开发语言学习/HTML/6.HTML列表标签.md"
     },
     {
       "basename": "1.概述",
       "path": "开发语言学习/HTML/1.概述.md"
+    },
+    {
+      "basename": "2.HTML排版标签",
+      "path": "开发语言学习/HTML/2.HTML排版标签.md"
+    },
+    {
+      "basename": "DocC文档",
+      "path": "学习工具及开发工具/文档生成工具/DocC/DocC文档.md"
+    },
+    {
+      "basename": "DocC和Cocoapods",
+      "path": "学习工具及开发工具/文档生成工具/DocC/DocC和Cocoapods.md"
+    },
+    {
+      "basename": "DocC的安装和使用",
+      "path": "学习工具及开发工具/文档生成工具/DocC/DocC的安装和使用.md"
+    },
+    {
+      "basename": "Obsidian",
+      "path": "学习工具及开发工具/笔记及知识管理工具/Obsidian.md"
+    },
+    {
+      "basename": "1.常量和变量以及基本类型_1",
+      "path": "开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md"
+    },
+    {
+      "basename": "1.基本数据类型",
+      "path": "开发语言学习/Python/1.基本数据类型.md"
+    },
+    {
+      "basename": "3.HTML转义标签",
+      "path": "开发语言学习/HTML/3.HTML转义标签.md"
+    },
+    {
+      "basename": "WKWebView处理白屏",
+      "path": "iOS跨平台/WebKit/issue/WKWebView处理白屏.md"
+    },
+    {
+      "basename": "WKWebView处理target=\"_blank\"",
+      "path": "iOS跨平台/WebKit/issue/WKWebView处理target=\"_blank\".md"
+    },
+    {
+      "basename": "原生和WKWebView交互",
+      "path": "iOS跨平台/WebKit/原生和WKWebView交互.md"
+    },
+    {
+      "basename": "WKWebView",
+      "path": "iOS跨平台/WebKit/WKWebView.md"
     },
     {
       "basename": "To Do",
@@ -53,20 +121,8 @@
       "path": "iOS_APM/2.启动优化/ 原理.md"
     },
     {
-      "basename": "DocC和Cocoapods",
-      "path": "学习工具及开发工具/文档生成工具/DocC/DocC和Cocoapods.md"
-    },
-    {
-      "basename": "DocC的安装和使用",
-      "path": "学习工具及开发工具/文档生成工具/DocC/DocC的安装和使用.md"
-    },
-    {
       "basename": "Swift_Package_Manager",
       "path": "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md"
-    },
-    {
-      "basename": "DocC文档",
-      "path": "学习工具及开发工具/文档生成工具/DocC/DocC文档.md"
     },
     {
       "basename": "Swift_Package_Manager发布构建产物",
@@ -129,14 +185,6 @@
       "path": "编译相关/1.GCC和LLVM.md"
     },
     {
-      "basename": "WKWebView处理window.open",
-      "path": "iOS跨平台/WebKit/issue/WKWebView处理window.open.md"
-    },
-    {
-      "basename": "WKWebView处理白屏",
-      "path": "iOS跨平台/WebKit/issue/WKWebView处理白屏.md"
-    },
-    {
       "basename": "苹果各机型屏幕尺寸信息",
       "path": "iOS_Framework/Apple设备信息/苹果各机型屏幕尺寸信息.md"
     },
@@ -151,54 +199,6 @@
     {
       "basename": "4.Dictionary",
       "path": "开发语言学习/Swift/4.集合类型/4.Dictionary.md"
-    },
-    {
-      "basename": "2.Array",
-      "path": "开发语言学习/Swift/4.集合类型/2.Array.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "开发语言学习/Swift/4.集合类型/1.概述.md"
-    },
-    {
-      "basename": "3.Set",
-      "path": "开发语言学习/Swift/4.集合类型/3.Set.md"
-    },
-    {
-      "basename": "WKWebView",
-      "path": "iOS跨平台/WebKit/WKWebView.md"
-    },
-    {
-      "basename": "WKWebViewConfiguration",
-      "path": "iOS跨平台/WebKit/WKWebViewConfiguration.md"
-    },
-    {
-      "basename": "WKUserContentController",
-      "path": "iOS跨平台/WebKit/WKUserContentController.md"
-    },
-    {
-      "basename": "原生和WKWebView交互",
-      "path": "iOS跨平台/WebKit/原生和WKWebView交互.md"
-    },
-    {
-      "basename": "2.字符串操作",
-      "path": "开发语言学习/Swift/3.字符串和字符/2.字符串操作.md"
-    },
-    {
-      "basename": "1.字符串",
-      "path": "开发语言学习/Swift/3.字符串和字符/1.字符串.md"
-    },
-    {
-      "basename": "1.Swift集合-集合协议",
-      "path": "开发语言学习/Swift/Swift标准库协议/1.Swift集合-集合协议.md"
-    },
-    {
-      "basename": "2.Swift集合-迭代器及索引协议",
-      "path": "开发语言学习/Swift/Swift标准库协议/2.Swift集合-迭代器及索引协议.md"
-    },
-    {
-      "basename": "3.Comparable协议",
-      "path": "开发语言学习/Swift/Swift标准库协议/3.Comparable协议.md"
     }
   ],
   "omittedPaths": [],
