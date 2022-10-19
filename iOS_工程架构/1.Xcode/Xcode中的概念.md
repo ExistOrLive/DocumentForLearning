@@ -36,6 +36,14 @@ Relocatable Object File|可重定位的目标文件，即.o目标文件
 
 ## 4. Build Settings
 
+## 5. Configuration
+
+## 6. Project
+
+## 7. Scheme
+
+## 8. WorkSpace
+
 
 
 

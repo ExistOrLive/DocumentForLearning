@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "58976b9441a86d93",
+        "id": "f7d5b61c9df1659e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "iOS_工程架构/1.Xcode/笔记.md",
+            "file": "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hmap",
+                "query": "load_a",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,12 +57,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 424.5
+    "width": 285.5
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iOS_工程架构/1.Xcode/笔记.md",
+                "file": "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iOS_工程架构/1.Xcode/笔记.md",
+                "file": "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iOS_工程架构/1.Xcode/笔记.md"
+                "file": "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md"
               }
             }
           }
@@ -130,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "58976b9441a86d93",
+  "active": "f7d5b61c9df1659e",
   "lastOpenFiles": [
+    "iOS_工程架构/5.构建原理/1.Xcode构建过程简述.md",
+    "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
     "iOS_工程架构/1.Xcode/笔记.md",
     "iOS_工程架构/1.Xcode/Xcode中的概念.md",
-    "Web开发/Vue/2.Vue模版.md",
-    "Web开发/Vue/1.概述.md",
-    "开发语言学习/Swift/Swift底层/1. 概述.md",
-    "学习工具及开发工具/文档生成工具/DocC/DocC的安装和使用.md",
-    "学习工具及开发工具/文档生成工具/DocC/DocC和Cocoapods.md",
-    "学习工具及开发工具/文档生成工具/DocC/DocC文档.md",
-    "Web开发/VSCode_Web开发插件.md",
-    "Web开发/1.Web开发技术.md"
+    "iOS_APM/2.启动优化/启动优化-原理.md",
+    "iOS_APM/2.启动优化/启动优化-实践.md",
+    "iOS_APM/2.启动优化/iOS启动流程原理.md",
+    "iOS_APM/2.启动优化/快手启动优化-动态库懒加载.md",
+    "iOS_工程架构/Swift与OC混编/OC工程引入Swift代码.md",
+    "开发语言学习/Objective_C/类/分类/load_and_initialize.md"
   ]
 }
