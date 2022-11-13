@@ -1,12 +1,72 @@
 {
   "recentFiles": [
     {
+      "basename": "3. 提高构建效率",
+      "path": "iOS_工程架构/5.构建原理/3. 提高构建效率.md"
+    },
+    {
       "basename": "2.iOS构建原理之预处理",
       "path": "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md"
     },
     {
       "basename": "1.Xcode构建过程简述",
       "path": "iOS_工程架构/5.构建原理/1.Xcode构建过程简述.md"
+    },
+    {
+      "basename": "快手技术沙龙-iOS-202204",
+      "path": "技术沙龙/快手技术沙龙-iOS-202204/快手技术沙龙-iOS-202204.md"
+    },
+    {
+      "basename": "得物技术沙龙-iOS-202112",
+      "path": "技术沙龙/得物技术沙龙-iOS-202112/得物技术沙龙-iOS-202112.md"
+    },
+    {
+      "basename": "字节技术沙龙-iOS-220122",
+      "path": "技术沙龙/字节技术沙龙-iOS-220122/字节技术沙龙-iOS-220122.md"
+    },
+    {
+      "basename": "快手海外SwiftObjC混编架构演进实践-陈豪",
+      "path": "技术沙龙/快手技术沙龙-iOS-202204/PPT/快手海外SwiftObjC混编架构演进实践-陈豪.pdf"
+    },
+    {
+      "basename": "抖音iOS体验优化：流畅性优化探索",
+      "path": "技术沙龙/字节技术沙龙-iOS-220122/ppt/抖音iOS体验优化：流畅性优化探索.pdf"
+    },
+    {
+      "basename": "抖音 iOS 自动化服务：容器化和规模化探索",
+      "path": "技术沙龙/字节技术沙龙-iOS-220122/ppt/抖音 iOS 自动化服务：容器化和规模化探索.pdf"
+    },
+    {
+      "basename": "大型App架构演进及挑战（对外）",
+      "path": "技术沙龙/字节技术沙龙-iOS-220122/ppt/大型App架构演进及挑战（对外）.pdf"
+    },
+    {
+      "basename": "李尧 - 字节跳动移动研发工具链MBox",
+      "path": "技术沙龙/得物技术沙龙-iOS-202112/PPT/李尧 - 字节跳动移动研发工具链MBox.pdf"
+    },
+    {
+      "basename": "Casa - 得物iOS工程演进之路",
+      "path": "技术沙龙/得物技术沙龙-iOS-202112/PPT/Casa - 得物iOS工程演进之路.pdf"
+    },
+    {
+      "basename": "ObjC混编架构演进实践-陈豪.pdf",
+      "path": "PPT/快手海外Swift/ObjC混编架构演进实践-陈豪.pdf.md"
+    },
+    {
+      "basename": "快手iOS动态库懒加载实践-周学运",
+      "path": "技术沙龙/快手技术沙龙-iOS-202204/PPT/快手iOS动态库懒加载实践-周学运.pdf"
+    },
+    {
+      "basename": "PPT",
+      "path": "PPT.md"
+    },
+    {
+      "basename": "todo",
+      "path": "WWDC/2022/todo.md"
+    },
+    {
+      "basename": "1. 横竖屏切换",
+      "path": "iOS_Framework/issue/常见问题/1. 横竖屏切换.md"
     },
     {
       "basename": "笔记",
@@ -139,66 +199,6 @@
     {
       "basename": "2.语义化标签",
       "path": "开发语言学习/HTML/HTML5/2.语义化标签.md"
-    },
-    {
-      "basename": "5.值和单位",
-      "path": "开发语言学习/CSS/5.值和单位.md"
-    },
-    {
-      "basename": "4.常见样式",
-      "path": "开发语言学习/CSS/4.常见样式.md"
-    },
-    {
-      "basename": "3.盒子模型",
-      "path": "开发语言学习/CSS/3.盒子模型.md"
-    },
-    {
-      "basename": "2.选择器",
-      "path": "开发语言学习/CSS/2.选择器.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "开发语言学习/CSS/1.概述.md"
-    },
-    {
-      "basename": "4.消息发送之消息转发",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/4.消息发送之消息转发.md"
-    },
-    {
-      "basename": "1.消息发送之方法快速查找",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/1.消息发送之方法快速查找.md"
-    },
-    {
-      "basename": "2.消息发送之方法的慢速查找",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/2.消息发送之方法的慢速查找.md"
-    },
-    {
-      "basename": "3.消息发送之动态方法决议",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/3.消息发送之动态方法决议.md"
-    },
-    {
-      "basename": "9.HTML表单标签",
-      "path": "开发语言学习/HTML/9.HTML表单标签.md"
-    },
-    {
-      "basename": "8.HTML框架标签",
-      "path": "开发语言学习/HTML/8.HTML框架标签.md"
-    },
-    {
-      "basename": "7.HTML表格标签",
-      "path": "开发语言学习/HTML/7.HTML表格标签.md"
-    },
-    {
-      "basename": "Obsidian",
-      "path": "学习工具及开发工具/笔记及知识管理工具/Obsidian.md"
-    },
-    {
-      "basename": "1.常量和变量以及基本类型_1",
-      "path": "开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md"
-    },
-    {
-      "basename": "1.基本数据类型",
-      "path": "开发语言学习/Python/1.基本数据类型.md"
     }
   ],
   "omittedPaths": [],

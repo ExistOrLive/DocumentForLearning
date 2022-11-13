@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "load_a",
+                "query": "屏幕旋转",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -131,15 +131,15 @@
   },
   "active": "f7d5b61c9df1659e",
   "lastOpenFiles": [
-    "iOS_工程架构/5.构建原理/1.Xcode构建过程简述.md",
+    "iOS_Framework/issue/常见问题/1. 横竖屏切换.md",
     "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
+    "iOS_工程架构/5.构建原理/1.Xcode构建过程简述.md",
     "iOS_工程架构/1.Xcode/笔记.md",
     "iOS_工程架构/1.Xcode/Xcode中的概念.md",
     "iOS_APM/2.启动优化/启动优化-原理.md",
     "iOS_APM/2.启动优化/启动优化-实践.md",
     "iOS_APM/2.启动优化/iOS启动流程原理.md",
     "iOS_APM/2.启动优化/快手启动优化-动态库懒加载.md",
-    "iOS_工程架构/Swift与OC混编/OC工程引入Swift代码.md",
-    "开发语言学习/Objective_C/类/分类/load_and_initialize.md"
+    "iOS_工程架构/Swift与OC混编/OC工程引入Swift代码.md"
   ]
 }
