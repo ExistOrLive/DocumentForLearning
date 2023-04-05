@@ -4,40 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "61f69025a14c29b7",
+        "id": "06c304d3791cf8b8",
         "type": "tabs",
         "children": [
           {
-            "id": "84d625a2f9217f9d",
+            "id": "49ae869a6c0a4d2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
+                "file": "前端/小程序开发/自定义组件/组件间通信和事件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fe5670eb450ffd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "开发语言学习/CSS/2.选择器.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "27db81a6d2652cf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "开发语言学习/CSS/6. 布局/1. display.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88de1d481ecf23f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "开发语言学习/CSS/6. 布局/2. float.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "58309a6b5b1d68bb",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6749a31f14533868",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "iOS_工程架构/5.构建原理/3. 提高构建效率.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -66,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#import",
+                "query": ":--",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -104,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iOS_工程架构/5.构建原理/3. 提高构建效率.md",
+                "file": "开发语言学习/CSS/6. 布局/2. float.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iOS_工程架构/5.构建原理/3. 提高构建效率.md",
+                "file": "开发语言学习/CSS/6. 布局/2. float.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iOS_工程架构/5.构建原理/3. 提高构建效率.md"
+                "file": "开发语言学习/CSS/6. 布局/2. float.md"
               }
             }
           }
@@ -153,20 +171,50 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "6749a31f14533868",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "88de1d481ecf23f2",
   "lastOpenFiles": [
-    "iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md",
-    "iOS_工程架构/5.构建原理/3. 提高构建效率.md",
-    "iOS_工程架构/5.构建原理/1.Xcode构建过程简述.md",
-    "技术沙龙/快手技术沙龙-iOS-202204/快手技术沙龙-iOS-202204.md",
-    "技术沙龙/得物技术沙龙-iOS-202112/得物技术沙龙-iOS-202112.md",
-    "技术沙龙/字节技术沙龙-iOS-220122/字节技术沙龙-iOS-220122.md",
-    "技术沙龙/快手技术沙龙-iOS-202204/PPT/快手海外SwiftObjC混编架构演进实践-陈豪.pdf",
-    "技术沙龙/字节技术沙龙-iOS-220122/ppt/抖音iOS体验优化：流畅性优化探索.pdf",
-    "技术沙龙/字节技术沙龙-iOS-220122/ppt/抖音 iOS 自动化服务：容器化和规模化探索.pdf",
-    "技术沙龙/字节技术沙龙-iOS-220122/ppt/大型App架构演进及挑战（对外）.pdf"
+    "开发语言学习/CSS/6. 布局/1. display.md",
+    "开发语言学习/CSS/6. 布局/2. float.md",
+    "开发语言学习/CSS/2.选择器.md",
+    "开发语言学习/CSS/3.盒子模型.md",
+    "开发语言学习/CSS/6. 布局",
+    "开发语言学习/CSS/4.常见样式.md",
+    "开发语言学习/CSS/5.值和单位.md",
+    "前端/小程序开发/自定义组件/组件生命周期.md",
+    "前端/小程序开发/自定义组件/组件间通信和事件.md",
+    "前端/小程序开发/自定义组件/自定义组件.md",
+    "前端/小程序开发/自定义组件",
+    "前端/小程序开发/引入外部模块.md",
+    "前端/小程序开发/微信小程序.md",
+    "开发语言学习/HTML/9.HTML表单标签.md",
+    "开发语言学习/HTML/8.HTML框架标签.md",
+    "开发语言学习/HTML/7.HTML表格标签.md",
+    "开发语言学习/HTML/6.HTML列表标签.md",
+    "开发语言学习/HTML/3.HTML转义标签.md",
+    "开发语言学习/HTML/2.HTML排版标签.md",
+    "开发语言学习/HTML/4.HTML字体标签和超链接.md",
+    "开发语言学习/JavaScript/2. 基本数据类型.md",
+    "开发语言学习/JavaScript/1. 基础部分.md",
+    "开发语言学习/CSS/1.概述.md",
+    "计算机网络/HTTP/HTTP-URL.md",
+    "开发语言学习/未命名",
+    "前端/小程序开发",
+    "前端/Web开发/Vue/2.Vue模版.md",
+    "前端/Web开发/Vue/1.概述.md",
+    "开发环境搭建/VSCode/2.VSCode的C语言环境搭建.md",
+    "开发环境搭建/VSCode/1.VSCode.md"
   ]
 }

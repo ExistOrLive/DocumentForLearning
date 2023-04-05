@@ -74,6 +74,12 @@ App Thinning 有三种方式，包括：**App Slicing**、**Bitcode**、**On-Dem
 
 
 
+[深入探索 iOS 包体积优化](https://juejin.cn/post/6844904169938092045)
+
+[如何让云音乐iOS包体积减少87MB](https://segmentfault.com/a/1190000041505761)
+
+[iOS 包体积优化1 - 总览](https://juejin.cn/post/7185079396678991928/)
+
 
 
 
