@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2.选择器",
+      "path": "开发语言学习/CSS/2.选择器.md"
+    },
+    {
       "basename": "2. float",
       "path": "开发语言学习/CSS/6. 布局/2. float.md"
     },
@@ -9,8 +13,52 @@
       "path": "开发语言学习/CSS/6. 布局/1. display.md"
     },
     {
-      "basename": "2.选择器",
-      "path": "开发语言学习/CSS/2.选择器.md"
+      "basename": "1. 基础部分",
+      "path": "开发语言学习/JavaScript/1. 基础部分.md"
+    },
+    {
+      "basename": "5. vue-router",
+      "path": "前端/Web开发/Vue/5. vue-router.md"
+    },
+    {
+      "basename": "4.npm",
+      "path": "前端/Web开发/Vue/4.npm.md"
+    },
+    {
+      "basename": "2.Vue模版",
+      "path": "前端/Web开发/Vue/2.Vue模版.md"
+    },
+    {
+      "basename": "1.概述",
+      "path": "前端/Web开发/Vue/1.概述.md"
+    },
+    {
+      "basename": "VSCode_Web开发插件",
+      "path": "前端/Web开发/VSCode_Web开发插件.md"
+    },
+    {
+      "basename": "vue开发环境搭建",
+      "path": "前端/Web开发/Vue/vue开发环境搭建.md"
+    },
+    {
+      "basename": "3. vite",
+      "path": "前端/Web开发/Vue/3. vite.md"
+    },
+    {
+      "basename": "引入外部模块",
+      "path": "前端/小程序开发/引入外部模块.md"
+    },
+    {
+      "basename": "1.概述",
+      "path": "开发语言学习/CSS/1.概述.md"
+    },
+    {
+      "basename": "1.制作framework",
+      "path": "iOS_工程架构/4.架构实践/1.制作framework.md"
+    },
+    {
+      "basename": "2. Alamofire",
+      "path": "开源库/iOS/Alamofire/2. Alamofire.md"
     },
     {
       "basename": "3.盒子模型",
@@ -35,10 +83,6 @@
     {
       "basename": "自定义组件",
       "path": "前端/小程序开发/自定义组件/自定义组件.md"
-    },
-    {
-      "basename": "引入外部模块",
-      "path": "前端/小程序开发/引入外部模块.md"
     },
     {
       "basename": "微信小程序",
@@ -77,24 +121,8 @@
       "path": "开发语言学习/JavaScript/2. 基本数据类型.md"
     },
     {
-      "basename": "1. 基础部分",
-      "path": "开发语言学习/JavaScript/1. 基础部分.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "开发语言学习/CSS/1.概述.md"
-    },
-    {
       "basename": "HTTP-URL",
       "path": "计算机网络/HTTP/HTTP-URL.md"
-    },
-    {
-      "basename": "2.Vue模版",
-      "path": "前端/Web开发/Vue/2.Vue模版.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "前端/Web开发/Vue/1.概述.md"
     },
     {
       "basename": "2.VSCode的C语言环境搭建",
@@ -171,34 +199,6 @@
     {
       "basename": "2. OC类原理下",
       "path": "开发语言学习/Objective_C/OC底层/2.OC类原理/2. OC类原理下.md"
-    },
-    {
-      "basename": "3.消息发送之动态方法决议",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/3.消息发送之动态方法决议.md"
-    },
-    {
-      "basename": "2.消息发送之方法的慢速查找",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/2.消息发送之方法的慢速查找.md"
-    },
-    {
-      "basename": "1.消息发送之方法快速查找",
-      "path": "开发语言学习/Objective_C/OC底层/3.消息发送/1.消息发送之方法快速查找.md"
-    },
-    {
-      "basename": "2.堆排序",
-      "path": "数据结构与算法/6.排序和顺序统计量/2.堆排序.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "数据结构与算法/6.排序和顺序统计量/1.概述.md"
-    },
-    {
-      "basename": "1. 二叉搜索树",
-      "path": "数据结构与算法/7. 数据结构/1. 二叉搜索树.md"
-    },
-    {
-      "basename": "线索二叉树",
-      "path": "数据结构与算法/3.二叉树/线索二叉树.md"
     }
   ],
   "omittedPaths": [],

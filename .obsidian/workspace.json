@@ -8,48 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "49ae869a6c0a4d2b",
+            "id": "b782b865eb82c378",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/小程序开发/自定义组件/组件间通信和事件.md",
+                "file": "前端/Web开发/Vue/3. vite.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7fe5670eb450ffd5",
+            "id": "80c3c226bf471b5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "前端/Web开发/Vue/3. vite.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ffb6abfa77610b25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "前端/Web开发/Vue/1.概述.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2586eca18b46542d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "开发语言学习/CSS/2.选择器.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27db81a6d2652cf3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "开发语言学习/CSS/6. 布局/1. display.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "88de1d481ecf23f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "开发语言学习/CSS/6. 布局/2. float.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ":--",
+                "query": "float",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 364.5
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/2. float.md",
+                "file": "开发语言学习/CSS/2.选择器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/2. float.md",
+                "file": "开发语言学习/CSS/2.选择器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/2. float.md"
+                "file": "开发语言学习/CSS/2.选择器.md"
               }
             }
           }
@@ -171,7 +171,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,10 +185,22 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "88de1d481ecf23f2",
+  "active": "3d8e8999fc6546c0",
   "lastOpenFiles": [
-    "开发语言学习/CSS/6. 布局/1. display.md",
     "开发语言学习/CSS/6. 布局/2. float.md",
+    "开发语言学习/CSS/6. 布局/1. display.md",
+    "开发语言学习/JavaScript/1. 基础部分.md",
+    "前端/Web开发/Vue/5. vue-router.md",
+    "前端/Web开发/Vue/4.npm.md",
+    "前端/Web开发/Vue/2.Vue模版.md",
+    "前端/Web开发/Vue/1.概述.md",
+    "前端/Web开发/VSCode_Web开发插件.md",
+    "前端/Web开发/Vue/vue开发环境搭建.md",
+    "前端/Web开发/Vue/3. vite.md",
+    "前端/小程序开发/引入外部模块.md",
+    "开发语言学习/CSS/1.概述.md",
+    "iOS_工程架构/4.架构实践/1.制作framework.md",
+    "开源库/iOS/Alamofire/2. Alamofire.md",
     "开发语言学习/CSS/2.选择器.md",
     "开发语言学习/CSS/3.盒子模型.md",
     "开发语言学习/CSS/6. 布局",
@@ -197,24 +210,12 @@
     "前端/小程序开发/自定义组件/组件间通信和事件.md",
     "前端/小程序开发/自定义组件/自定义组件.md",
     "前端/小程序开发/自定义组件",
-    "前端/小程序开发/引入外部模块.md",
     "前端/小程序开发/微信小程序.md",
     "开发语言学习/HTML/9.HTML表单标签.md",
     "开发语言学习/HTML/8.HTML框架标签.md",
     "开发语言学习/HTML/7.HTML表格标签.md",
     "开发语言学习/HTML/6.HTML列表标签.md",
-    "开发语言学习/HTML/3.HTML转义标签.md",
-    "开发语言学习/HTML/2.HTML排版标签.md",
-    "开发语言学习/HTML/4.HTML字体标签和超链接.md",
-    "开发语言学习/JavaScript/2. 基本数据类型.md",
-    "开发语言学习/JavaScript/1. 基础部分.md",
-    "开发语言学习/CSS/1.概述.md",
-    "计算机网络/HTTP/HTTP-URL.md",
     "开发语言学习/未命名",
-    "前端/小程序开发",
-    "前端/Web开发/Vue/2.Vue模版.md",
-    "前端/Web开发/Vue/1.概述.md",
-    "开发环境搭建/VSCode/2.VSCode的C语言环境搭建.md",
-    "开发环境搭建/VSCode/1.VSCode.md"
+    "前端/小程序开发"
   ]
 }
