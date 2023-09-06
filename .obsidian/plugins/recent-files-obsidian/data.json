@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "利用Swiftlint自定义规则实现自动化code review",
-      "path": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md"
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "SUMMARY",
       "path": "SUMMARY.md"
+    },
+    {
+      "basename": "利用Swiftlint自定义规则实现自动化code review",
+      "path": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md"
     },
     {
       "basename": "Swiftlint源码学习",
@@ -195,10 +199,6 @@
     {
       "basename": "fastlane证书管理",
       "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane证书管理.md"
-    },
-    {
-      "basename": "fastlane一键打包",
-      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane一键打包.md"
     }
   ],
   "omittedPaths": [],

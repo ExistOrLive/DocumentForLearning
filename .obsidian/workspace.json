@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md"
+                "file": "README.md"
               }
             }
           }
@@ -158,9 +158,10 @@
   "active": "13c66b1893f27822",
   "lastOpenFiles": [
     "SUMMARY.md",
+    "README.md",
+    "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
     "开源库/Tool/Swiftlint源码学习.md",
     "开源库/Tool/pic/swiftlint-xcode.png",
-    "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
     "SpringBoot/Java Servlet.md",
     "学习工具及开发工具/DevOps工具.md",
     "SpringBoot/spring boot简述.md",
@@ -185,7 +186,6 @@
     "开发语言学习/CSS/6. 布局",
     "开发语言学习/CSS/4.常见样式.md",
     "开发语言学习/CSS/5.值和单位.md",
-    "前端/小程序开发/自定义组件/组件生命周期.md",
     "前端/小程序开发/自定义组件",
     "开发语言学习/未命名",
     "前端/小程序开发"
