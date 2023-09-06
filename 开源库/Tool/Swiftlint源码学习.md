@@ -5,8 +5,7 @@
 
 [Swiftlint](https://github.com/realm/SwiftLint) 是统一Swift代码风格的工具，本身就是使用Swift语言编写。Swiftlint 使用 [Swift_Package_Manager](../../学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md)来组织源代码，可以直接用 Xcode打开。
 
-![](pic/swiftlint-xcode.png)
-
+![](https://pic.existorlive.cn//202309070142316.png)
 
 ## 1. 项目结构
 ### 1.1  Package.swift
@@ -99,7 +98,7 @@ struct LintOrAnalyzeOptions {
     let inProcessSourcekit: Bool
 } 
 ```
-2. 查询出所有的Swift文件，及文件对应的Swiftlint配置及规则， 返回 [CollectedLinter]
+2. 查询出所有的Swift文件，及文件对应的Swiftlint配置及规则， 返回 `[CollectedLinter]`
 
 ```swift
 LintOrAnalyzeCommand.run(_ options: LintOrAnalyzeOptions)
@@ -116,7 +115,7 @@ public struct CollectedLinter {
 }
 ```
 
-3. 利用规则扫描swift文件, 返回  [StyleViolation]
+3. 利用规则扫描swift文件, 返回  `[StyleViolation]`
 
 ```swift
 Rules.validate(file: SwiftLintFile) -> [StyleViolation]

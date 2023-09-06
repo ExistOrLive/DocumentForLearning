@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "06c304d3791cf8b8",
+        "id": "7115b8416896fc5b",
         "type": "tabs",
         "children": [
           {
-            "id": "b782b865eb82c378",
+            "id": "13c66b1893f27822",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/Web开发/Vue/3. vite.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80c3c226bf471b5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端/Web开发/Vue/3. vite.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ffb6abfa77610b25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端/Web开发/Vue/1.概述.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2586eca18b46542d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "开发语言学习/CSS/2.选择器.md",
+                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "float",
+                "query": "swiftlint源码",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,12 +64,20 @@
               "type": "recent-files",
               "state": {}
             }
+          },
+          {
+            "id": "aec6d6d0555ef128",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 364.5
+    "width": 313.5
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -122,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/CSS/2.选择器.md",
+                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/CSS/2.选择器.md",
+                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/CSS/2.选择器.md"
+                "file": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md"
               }
             }
           }
@@ -171,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,8 +155,18 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "3d8e8999fc6546c0",
+  "active": "13c66b1893f27822",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "开源库/Tool/Swiftlint源码学习.md",
+    "开源库/Tool/pic/swiftlint-xcode.png",
+    "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
+    "SpringBoot/Java Servlet.md",
+    "学习工具及开发工具/DevOps工具.md",
+    "SpringBoot/spring boot简述.md",
+    "SpringBoot/环境搭建.md",
+    "前端/Web开发/Vue/3. vite.md",
+    "SpringBoot",
     "开发语言学习/CSS/6. 布局/2. float.md",
     "开发语言学习/CSS/6. 布局/1. display.md",
     "开发语言学习/JavaScript/1. 基础部分.md",
@@ -196,7 +176,6 @@
     "前端/Web开发/Vue/1.概述.md",
     "前端/Web开发/VSCode_Web开发插件.md",
     "前端/Web开发/Vue/vue开发环境搭建.md",
-    "前端/Web开发/Vue/3. vite.md",
     "前端/小程序开发/引入外部模块.md",
     "开发语言学习/CSS/1.概述.md",
     "iOS_工程架构/4.架构实践/1.制作framework.md",
@@ -207,14 +186,7 @@
     "开发语言学习/CSS/4.常见样式.md",
     "开发语言学习/CSS/5.值和单位.md",
     "前端/小程序开发/自定义组件/组件生命周期.md",
-    "前端/小程序开发/自定义组件/组件间通信和事件.md",
-    "前端/小程序开发/自定义组件/自定义组件.md",
     "前端/小程序开发/自定义组件",
-    "前端/小程序开发/微信小程序.md",
-    "开发语言学习/HTML/9.HTML表单标签.md",
-    "开发语言学习/HTML/8.HTML框架标签.md",
-    "开发语言学习/HTML/7.HTML表格标签.md",
-    "开发语言学习/HTML/6.HTML列表标签.md",
     "开发语言学习/未命名",
     "前端/小程序开发"
   ]
