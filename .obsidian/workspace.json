@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "06818b0b1103ab62",
+        "id": "8a651d5a3e07b061",
         "type": "tabs",
         "children": [
           {
-            "id": "b637ab5da61d0210",
+            "id": "ae70532e4b7ef8d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开源库/Tool/Swiftlint源码学习.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2634663968f17c4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "开发语言学习/Dart/1.概述1.md",
+                "file": "开发语言学习/TypeScript/1. 简介.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,12 +73,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 200
   },
   "right": {
     "id": "6c6178ecff0fdf5c",
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/Dart/1.概述1.md",
+                "file": "开发语言学习/TypeScript/1. 简介.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/Dart/1.概述1.md",
+                "file": "开发语言学习/TypeScript/1. 简介.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/Dart/1.概述1.md"
+                "file": "开发语言学习/TypeScript/1. 简介.md"
               }
             }
           }
@@ -156,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +156,13 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "2634663968f17c4b",
+  "active": "ae70532e4b7ef8d4",
   "lastOpenFiles": [
+    "开发语言学习/TypeScript/2. 类型安全.md",
+    "开发语言学习/TypeScript/1. 简介.md",
+    "开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md",
+    "开发语言学习/Swift/1.基础部分/2.常量和变量以及基本类型_2.md",
+    "开发语言学习/Dart/1.概述1.md",
     "开发环境搭建/Flutter/1. Flutter环境安装.md",
     "iOS_Framework/UI/SwiftUI/2. SwiftUI 生命周期.md",
     "iOS_Framework/UI/SwiftUI/1. SwiftUI工程.md",
@@ -194,14 +186,9 @@
     "前端/Web开发/Vue/5. vue-router.md",
     "前端/Web开发/Vue/4.npm.md",
     "前端/Web开发/VSCode_Web开发插件.md",
-    "前端/Web开发/Vue/vue开发环境搭建.md",
-    "前端/小程序开发/引入外部模块.md",
-    "开发语言学习/CSS/1.概述.md",
-    "iOS_工程架构/4.架构实践/1.制作framework.md",
-    "开源库/iOS/Alamofire/2. Alamofire.md",
     "开发语言学习/CSS/6. 布局",
     "前端/小程序开发/自定义组件",
-    "开发语言学习/未命名",
+    "开发语言学习/TypeScript",
     "前端/小程序开发"
   ]
 }

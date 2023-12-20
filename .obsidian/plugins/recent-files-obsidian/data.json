@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "1. 简介",
+      "path": "开发语言学习/TypeScript/1. 简介.md"
+    },
+    {
+      "basename": "2. 类型安全",
+      "path": "开发语言学习/TypeScript/2. 类型安全.md"
+    },
+    {
+      "basename": "1.常量和变量以及基本类型_1",
+      "path": "开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md"
+    },
+    {
+      "basename": "2.常量和变量以及基本类型_2",
+      "path": "开发语言学习/Swift/1.基础部分/2.常量和变量以及基本类型_2.md"
+    },
+    {
       "basename": "1.概述1",
       "path": "开发语言学习/Dart/1.概述1.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "app包体积分析",
       "path": "iOS_APM/3.App包大小优化/app包体积分析.md"
-    },
-    {
-      "basename": "app包瘦身",
-      "path": "iOS_APM/3.App包大小优化/app包瘦身.md"
-    },
-    {
-      "basename": "7.元组",
-      "path": "开发语言学习/Python/7.元组.md"
-    },
-    {
-      "basename": "6.列表",
-      "path": "开发语言学习/Python/6.列表.md"
-    },
-    {
-      "basename": "5.字符串",
-      "path": "开发语言学习/Python/5.字符串.md"
     }
   ],
   "omittedPaths": [],
