@@ -1,20 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "1.概述1",
+      "path": "开发语言学习/Dart/1.概述1.md"
     },
     {
-      "basename": "SUMMARY",
-      "path": "SUMMARY.md"
+      "basename": "1. Flutter环境安装",
+      "path": "开发环境搭建/Flutter/1. Flutter环境安装.md"
+    },
+    {
+      "basename": "2. SwiftUI 生命周期",
+      "path": "iOS_Framework/UI/SwiftUI/2. SwiftUI 生命周期.md"
+    },
+    {
+      "basename": "1. SwiftUI工程",
+      "path": "iOS_Framework/UI/SwiftUI/1. SwiftUI工程.md"
+    },
+    {
+      "basename": "2.Vue模版",
+      "path": "前端/Web开发/Vue/2.Vue模版.md"
+    },
+    {
+      "basename": "1.概述",
+      "path": "前端/Web开发/Vue/1.概述.md"
+    },
+    {
+      "basename": "1. 基础部分",
+      "path": "开发语言学习/JavaScript/1. 基础部分.md"
+    },
+    {
+      "basename": "2. 基本数据类型",
+      "path": "开发语言学习/JavaScript/2. 基本数据类型.md"
+    },
+    {
+      "basename": "Swiftlint源码学习",
+      "path": "开源库/Tool/Swiftlint源码学习.md"
     },
     {
       "basename": "利用Swiftlint自定义规则实现自动化code review",
       "path": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md"
     },
     {
-      "basename": "Swiftlint源码学习",
-      "path": "开源库/Tool/Swiftlint源码学习.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "SUMMARY",
+      "path": "SUMMARY.md"
     },
     {
       "basename": "Java Servlet",
@@ -49,24 +81,12 @@
       "path": "开发语言学习/CSS/6. 布局/1. display.md"
     },
     {
-      "basename": "1. 基础部分",
-      "path": "开发语言学习/JavaScript/1. 基础部分.md"
-    },
-    {
       "basename": "5. vue-router",
       "path": "前端/Web开发/Vue/5. vue-router.md"
     },
     {
       "basename": "4.npm",
       "path": "前端/Web开发/Vue/4.npm.md"
-    },
-    {
-      "basename": "2.Vue模版",
-      "path": "前端/Web开发/Vue/2.Vue模版.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "前端/Web开发/Vue/1.概述.md"
     },
     {
       "basename": "VSCode_Web开发插件",
@@ -149,10 +169,6 @@
       "path": "开发语言学习/HTML/4.HTML字体标签和超链接.md"
     },
     {
-      "basename": "2. 基本数据类型",
-      "path": "开发语言学习/JavaScript/2. 基本数据类型.md"
-    },
-    {
       "basename": "HTTP-URL",
       "path": "计算机网络/HTTP/HTTP-URL.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "5.字符串",
       "path": "开发语言学习/Python/5.字符串.md"
-    },
-    {
-      "basename": "4.运算符",
-      "path": "开发语言学习/Python/4.运算符.md"
-    },
-    {
-      "basename": "1.Xcode构建过程简述",
-      "path": "iOS_工程架构/5.构建原理/1.Xcode构建过程简述.md"
-    },
-    {
-      "basename": "安装pod库-podfile",
-      "path": "学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md"
-    },
-    {
-      "basename": "fastlane证书管理",
-      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane证书管理.md"
     }
   ],
   "omittedPaths": [],

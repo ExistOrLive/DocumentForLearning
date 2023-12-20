@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7115b8416896fc5b",
+        "id": "06818b0b1103ab62",
         "type": "tabs",
         "children": [
           {
-            "id": "13c66b1893f27822",
+            "id": "b637ab5da61d0210",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "开源库/Tool/Swiftlint源码学习.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2634663968f17c4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "开发语言学习/Dart/1.概述1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "swiftlint源码",
+                "query": "dart",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +86,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -93,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "开发语言学习/Dart/1.概述1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "开发语言学习/Dart/1.概述1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "开发语言学习/Dart/1.概述1.md"
               }
             }
           }
@@ -155,12 +169,19 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "13c66b1893f27822",
+  "active": "2634663968f17c4b",
   "lastOpenFiles": [
-    "SUMMARY.md",
-    "README.md",
+    "开发环境搭建/Flutter/1. Flutter环境安装.md",
+    "iOS_Framework/UI/SwiftUI/2. SwiftUI 生命周期.md",
+    "iOS_Framework/UI/SwiftUI/1. SwiftUI工程.md",
+    "前端/Web开发/Vue/2.Vue模版.md",
+    "前端/Web开发/Vue/1.概述.md",
+    "开发语言学习/JavaScript/1. 基础部分.md",
+    "开发语言学习/JavaScript/2. 基本数据类型.md",
     "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md",
     "开源库/Tool/Swiftlint源码学习.md",
+    "README.md",
+    "SUMMARY.md",
     "开源库/Tool/pic/swiftlint-xcode.png",
     "SpringBoot/Java Servlet.md",
     "学习工具及开发工具/DevOps工具.md",
@@ -170,22 +191,15 @@
     "SpringBoot",
     "开发语言学习/CSS/6. 布局/2. float.md",
     "开发语言学习/CSS/6. 布局/1. display.md",
-    "开发语言学习/JavaScript/1. 基础部分.md",
     "前端/Web开发/Vue/5. vue-router.md",
     "前端/Web开发/Vue/4.npm.md",
-    "前端/Web开发/Vue/2.Vue模版.md",
-    "前端/Web开发/Vue/1.概述.md",
     "前端/Web开发/VSCode_Web开发插件.md",
     "前端/Web开发/Vue/vue开发环境搭建.md",
     "前端/小程序开发/引入外部模块.md",
     "开发语言学习/CSS/1.概述.md",
     "iOS_工程架构/4.架构实践/1.制作framework.md",
     "开源库/iOS/Alamofire/2. Alamofire.md",
-    "开发语言学习/CSS/2.选择器.md",
-    "开发语言学习/CSS/3.盒子模型.md",
     "开发语言学习/CSS/6. 布局",
-    "开发语言学习/CSS/4.常见样式.md",
-    "开发语言学习/CSS/5.值和单位.md",
     "前端/小程序开发/自定义组件",
     "开发语言学习/未命名",
     "前端/小程序开发"

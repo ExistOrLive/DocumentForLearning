@@ -581,7 +581,7 @@ SourceKit 是一套工具集，使得大多数 Swift 源代码层面的操作特
 
 
 ## 参考文档
-[Swiftlint Github](. https://github.com/realm/SwiftLint)
+[Swiftlint Github](https://github.com/realm/SwiftLint)
 
 [Using the Package Manager](https://www.swift.org/getting-started/#using-the-package-manager)
 
