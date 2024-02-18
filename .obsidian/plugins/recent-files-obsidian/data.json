@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "9. 类",
+      "path": "开发语言学习/TypeScript/9. 类.md"
+    },
+    {
+      "basename": "7. 对象",
+      "path": "开发语言学习/TypeScript/7. 对象.md"
+    },
+    {
+      "basename": "6. 函数",
+      "path": "开发语言学习/TypeScript/6. 函数.md"
+    },
+    {
+      "basename": "5. ts的元组类型",
+      "path": "开发语言学习/TypeScript/5. ts的元组类型.md"
+    },
+    {
+      "basename": "4. ts的数组类型",
+      "path": "开发语言学习/TypeScript/4. ts的数组类型.md"
+    },
+    {
       "basename": "1. 简介",
       "path": "开发语言学习/TypeScript/1. 简介.md"
     },
@@ -115,90 +135,6 @@
     {
       "basename": "引入外部模块",
       "path": "前端/小程序开发/引入外部模块.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "开发语言学习/CSS/1.概述.md"
-    },
-    {
-      "basename": "1.制作framework",
-      "path": "iOS_工程架构/4.架构实践/1.制作framework.md"
-    },
-    {
-      "basename": "2. Alamofire",
-      "path": "开源库/iOS/Alamofire/2. Alamofire.md"
-    },
-    {
-      "basename": "3.盒子模型",
-      "path": "开发语言学习/CSS/3.盒子模型.md"
-    },
-    {
-      "basename": "4.常见样式",
-      "path": "开发语言学习/CSS/4.常见样式.md"
-    },
-    {
-      "basename": "5.值和单位",
-      "path": "开发语言学习/CSS/5.值和单位.md"
-    },
-    {
-      "basename": "组件生命周期",
-      "path": "前端/小程序开发/自定义组件/组件生命周期.md"
-    },
-    {
-      "basename": "组件间通信和事件",
-      "path": "前端/小程序开发/自定义组件/组件间通信和事件.md"
-    },
-    {
-      "basename": "自定义组件",
-      "path": "前端/小程序开发/自定义组件/自定义组件.md"
-    },
-    {
-      "basename": "微信小程序",
-      "path": "前端/小程序开发/微信小程序.md"
-    },
-    {
-      "basename": "9.HTML表单标签",
-      "path": "开发语言学习/HTML/9.HTML表单标签.md"
-    },
-    {
-      "basename": "8.HTML框架标签",
-      "path": "开发语言学习/HTML/8.HTML框架标签.md"
-    },
-    {
-      "basename": "7.HTML表格标签",
-      "path": "开发语言学习/HTML/7.HTML表格标签.md"
-    },
-    {
-      "basename": "6.HTML列表标签",
-      "path": "开发语言学习/HTML/6.HTML列表标签.md"
-    },
-    {
-      "basename": "3.HTML转义标签",
-      "path": "开发语言学习/HTML/3.HTML转义标签.md"
-    },
-    {
-      "basename": "2.HTML排版标签",
-      "path": "开发语言学习/HTML/2.HTML排版标签.md"
-    },
-    {
-      "basename": "4.HTML字体标签和超链接",
-      "path": "开发语言学习/HTML/4.HTML字体标签和超链接.md"
-    },
-    {
-      "basename": "HTTP-URL",
-      "path": "计算机网络/HTTP/HTTP-URL.md"
-    },
-    {
-      "basename": "2.VSCode的C语言环境搭建",
-      "path": "开发环境搭建/VSCode/2.VSCode的C语言环境搭建.md"
-    },
-    {
-      "basename": "1.VSCode",
-      "path": "开发环境搭建/VSCode/1.VSCode.md"
-    },
-    {
-      "basename": "app包体积分析",
-      "path": "iOS_APM/3.App包大小优化/app包体积分析.md"
     }
   ],
   "omittedPaths": [],

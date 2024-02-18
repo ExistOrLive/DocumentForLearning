@@ -4,22 +4,54 @@
     "type": "split",
     "children": [
       {
-        "id": "8a651d5a3e07b061",
-        "type": "tabs",
+        "id": "311edbffd9b61c3b",
+        "type": "split",
         "children": [
           {
-            "id": "ae70532e4b7ef8d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "开发语言学习/TypeScript/1. 简介.md",
-                "mode": "source",
-                "source": false
+            "id": "8a651d5a3e07b061",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "54fda805968ccf5f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "开发语言学习/TypeScript/9. 类.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                },
+                "group": "5fb2cf7d596db38e"
               }
-            }
+            ]
+          },
+          {
+            "id": "5750692b29fb5d9d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2b1307de8f75ddf2",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "开发语言学习/TypeScript/9. 类.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                },
+                "group": "5fb2cf7d596db38e"
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -93,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/TypeScript/1. 简介.md",
+                "file": "开发语言学习/TypeScript/9. 类.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/TypeScript/1. 简介.md",
+                "file": "开发语言学习/TypeScript/9. 类.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +165,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/TypeScript/1. 简介.md"
+                "file": "开发语言学习/TypeScript/9. 类.md"
+              }
+            }
+          },
+          {
+            "id": "ce930c5d77c03596",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -156,8 +200,23 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ae70532e4b7ef8d4",
+  "active": "54fda805968ccf5f",
   "lastOpenFiles": [
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午5.19.31.png",
+    "开发语言学习/TypeScript/9. 类.md",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午5.17.55.png",
+    "开发语言学习/TypeScript/7. 对象.md",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.54.30.png",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.47.23.png",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.43.45.png",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.33.57.png",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.34.48.png",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.30.28.png",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.10.10.png",
+    "开发语言学习/TypeScript/6. 函数.md",
+    "开发语言学习/TypeScript/pic/截屏2024-02-07 上午11.48.15.png",
+    "开发语言学习/TypeScript/5. ts的元组类型.md",
+    "开发语言学习/TypeScript/4. ts的数组类型.md",
     "开发语言学习/TypeScript/2. 类型安全.md",
     "开发语言学习/TypeScript/1. 简介.md",
     "开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md",
@@ -174,18 +233,11 @@
     "开源库/Tool/Swiftlint源码学习.md",
     "README.md",
     "SUMMARY.md",
-    "开源库/Tool/pic/swiftlint-xcode.png",
     "SpringBoot/Java Servlet.md",
     "学习工具及开发工具/DevOps工具.md",
     "SpringBoot/spring boot简述.md",
     "SpringBoot/环境搭建.md",
-    "前端/Web开发/Vue/3. vite.md",
     "SpringBoot",
-    "开发语言学习/CSS/6. 布局/2. float.md",
-    "开发语言学习/CSS/6. 布局/1. display.md",
-    "前端/Web开发/Vue/5. vue-router.md",
-    "前端/Web开发/Vue/4.npm.md",
-    "前端/Web开发/VSCode_Web开发插件.md",
     "开发语言学习/CSS/6. 布局",
     "前端/小程序开发/自定义组件",
     "开发语言学习/TypeScript",
