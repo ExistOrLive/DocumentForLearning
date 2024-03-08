@@ -1,8 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "2. 开发环境搭建",
+      "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
+    },
+    {
+      "basename": "1. JS  简介",
+      "path": "开发环境搭建/JS开发环境/1. JS  简介.md"
+    },
+    {
+      "basename": "node",
+      "path": "开发环境搭建/包管理工具/node.md"
+    },
+    {
+      "basename": "1. 简介",
+      "path": "开发语言学习/TypeScript/1. 简介.md"
+    },
+    {
+      "basename": "fastlane证书管理",
+      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane证书管理.md"
+    },
+    {
+      "basename": "fastlane一键打包",
+      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane一键打包.md"
+    },
+    {
+      "basename": "3. iOS图像渲染原理",
+      "path": "视频课学习/视觉相关/博客总结/3. iOS图像渲染原理.md"
+    },
+    {
+      "basename": "1. KVC使用",
+      "path": "开发语言学习/Objective_C/OC底层/6.KVC/1. KVC使用.md"
+    },
+    {
+      "basename": "iOS Json解析",
+      "path": "iOS_Framework/issue/xml,json,plist的读写/iOS Json解析.md"
+    },
+    {
+      "basename": "1.基本运算符",
+      "path": "开发语言学习/Swift/2.基本运算符/1.基本运算符.md"
+    },
+    {
+      "basename": "OC工程引入Swift代码",
+      "path": "iOS_工程架构/Swift与OC混编/OC工程引入Swift代码.md"
+    },
+    {
+      "basename": "issues",
+      "path": "iOS_工程架构/Swift与OC混编/issues.md"
+    },
+    {
+      "basename": "3.ZLGitRemoteService库实践",
+      "path": "iOS_工程架构/4.架构实践/3.ZLGitRemoteService库实践.md"
+    },
+    {
       "basename": "9. 类",
       "path": "开发语言学习/TypeScript/9. 类.md"
+    },
+    {
+      "basename": "创建pod库-podspec",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/创建pod库-podspec.md"
+    },
+    {
+      "basename": "安装pod库-podfile",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md"
     },
     {
       "basename": "7. 对象",
@@ -19,10 +79,6 @@
     {
       "basename": "4. ts的数组类型",
       "path": "开发语言学习/TypeScript/4. ts的数组类型.md"
-    },
-    {
-      "basename": "1. 简介",
-      "path": "开发语言学习/TypeScript/1. 简介.md"
     },
     {
       "basename": "2. 类型安全",
