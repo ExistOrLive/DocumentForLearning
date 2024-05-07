@@ -1,8 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "9. 类",
+      "path": "开发语言学习/TypeScript/9. 类.md"
+    },
+    {
+      "basename": "6. 函数",
+      "path": "开发语言学习/TypeScript/6. 函数.md"
+    },
+    {
+      "basename": "5. ts的元组类型",
+      "path": "开发语言学习/TypeScript/5. ts的元组类型.md"
+    },
+    {
+      "basename": "16. tsconfig.json",
+      "path": "开发语言学习/TypeScript/16. tsconfig.json.md"
+    },
+    {
+      "basename": "15. d.ts类型声明文件",
+      "path": "开发语言学习/TypeScript/15. d.ts类型声明文件.md"
+    },
+    {
+      "basename": "11. 枚举",
+      "path": "开发语言学习/TypeScript/11. 枚举.md"
+    },
+    {
+      "basename": "10. ts和js中类的本质",
+      "path": "开发语言学习/TypeScript/10. ts和js中类的本质.md"
+    },
+    {
+      "basename": "1. NPM",
+      "path": "开发环境搭建/Node/1. NPM.md"
+    },
+    {
       "basename": "2. 开发环境搭建",
       "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
+    },
+    {
+      "basename": "5. 钩子函数",
+      "path": "前端/React Native/5. 钩子函数.md"
+    },
+    {
+      "basename": "4. 导航栏和路由",
+      "path": "前端/React Native/4. 导航栏和路由.md"
+    },
+    {
+      "basename": "3. 布局方式",
+      "path": "前端/React Native/3. 布局方式.md"
+    },
+    {
+      "basename": "2. 核心组件",
+      "path": "前端/React Native/2. 核心组件.md"
+    },
+    {
+      "basename": "1. 环境搭建",
+      "path": "前端/React Native/1. 环境搭建.md"
+    },
+    {
+      "basename": "隐私清单",
+      "path": "iOS发版/隐私清单.md"
+    },
+    {
+      "basename": "安装pod库-podfile",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md"
     },
     {
       "basename": "1. JS  简介",
@@ -53,28 +113,12 @@
       "path": "iOS_工程架构/4.架构实践/3.ZLGitRemoteService库实践.md"
     },
     {
-      "basename": "9. 类",
-      "path": "开发语言学习/TypeScript/9. 类.md"
-    },
-    {
       "basename": "创建pod库-podspec",
       "path": "学习工具及开发工具/Cocoapods依赖管理/创建pod库-podspec.md"
     },
     {
-      "basename": "安装pod库-podfile",
-      "path": "学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md"
-    },
-    {
       "basename": "7. 对象",
       "path": "开发语言学习/TypeScript/7. 对象.md"
-    },
-    {
-      "basename": "6. 函数",
-      "path": "开发语言学习/TypeScript/6. 函数.md"
-    },
-    {
-      "basename": "5. ts的元组类型",
-      "path": "开发语言学习/TypeScript/5. ts的元组类型.md"
     },
     {
       "basename": "4. ts的数组类型",
@@ -155,42 +199,6 @@
     {
       "basename": "环境搭建",
       "path": "SpringBoot/环境搭建.md"
-    },
-    {
-      "basename": "3. vite",
-      "path": "前端/Web开发/Vue/3. vite.md"
-    },
-    {
-      "basename": "2.选择器",
-      "path": "开发语言学习/CSS/2.选择器.md"
-    },
-    {
-      "basename": "2. float",
-      "path": "开发语言学习/CSS/6. 布局/2. float.md"
-    },
-    {
-      "basename": "1. display",
-      "path": "开发语言学习/CSS/6. 布局/1. display.md"
-    },
-    {
-      "basename": "5. vue-router",
-      "path": "前端/Web开发/Vue/5. vue-router.md"
-    },
-    {
-      "basename": "4.npm",
-      "path": "前端/Web开发/Vue/4.npm.md"
-    },
-    {
-      "basename": "VSCode_Web开发插件",
-      "path": "前端/Web开发/VSCode_Web开发插件.md"
-    },
-    {
-      "basename": "vue开发环境搭建",
-      "path": "前端/Web开发/Vue/vue开发环境搭建.md"
-    },
-    {
-      "basename": "引入外部模块",
-      "path": "前端/小程序开发/引入外部模块.md"
     }
   ],
   "omittedPaths": [],
