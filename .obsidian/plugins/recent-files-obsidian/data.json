@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "3. position",
+      "path": "开发语言学习/CSS/6. 布局/3. position.md"
+    },
+    {
+      "basename": "3. 布局",
+      "path": "前端/React Native/3. 布局.md"
+    },
+    {
+      "basename": "1. display",
+      "path": "开发语言学习/CSS/6. 布局/1. display.md"
+    },
+    {
+      "basename": "5.值和单位",
+      "path": "开发语言学习/CSS/5.值和单位.md"
+    },
+    {
+      "basename": "4.常见样式",
+      "path": "开发语言学习/CSS/4.常见样式.md"
+    },
+    {
+      "basename": "3.盒子模型",
+      "path": "开发语言学习/CSS/3.盒子模型.md"
+    },
+    {
+      "basename": "css布局",
+      "path": "开发语言学习/CSS/6. 布局/css布局.md"
+    },
+    {
+      "basename": "2. float",
+      "path": "开发语言学习/CSS/6. 布局/2. float.md"
+    },
+    {
+      "basename": "1.概述",
+      "path": "开发语言学习/CSS/1.概述.md"
+    },
+    {
+      "basename": "2.选择器",
+      "path": "开发语言学习/CSS/2.选择器.md"
+    },
+    {
       "basename": "9. 类",
       "path": "开发语言学习/TypeScript/9. 类.md"
     },
@@ -43,10 +83,6 @@
     {
       "basename": "4. 导航栏和路由",
       "path": "前端/React Native/4. 导航栏和路由.md"
-    },
-    {
-      "basename": "3. 布局方式",
-      "path": "前端/React Native/3. 布局方式.md"
     },
     {
       "basename": "2. 核心组件",
@@ -159,46 +195,6 @@
     {
       "basename": "1.概述",
       "path": "前端/Web开发/Vue/1.概述.md"
-    },
-    {
-      "basename": "1. 基础部分",
-      "path": "开发语言学习/JavaScript/1. 基础部分.md"
-    },
-    {
-      "basename": "2. 基本数据类型",
-      "path": "开发语言学习/JavaScript/2. 基本数据类型.md"
-    },
-    {
-      "basename": "Swiftlint源码学习",
-      "path": "开源库/Tool/Swiftlint源码学习.md"
-    },
-    {
-      "basename": "利用Swiftlint自定义规则实现自动化code review",
-      "path": "开源库/Tool/利用Swiftlint自定义规则实现自动化code review.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "SUMMARY",
-      "path": "SUMMARY.md"
-    },
-    {
-      "basename": "Java Servlet",
-      "path": "SpringBoot/Java Servlet.md"
-    },
-    {
-      "basename": "DevOps工具",
-      "path": "学习工具及开发工具/DevOps工具.md"
-    },
-    {
-      "basename": "spring boot简述",
-      "path": "SpringBoot/spring boot简述.md"
-    },
-    {
-      "basename": "环境搭建",
-      "path": "SpringBoot/环境搭建.md"
     }
   ],
   "omittedPaths": [],
