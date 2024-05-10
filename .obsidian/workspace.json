@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/3. position.md",
+                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/3. position.md",
+                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/3. position.md",
+                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/CSS/6. 布局/3. position.md"
+                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md"
               }
             }
           },
@@ -182,8 +182,17 @@
   },
   "active": "ed6c92669654826e",
   "lastOpenFiles": [
-    "截屏2024-05-09 23.28.15.png",
+    "开发环境搭建/React-Native/开发环境搭建.md",
+    "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
+    "开发环境搭建/Node/1. Node.md",
+    "开发环境搭建/Node/2. NPM.md",
+    "开发环境搭建/Ruby环境/RVM安装.md",
+    "开发环境搭建/Ruby环境/Ruby.md",
+    "开发环境搭建/React-Native",
+    "开发环境搭建/JS开发环境/2. 开发环境搭建.md",
+    "开发环境搭建/JS开发环境/1. JS  简介.md",
     "开发语言学习/CSS/6. 布局/3. position.md",
+    "截屏2024-05-09 23.28.15.png",
     "前端/React Native/3. 布局.md",
     "开发语言学习/CSS/6. 布局/1. display.md",
     "开发语言学习/CSS/5.值和单位.md",
@@ -200,14 +209,7 @@
     "开发语言学习/TypeScript/15. d.ts类型声明文件.md",
     "开发语言学习/TypeScript/11. 枚举.md",
     "开发语言学习/TypeScript/10. ts和js中类的本质.md",
-    "开发环境搭建/Node/1. NPM.md",
     "开发语言学习/TypeScript/14. declare 关键字.md",
-    "开发语言学习/TypeScript/13. 模块.md",
-    "开发语言学习/TypeScript/12. 类型断言.md",
-    "开发环境搭建/JS开发环境/2. 开发环境搭建.md",
-    "前端/React Native/5. 钩子函数.md",
-    "前端/React Native/4. 导航栏和路由.md",
-    "前端/React Native/2. 核心组件.md",
     "前端/React Native",
     "iOS发版",
     "开发环境搭建/JS开发环境",

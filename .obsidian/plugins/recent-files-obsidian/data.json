@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "创建一个RN工程接入现有原生工程",
+      "path": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md"
+    },
+    {
+      "basename": "开发环境搭建",
+      "path": "开发环境搭建/React-Native/开发环境搭建.md"
+    },
+    {
+      "basename": "1. Node",
+      "path": "开发环境搭建/Node/1. Node.md"
+    },
+    {
+      "basename": "2. NPM",
+      "path": "开发环境搭建/Node/2. NPM.md"
+    },
+    {
+      "basename": "RVM安装",
+      "path": "开发环境搭建/Ruby环境/RVM安装.md"
+    },
+    {
+      "basename": "Ruby",
+      "path": "开发环境搭建/Ruby环境/Ruby.md"
+    },
+    {
+      "basename": "2. 开发环境搭建",
+      "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
+    },
+    {
+      "basename": "1. JS  简介",
+      "path": "开发环境搭建/JS开发环境/1. JS  简介.md"
+    },
+    {
       "basename": "3. position",
       "path": "开发语言学习/CSS/6. 布局/3. position.md"
     },
@@ -69,14 +101,6 @@
       "path": "开发语言学习/TypeScript/10. ts和js中类的本质.md"
     },
     {
-      "basename": "1. NPM",
-      "path": "开发环境搭建/Node/1. NPM.md"
-    },
-    {
-      "basename": "2. 开发环境搭建",
-      "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
-    },
-    {
       "basename": "5. 钩子函数",
       "path": "前端/React Native/5. 钩子函数.md"
     },
@@ -99,10 +123,6 @@
     {
       "basename": "安装pod库-podfile",
       "path": "学习工具及开发工具/Cocoapods依赖管理/安装pod库-podfile.md"
-    },
-    {
-      "basename": "1. JS  简介",
-      "path": "开发环境搭建/JS开发环境/1. JS  简介.md"
     },
     {
       "basename": "node",
@@ -179,22 +199,6 @@
     {
       "basename": "1. Flutter环境安装",
       "path": "开发环境搭建/Flutter/1. Flutter环境安装.md"
-    },
-    {
-      "basename": "2. SwiftUI 生命周期",
-      "path": "iOS_Framework/UI/SwiftUI/2. SwiftUI 生命周期.md"
-    },
-    {
-      "basename": "1. SwiftUI工程",
-      "path": "iOS_Framework/UI/SwiftUI/1. SwiftUI工程.md"
-    },
-    {
-      "basename": "2.Vue模版",
-      "path": "前端/Web开发/Vue/2.Vue模版.md"
-    },
-    {
-      "basename": "1.概述",
-      "path": "前端/Web开发/Vue/1.概述.md"
     }
   ],
   "omittedPaths": [],
