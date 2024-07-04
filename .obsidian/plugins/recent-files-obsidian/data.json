@@ -1,6 +1,74 @@
 {
   "recentFiles": [
     {
+      "basename": "16. tsconfig.json",
+      "path": "开发语言学习/TypeScript/16. tsconfig.json.md"
+    },
+    {
+      "basename": "2. 基本数据类型",
+      "path": "开发语言学习/JavaScript/2. 基本数据类型.md"
+    },
+    {
+      "basename": "5. VSCode的JSTS开发环境搭建",
+      "path": "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md"
+    },
+    {
+      "basename": "4. VSCode下 Swift 开发环境搭建",
+      "path": "开发环境搭建/VSCode/4. VSCode下 Swift 开发环境搭建.md"
+    },
+    {
+      "basename": "3. VSCode下CMake",
+      "path": "开发环境搭建/VSCode/3. VSCode下CMake.md"
+    },
+    {
+      "basename": "2. VSCode的C语言环境搭建",
+      "path": "开发环境搭建/VSCode/2. VSCode的C语言环境搭建.md"
+    },
+    {
+      "basename": "3. VSCode 的Task",
+      "path": "开发环境搭建/VSCode/1. VSCode/3. VSCode 的Task.md"
+    },
+    {
+      "basename": "2. VSCode 的调试功能",
+      "path": "开发环境搭建/VSCode/1. VSCode/2. VSCode 的调试功能.md"
+    },
+    {
+      "basename": "1. VSCode",
+      "path": "开发环境搭建/VSCode/1. VSCode/1. VSCode.md"
+    },
+    {
+      "basename": "调试工具",
+      "path": "开发环境搭建/React-Native/调试工具.md"
+    },
+    {
+      "basename": "3. ESLint",
+      "path": "开发环境搭建/JS开发环境/3. ESLint.md"
+    },
+    {
+      "basename": "2. 开发环境搭建",
+      "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
+    },
+    {
+      "basename": "1. JS  简介",
+      "path": "开发环境搭建/JS开发环境/1. JS  简介.md"
+    },
+    {
+      "basename": "Swift_Package_Manager",
+      "path": "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md"
+    },
+    {
+      "basename": "Swift_Package_Manager发布构建产物",
+      "path": "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager发布构建产物.md"
+    },
+    {
+      "basename": "SwiftLint",
+      "path": "学习工具及开发工具/静态分析及代码风格/SwiftLint.md"
+    },
+    {
+      "basename": "touch事件从始至终",
+      "path": "iOS_Framework/UI/UIKit/UIResponder/touch事件从始至终.md"
+    },
+    {
       "basename": "创建一个RN工程接入现有原生工程",
       "path": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md"
     },
@@ -23,14 +91,6 @@
     {
       "basename": "Ruby",
       "path": "开发环境搭建/Ruby环境/Ruby.md"
-    },
-    {
-      "basename": "2. 开发环境搭建",
-      "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
-    },
-    {
-      "basename": "1. JS  简介",
-      "path": "开发环境搭建/JS开发环境/1. JS  简介.md"
     },
     {
       "basename": "3. position",
@@ -85,10 +145,6 @@
       "path": "开发语言学习/TypeScript/5. ts的元组类型.md"
     },
     {
-      "basename": "16. tsconfig.json",
-      "path": "开发语言学习/TypeScript/16. tsconfig.json.md"
-    },
-    {
       "basename": "15. d.ts类型声明文件",
       "path": "开发语言学习/TypeScript/15. d.ts类型声明文件.md"
     },
@@ -139,66 +195,6 @@
     {
       "basename": "fastlane一键打包",
       "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane一键打包.md"
-    },
-    {
-      "basename": "3. iOS图像渲染原理",
-      "path": "视频课学习/视觉相关/博客总结/3. iOS图像渲染原理.md"
-    },
-    {
-      "basename": "1. KVC使用",
-      "path": "开发语言学习/Objective_C/OC底层/6.KVC/1. KVC使用.md"
-    },
-    {
-      "basename": "iOS Json解析",
-      "path": "iOS_Framework/issue/xml,json,plist的读写/iOS Json解析.md"
-    },
-    {
-      "basename": "1.基本运算符",
-      "path": "开发语言学习/Swift/2.基本运算符/1.基本运算符.md"
-    },
-    {
-      "basename": "OC工程引入Swift代码",
-      "path": "iOS_工程架构/Swift与OC混编/OC工程引入Swift代码.md"
-    },
-    {
-      "basename": "issues",
-      "path": "iOS_工程架构/Swift与OC混编/issues.md"
-    },
-    {
-      "basename": "3.ZLGitRemoteService库实践",
-      "path": "iOS_工程架构/4.架构实践/3.ZLGitRemoteService库实践.md"
-    },
-    {
-      "basename": "创建pod库-podspec",
-      "path": "学习工具及开发工具/Cocoapods依赖管理/创建pod库-podspec.md"
-    },
-    {
-      "basename": "7. 对象",
-      "path": "开发语言学习/TypeScript/7. 对象.md"
-    },
-    {
-      "basename": "4. ts的数组类型",
-      "path": "开发语言学习/TypeScript/4. ts的数组类型.md"
-    },
-    {
-      "basename": "2. 类型安全",
-      "path": "开发语言学习/TypeScript/2. 类型安全.md"
-    },
-    {
-      "basename": "1.常量和变量以及基本类型_1",
-      "path": "开发语言学习/Swift/1.基础部分/1.常量和变量以及基本类型_1.md"
-    },
-    {
-      "basename": "2.常量和变量以及基本类型_2",
-      "path": "开发语言学习/Swift/1.基础部分/2.常量和变量以及基本类型_2.md"
-    },
-    {
-      "basename": "1.概述1",
-      "path": "开发语言学习/Dart/1.概述1.md"
-    },
-    {
-      "basename": "1. Flutter环境安装",
-      "path": "开发环境搭建/Flutter/1. Flutter环境安装.md"
     }
   ],
   "omittedPaths": [],

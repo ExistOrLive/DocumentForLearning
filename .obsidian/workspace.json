@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
+                "file": "开发语言学习/TypeScript/16. tsconfig.json.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "隐私",
+                "query": "tag:#Swift_Package_Manager",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
+                "file": "开发语言学习/TypeScript/16. tsconfig.json.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
+                "file": "开发语言学习/TypeScript/16. tsconfig.json.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md"
+                "file": "开发语言学习/TypeScript/16. tsconfig.json.md"
               }
             }
           },
@@ -182,34 +182,37 @@
   },
   "active": "ed6c92669654826e",
   "lastOpenFiles": [
-    "开发环境搭建/React-Native/开发环境搭建.md",
+    "开发语言学习/JavaScript/2. 基本数据类型.md",
+    "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md",
+    "开发环境搭建/VSCode/4. VSCode下 Swift 开发环境搭建.md",
+    "开发环境搭建/VSCode/3. VSCode下CMake.md",
+    "开发环境搭建/VSCode/2. VSCode的C语言环境搭建.md",
+    "开发环境搭建/VSCode/1. VSCode/3. VSCode 的Task.md",
+    "截屏2024-05-14 下午9.47.11.png",
+    "开发环境搭建/VSCode/1. VSCode/2. VSCode 的调试功能.md",
+    "开发环境搭建/VSCode/1. VSCode/1. VSCode.md",
+    "开发环境搭建/React-Native/调试工具.md",
+    "开发环境搭建/VSCode/1. VSCode",
+    "开发环境搭建/VSCode",
+    "开发环境搭建/VSCode/1.VSCode.md",
+    "开发环境搭建/JS开发环境/3. ESLint.md",
+    "开发环境搭建/JS开发环境/2. 开发环境搭建.md",
+    "开发环境搭建/JS开发环境/1. JS  简介.md",
+    "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md",
+    "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager发布构建产物.md",
+    "使用.md",
+    "学习工具及开发工具/静态分析及代码风格/SwiftLint.md",
+    "iOS_Framework/UI/UIKit/UIResponder/touch事件从始至终.md",
     "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
+    "开发环境搭建/React-Native/开发环境搭建.md",
     "开发环境搭建/Node/1. Node.md",
     "开发环境搭建/Node/2. NPM.md",
     "开发环境搭建/Ruby环境/RVM安装.md",
     "开发环境搭建/Ruby环境/Ruby.md",
     "开发环境搭建/React-Native",
-    "开发环境搭建/JS开发环境/2. 开发环境搭建.md",
-    "开发环境搭建/JS开发环境/1. JS  简介.md",
     "开发语言学习/CSS/6. 布局/3. position.md",
     "截屏2024-05-09 23.28.15.png",
     "前端/React Native/3. 布局.md",
-    "开发语言学习/CSS/6. 布局/1. display.md",
-    "开发语言学习/CSS/5.值和单位.md",
-    "开发语言学习/CSS/4.常见样式.md",
-    "开发语言学习/CSS/3.盒子模型.md",
-    "开发语言学习/CSS/6. 布局/css布局.md",
-    "开发语言学习/CSS/6. 布局/2. float.md",
-    "开发语言学习/CSS/1.概述.md",
-    "开发语言学习/CSS/2.选择器.md",
-    "开发语言学习/TypeScript/9. 类.md",
-    "开发语言学习/TypeScript/6. 函数.md",
-    "开发语言学习/TypeScript/5. ts的元组类型.md",
-    "开发语言学习/TypeScript/16. tsconfig.json.md",
-    "开发语言学习/TypeScript/15. d.ts类型声明文件.md",
-    "开发语言学习/TypeScript/11. 枚举.md",
-    "开发语言学习/TypeScript/10. ts和js中类的本质.md",
-    "开发语言学习/TypeScript/14. declare 关键字.md",
     "前端/React Native",
     "iOS发版",
     "开发环境搭建/JS开发环境",
@@ -222,11 +225,8 @@
     "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.33.57.png",
     "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.34.48.png",
     "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.30.28.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.10.10.png",
     "SpringBoot",
     "开发语言学习/CSS/6. 布局",
-    "前端/小程序开发/自定义组件",
-    "开发语言学习/TypeScript",
-    "前端/小程序开发"
+    "前端/小程序开发/自定义组件"
   ]
 }

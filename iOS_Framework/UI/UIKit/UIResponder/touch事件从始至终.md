@@ -1,4 +1,3 @@
-
 # Touch事件从始至终
 
 iOS系统在运行过程中，会收到各种不同的事件，包括`touch事件`，`motion事件`，`remote control事件`以及`press 事件`。
@@ -17,12 +16,7 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
  当点击屏幕时，iOS系统首先会收到`touch事件`并分派到相应的app，然后从`UIWindow`开始自下而上遍历图层，找到最上层touch事件点击的View，即`first responder`。如果`first responder`能够处理Touch事件，则触发事件响应的action；否则根据响应链寻找到能够处理 `touch事件` 的Responder再处理事件。
 
-</br>
-
-<div align="center"><img src="pic/touch_test.jpeg" alt="图1" width="200" height="400" align="top" /></div>
-
-</br>
-
+![](pic/touch_test.jpeg)
 
 >如图所示，有以上的图层关系。
 
@@ -31,11 +25,7 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
  当点击屏幕上CustomView2区域时，首先系统会收到`touch事件`，然后调用UIWindow的方法 `[UIWindow _targetWindowForPathIndex:atPoint:forEvent:windowServerHitTestWindow:]` ,该方法会遍历`UIWindow`的子视图，并调用子视图的 `hitTest:withEvent:` 确定first responder。
 
-</br>
-
-<div align="center"><img src="pic/touch_test_4.png" alt="图2" width="200" height="400" align="top" /></div>
-
-</br>
+![](pic/touch_test_4.png)
 
 
 `hitTest:withEvent:`方法作用是返回touch事件点击的view。如果touch事件没有点击在该view的范围中，则返回nil；如果点击在该view的范围中，则遍历子视图，调用子视图的`hitTest:withEvent:`方法。具体步骤如下：
@@ -50,8 +40,7 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
 当通过`hitTest:withEvent:`确定了first responder，系统就会调用`UIApplication`的`sendEvent:`方法，将事件发送到first responder。
 
-<div align="center"><img src="pic/touch_test_5.png" alt="图3" width="200" height="400" align="top" /></div>
-
+![](pic/touch_test_5.png)
 > 由上图1可以看到CustomView2直接收到了事件，并调用`touchesBegan:withEvent:`。
 
 ```objc
@@ -69,23 +58,14 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
 `UIControl`作为`UIResponder`的子类，重写了`touchesBegan:withEvent:`等方法，所以`UIButton`，`UISwitch`等收到事件，会直接阻止事件向下传递;而`UIView`，`UIImaeView`等则不会阻止事件的传递。
 
-<div align="center"><img src="pic/touch_test_6.png" alt="图4"  align="top" /></div>
-
-</br>
+![](pic/touch_test_6.png)" 
 
 > 在这里，我们设置了符号断点，追踪了事件的传递。图1所示的`CustomView`，`CustomView1`，`CustomView2`都直接继承自`UIView`，且没有重写`touchesBegan:withEvent:`等方法，所以都不会拦截事件，事件会顺着响应链一直传递到`UIApplicationDelegate`(这里`UIApplicationDelegate`是`UIResponder`的子类)。可以看到事件的传递如下：
 
-</br>
-
-<div align="center"><img src="pic/touch_test_7.png" alt="图5"  align="top" /></div>
-
-</br>
-
+![](pic/touch_test_7.png)
 > 如果将`CustomView1` 改为继承自`UIControl`或者重写`touchesBegan:withEvent:`等方法,则会拦截事件不再传递。可以看到事件的传递如下：
 
-</br>
-
-<div align="center"><img src="pic/touch_test_8.png" alt="图6"  align="top" /></div>
+![](pic/touch_test_8.png)
 
 ## UIControl
 
@@ -101,9 +81,8 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
 > 这里我将 `CustomView1` 修改为 `UIButton` ,并设置target-action；在点击后，堆栈如下图所示
 
-</br>
-<div align="center"><img src="pic/touch_test_10.png" alt="图6"  align="top" /></div>
-</br>
+
+![](pic/touch_test_10.png)
 
 可以看到 `UIButton` 在 `touchesEnded:withEvent:` 方法中，
 
@@ -116,9 +95,7 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
 `touch事件` 在响应链中传递时，`UIGestureRecognizer` 会比它们的 `view` 先收到 `touch事件`。如果 `UIGestureRecognizer` 无法响应 `touch事件` ，`view` 才会收到并处理。
 
-</br>
-<div align="center"><img src="pic/touch_test_11.png" alt="图6"  align="top" /></div>
-</br>
+![](pic/touch_test_11.png)
 
 
 
@@ -127,21 +104,10 @@ iOS系统在运行过程中，会收到各种不同的事件，包括`touch事�
 
 
 
-[Using Responders and the Responder Chain to Handle Events][1]
+[Using Responders and the Responder Chain to Handle Events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc)
 
-[UIResponder][2]
+[UIResponder][https://developer.apple.com/documentation/uikit/uiresponder?language=objc]
 
-[UIEvent][3]
+[UIEvent][https://developer.apple.com/documentation/uikit/uievent?language=objc]
 
 [iOS|事件传递及响应链](https://juejin.cn/post/6894518925514997767https://juejin.cn/post/6894518925514997767)
-
-[1]: https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc
-
-[2]: https://developer.apple.com/documentation/uikit/uiresponder?language=objc
-
-[3]: https://developer.apple.com/documentation/uikit/uievent?language=objc
-
-
-
-
-

@@ -42,6 +42,7 @@ target的依赖就是一个或多个组件，这些组件被包中的代码所�
 - swift test 
 
 #### 2.1 创建package 
+
 ```sh
 USAGE: swift package init <options>
 
@@ -53,21 +54,20 @@ OPTIONS:
   -help, -h, --help       Show help information.
 ```
 
-`swift package init --name Hello --type executable` 创建一个可执行 swift package，目录结构如下：
+`swift package init --name SwiftHelloWorld --type executable` 创建一个可执行 swift package，目录结构如下：
 
-```
-├── Package.swift
-├── README.md
-├── Sources
-│   └── Hello
-│       └── Hello.swift
-└── Tests
-    ├── HelloTests
-    │   └── HelloTests.swift
-    └── LinuxMain.swift
-```
+![](../../截屏2024-05-16%20下午4.03.06.png)
 
-#### 2.2 构建 package
+####  2.2 解析依赖
+在 package.json 中添加 swift-argument-parser； 执行 `swift package resolve` 解析并下载依赖.
+
+![](../../截屏2024-05-16%20下午4.13.48.png)
+
+依赖的库将会下载到 .build 目录下
+![](../../截屏2024-05-16%20下午5.17.50.png)
+
+#### 2.3 构建 package
+
 ```sh
 USAGE: swift build <options>
 
@@ -83,14 +83,31 @@ OPTIONS:
 
 `swift build` 构建后的产物默认在 `.build` 文件夹下
 
-```sh
--> % swift build
-[3/3] Build complete!
+![](../../截屏2024-05-16%20下午9.07.52.png)
+
+![](../../截屏2024-05-16%20下午9.08.38.png)
+
+swift build 默认构建的是当前平台架构的debug 包；如果想要构建release包，则需要指定：
+
+```sh 
+# 构建 arm64 的 release 包 
+swift build --configuration release --product SwiftHelloWorld --arch arm64
+
+# 构建 x86_64 的 release 包 
+swift build --configuration release --product SwiftHelloWorld --arch x86_64 --verbose
+
+# 合并arm64 和 x86_64 
+lipo -create -output \
+		".build/universal/SwiftHelloWorld" \
+		".build/arm64-apple-macosx/release/SwiftHelloWorld" \
+		".build/x86_64-apple-macosx/release/SwiftHelloWorld"
+
+# 移除符号信息和调试信息 
+strip -rSTX ".build/universal/SwiftHelloWorld"
 ```
 
-![](https://raw.githubusercontent.com/ExistOrLive/existorlivepic/master/202204142118833.png)
 
-#### 2.3 运行 test
+#### 2.4 运行 test
 ```sh
 USAGE: swift test <options>
 
@@ -132,7 +149,7 @@ Test Suite 'All tests' passed at 2022-04-14 21:20:41.438.
 	 Executed 1 test, with 0 failures (0 unexpected) in 0.338 (0.340) seconds
 ```
 
-#### 2.4 运行可执行package
+#### 2.5 运行可执行package
 ```sh
 USAGE: swift run [<options>] [<executable>] [<arguments> ...]
 
@@ -166,6 +183,7 @@ Hello, world!
 ```
 
 ## 3. Package.swift
+
 `Package.swift` 仍然是一个swift文件，遵循swift的语法。文件中需要定义了一个  `Package` 类的对象，该对象的属性也就是 Package 的各种配置
 
 `Package`类的定义在 `PackageDescription` 模块中
