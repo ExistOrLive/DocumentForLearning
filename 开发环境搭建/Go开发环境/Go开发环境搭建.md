@@ -55,6 +55,8 @@ go install github.com/beego/bee@latest
 
 GOBIN目录一般会配置在shell的PATH环境变量中，这样就可以在shell中执行安装的go工具
 
+https://pkg.go.dev/ 
+
 ### 3.3 go get
 
 go get 用于在go包中下载，更新，移除go包的依赖，go get 会修改go包的go.mod 文件

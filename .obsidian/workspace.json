@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发语言学习/TypeScript/16. tsconfig.json.md",
+                "file": "开发环境搭建/Go开发环境/Go开发环境搭建.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/React Native/3. 布局.md",
+                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发语言学习/TypeScript/16. tsconfig.json.md",
+                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发语言学习/TypeScript/16. tsconfig.json.md",
+                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发语言学习/TypeScript/16. tsconfig.json.md"
+                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md"
               }
             }
           },
@@ -180,16 +181,20 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ed6c92669654826e",
+  "active": "88bfe1fe1b526815",
   "lastOpenFiles": [
-    "开发语言学习/JavaScript/2. 基本数据类型.md",
-    "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md",
+    "开发环境搭建/VSCode/1. VSCode/3. VSCode 的Task.md",
+    "开发环境搭建/VSCode/1. VSCode/2. VSCode 的调试功能.md",
+    "开发环境搭建/Go开发环境/Go开发环境搭建.md",
+    "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
     "开发环境搭建/VSCode/4. VSCode下 Swift 开发环境搭建.md",
+    "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md",
+    "前端/React Native/3. 布局.md",
+    "开发语言学习/TypeScript/16. tsconfig.json.md",
+    "开发语言学习/JavaScript/2. 基本数据类型.md",
     "开发环境搭建/VSCode/3. VSCode下CMake.md",
     "开发环境搭建/VSCode/2. VSCode的C语言环境搭建.md",
-    "开发环境搭建/VSCode/1. VSCode/3. VSCode 的Task.md",
     "截屏2024-05-14 下午9.47.11.png",
-    "开发环境搭建/VSCode/1. VSCode/2. VSCode 的调试功能.md",
     "开发环境搭建/VSCode/1. VSCode/1. VSCode.md",
     "开发环境搭建/React-Native/调试工具.md",
     "开发环境搭建/VSCode/1. VSCode",
@@ -207,12 +212,8 @@
     "开发环境搭建/React-Native/开发环境搭建.md",
     "开发环境搭建/Node/1. Node.md",
     "开发环境搭建/Node/2. NPM.md",
-    "开发环境搭建/Ruby环境/RVM安装.md",
-    "开发环境搭建/Ruby环境/Ruby.md",
     "开发环境搭建/React-Native",
-    "开发语言学习/CSS/6. 布局/3. position.md",
     "截屏2024-05-09 23.28.15.png",
-    "前端/React Native/3. 布局.md",
     "前端/React Native",
     "iOS发版",
     "开发环境搭建/JS开发环境",
