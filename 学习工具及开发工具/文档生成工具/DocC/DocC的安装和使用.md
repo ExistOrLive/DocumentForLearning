@@ -3,7 +3,7 @@
 #文档生成工具 
 
 ## 1.  源码安装
-[DocC](https://github.com/apple/swift-docc) 是一个Swift包，可以通过 [Swift_Package_Manager](../../Swift_Package_Manager/Swift_Package_Manager.md) 构建生成 DocC 可执行文件。
+[DocC](https://github.com/apple/swift-docc) 是一个Swift包，可以通过 [Swift_Package_Manager](../../../开发环境搭建/Swift开发环境/Swift_Package_Manager/Swift_Package_Manager.md) 构建生成 DocC 可执行文件。
 
 下载 DocC源码
 ```sh

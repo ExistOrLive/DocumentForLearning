@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8a651d5a3e07b061",
+        "id": "42e80f8d85742d1c",
         "type": "tabs",
         "children": [
           {
-            "id": "ed6c92669654826e",
+            "id": "64475cc6fdbe38be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发环境搭建/Go开发环境/Go开发环境搭建.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "88bfe1fe1b526815",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
+                "file": "开发环境搭建/JS开发环境/3. ESLint.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Swift_Package_Manager",
+                "query": "9.52",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
+                "file": "开发环境搭建/JS开发环境/3. ESLint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
+                "file": "开发环境搭建/JS开发环境/3. ESLint.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发环境搭建/VSCode/6. VSCode的go环境搭建.md"
+                "file": "开发环境搭建/JS开发环境/3. ESLint.md"
               }
             }
           },
@@ -181,53 +169,53 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "88bfe1fe1b526815",
+  "active": "4b87c1b78009ade6",
   "lastOpenFiles": [
-    "开发环境搭建/VSCode/1. VSCode/3. VSCode 的Task.md",
-    "开发环境搭建/VSCode/1. VSCode/2. VSCode 的调试功能.md",
-    "开发环境搭建/Go开发环境/Go开发环境搭建.md",
+    "开发语言学习/Golang/3. 基础类型.md",
     "开发环境搭建/VSCode/6. VSCode的go环境搭建.md",
-    "开发环境搭建/VSCode/4. VSCode下 Swift 开发环境搭建.md",
-    "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md",
-    "前端/React Native/3. 布局.md",
-    "开发语言学习/TypeScript/16. tsconfig.json.md",
-    "开发语言学习/JavaScript/2. 基本数据类型.md",
-    "开发环境搭建/VSCode/3. VSCode下CMake.md",
-    "开发环境搭建/VSCode/2. VSCode的C语言环境搭建.md",
-    "截屏2024-05-14 下午9.47.11.png",
-    "开发环境搭建/VSCode/1. VSCode/1. VSCode.md",
-    "开发环境搭建/React-Native/调试工具.md",
-    "开发环境搭建/VSCode/1. VSCode",
-    "开发环境搭建/VSCode",
-    "开发环境搭建/VSCode/1.VSCode.md",
-    "开发环境搭建/JS开发环境/3. ESLint.md",
-    "开发环境搭建/JS开发环境/2. 开发环境搭建.md",
-    "开发环境搭建/JS开发环境/1. JS  简介.md",
-    "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager.md",
-    "学习工具及开发工具/Swift_Package_Manager/Swift_Package_Manager发布构建产物.md",
-    "使用.md",
-    "学习工具及开发工具/静态分析及代码风格/SwiftLint.md",
-    "iOS_Framework/UI/UIKit/UIResponder/touch事件从始至终.md",
-    "开发环境搭建/React-Native/创建一个RN工程接入现有原生工程.md",
-    "开发环境搭建/React-Native/开发环境搭建.md",
-    "开发环境搭建/Node/1. Node.md",
-    "开发环境搭建/Node/2. NPM.md",
-    "开发环境搭建/React-Native",
-    "截屏2024-05-09 23.28.15.png",
-    "前端/React Native",
-    "iOS发版",
-    "开发环境搭建/JS开发环境",
-    "开发环境搭建/Node",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午5.19.31.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午5.17.55.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.54.30.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.47.23.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.43.45.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午3.33.57.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.34.48.png",
-    "开发语言学习/TypeScript/pic/截屏2024-02-07 下午2.30.28.png",
-    "SpringBoot",
-    "开发语言学习/CSS/6. 布局",
-    "前端/小程序开发/自定义组件"
+    "截屏2024-07-05 下午3.11.30.png",
+    "前端/Web开发/Vue/1.概述.md",
+    "跨平台/React Native/6.  RecyclerListView.md",
+    "跨平台/React Native/2. 核心组件.md",
+    "跨平台/React Native/3. 布局.md",
+    "跨平台/React Native/1. 环境搭建.md",
+    "跨平台/React Native/4. 导航栏和路由.md",
+    "跨平台/React Native/5. 钩子函数.md",
+    "跨平台/React Native/7. 动画.md",
+    "跨平台/React Native",
+    "跨平台",
+    "开发语言学习/JavaScript/1. 基础/1. 基础部分.md",
+    "开发语言学习/JavaScript/6. promise/1. promise.md",
+    "开发语言学习/JavaScript/3. 对象/6. Object.md",
+    "开发语言学习/JavaScript/6. promise",
+    "开发语言学习/JavaScript/7. 常用类型的使用及方法/1. 数字类型.md",
+    "开发语言学习/JavaScript/7. 常用类型的使用及方法/3. 数组类型.md",
+    "开发语言学习/JavaScript/7. 常用类型的使用及方法/3. 可迭代对象.md",
+    "开发语言学习/JavaScript/7. 常用类型的使用及方法/2. 字符串类型.md",
+    "开发语言学习/JavaScript/7. 常用类型的使用及方法/解构赋值.md",
+    "开发语言学习/JavaScript/7. 常用类型的使用及方法",
+    "开发语言学习/JavaScript/3. 对象/5. 可选链.md",
+    "开发语言学习/JavaScript/3. 对象/4. 垃圾回收.md",
+    "开发语言学习/JavaScript/3. 对象/3. 集合.md",
+    "开发语言学习/JavaScript/3. 对象/2. symbol 类型.md",
+    "开发语言学习/JavaScript/3. 对象/1. 对象.md",
+    "开发语言学习/JavaScript/5. 模块",
+    "开发语言学习/JavaScript/4. 类",
+    "开发语言学习/JavaScript/2. 函数/3. Function.md",
+    "开发语言学习/JavaScript/3. 对象",
+    "开发语言学习/JavaScript/2. 函数/2. 函数进阶特性.md",
+    "开发语言学习/JavaScript/2. 函数/1. 函数基础.md",
+    "开发语言学习/JavaScript/2. 函数",
+    "开发语言学习/JavaScript/1. 基础",
+    "截屏2024-07-18 下午9.55.09.png",
+    "截屏2024-07-18 下午9.53.43.png",
+    "截屏2024-07-18 下午9.52.15.png",
+    "截屏2024-07-18 下午9.52.10.png",
+    "截屏2024-07-18 下午9.50.32.png",
+    "截屏2024-07-15 下午6.19.46.png",
+    "截屏2024-07-05 下午5.43.12.png",
+    "截屏2024-07-05 下午5.40.23.png",
+    "截屏2024-07-05 下午3.26.33.png",
+    "开发环境搭建/Swift开发环境/Swift_Package_Manager"
   ]
 }

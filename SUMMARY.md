@@ -70,17 +70,17 @@
     * UI
         * UIKit
             * UIView
-                * [UIView](iOS_Framework/UI/UIKit/UIView/UIView.md)
-                * [drawRect](iOS_Framework/UI/UIKit/UIView/drawRect.md)
+                * [UIView](iOS/iOS_Framework/UI/UIKit/UIView/UIView.md)
+                * [drawRect](iOS/iOS_Framework/UI/UIKit/UIView/drawRect.md)
             * UITableView
-                * [UITableView](iOS_Framework/UI/UIKit/UITableView/UITableView.md)
-                * [UITableView的加载过程](iOS_Framework/UI/UIKit/UITableView/UITableView的加载过程.md)
+                * [UITableView](iOS/iOS_Framework/UI/UIKit/UITableView/UITableView.md)
+                * [UITableView的加载过程](iOS/iOS_Framework/UI/UIKit/UITableView/UITableView的加载过程.md)
 
 * 学习开发工具
     * 静态分析
         * [OCLint](学习工具及开发工具/静态分析及代码风格/OCLint.md) 
         * [infer](学习工具及开发工具/静态分析及代码风格/infer.md) 
-        * [SwiftLint](学习工具及开发工具/静态分析及代码风格/SwiftLint.md) 
+        * [SwiftLint](学习工具及开发工具/静态分析及代码风格/swiftlint/SwiftLint.md) 
     * iOS构建工具
         * fastlane
             * [fastlane](学习工具及开发工具/iOS构建工具/fastlane/fastlane.md)
@@ -93,8 +93,8 @@
 	
 - 开源库
     - Tool
-       - [Swiftlint源码学习](开源库/Tool/Swiftlint源码学习.md)
-       - [利用Swiftlint自定义规则实现自动化code review](开源库/Tool/利用Swiftlint自定义规则实现自动化code%20review.md)
+       - [Swiftlint源码学习](学习工具及开发工具/静态分析及代码风格/swiftlint/Swiftlint源码学习.md)
+       - [利用Swiftlint自定义规则实现自动化code review](学习工具及开发工具/静态分析及代码风格/swiftlint/利用Swiftlint自定义规则实现自动化code%20review.md)
 
             
             
