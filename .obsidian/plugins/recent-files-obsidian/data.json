@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "1. 概述",
+      "path": "开发语言学习/Kotlin/1. 概述.md"
+    },
+    {
+      "basename": "6. 函数",
+      "path": "开发语言学习/TypeScript/6. 函数.md"
+    },
+    {
+      "basename": "1. 函数基础",
+      "path": "开发语言学习/JavaScript/2. 函数/1. 函数基础.md"
+    },
+    {
+      "basename": "1. 对象",
+      "path": "开发语言学习/JavaScript/3. 对象/1. 对象.md"
+    },
+    {
+      "basename": "gradle",
+      "path": "Android/gradle/gradle.md"
+    },
+    {
+      "basename": "spring boot简述",
+      "path": "SpringBoot/spring boot简述.md"
+    },
+    {
+      "basename": "环境搭建",
+      "path": "SpringBoot/环境搭建.md"
+    },
+    {
+      "basename": "DevOps工具",
+      "path": "学习工具及开发工具/DevOps工具.md"
+    },
+    {
+      "basename": "Android Studio目录结构",
+      "path": "Android/Android Studio/Android Studio目录结构.md"
+    },
+    {
+      "basename": "AndroidManifest.xml",
+      "path": "Android/Android Studio/AndroidManifest.xml.md"
+    },
+    {
       "basename": "3. ESLint",
       "path": "开发环境搭建/JS开发环境/3. ESLint.md"
     },
@@ -45,20 +85,12 @@
       "path": "开发语言学习/JavaScript/3. 对象/2. symbol 类型.md"
     },
     {
-      "basename": "1. 对象",
-      "path": "开发语言学习/JavaScript/3. 对象/1. 对象.md"
-    },
-    {
       "basename": "3. Function",
       "path": "开发语言学习/JavaScript/2. 函数/3. Function.md"
     },
     {
       "basename": "2. 函数进阶特性",
       "path": "开发语言学习/JavaScript/2. 函数/2. 函数进阶特性.md"
-    },
-    {
-      "basename": "1. 函数基础",
-      "path": "开发语言学习/JavaScript/2. 函数/1. 函数基础.md"
     },
     {
       "basename": "4. 语句",
@@ -167,34 +199,6 @@
     {
       "basename": "5. VSCode的JSTS开发环境搭建",
       "path": "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md"
-    },
-    {
-      "basename": "16. tsconfig.json",
-      "path": "开发语言学习/TypeScript/16. tsconfig.json.md"
-    },
-    {
-      "basename": "3. VSCode下CMake",
-      "path": "开发环境搭建/VSCode/3. VSCode下CMake.md"
-    },
-    {
-      "basename": "2. VSCode的C语言环境搭建",
-      "path": "开发环境搭建/VSCode/2. VSCode的C语言环境搭建.md"
-    },
-    {
-      "basename": "1. VSCode",
-      "path": "开发环境搭建/VSCode/1. VSCode/1. VSCode.md"
-    },
-    {
-      "basename": "调试工具",
-      "path": "开发环境搭建/React-Native/调试工具.md"
-    },
-    {
-      "basename": "2. 开发环境搭建",
-      "path": "开发环境搭建/JS开发环境/2. 开发环境搭建.md"
-    },
-    {
-      "basename": "1. JS  简介",
-      "path": "开发环境搭建/JS开发环境/1. JS  简介.md"
     }
   ],
   "omittedPaths": [],
