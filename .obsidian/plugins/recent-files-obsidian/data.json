@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "2. Activity的生命周期",
+      "path": "Android/四大组件/Activity/2. Activity的生命周期.md"
+    },
+    {
       "basename": "1. 概述",
       "path": "开发语言学习/Kotlin/1. 概述.md"
+    },
+    {
+      "basename": "4. Intent",
+      "path": "Android/四大组件/Activity/4. Intent.md"
+    },
+    {
+      "basename": "3. View Binding",
+      "path": "Android/四大组件/Activity/3. View Binding.md"
+    },
+    {
+      "basename": "1. 概述",
+      "path": "Android/四大组件/Activity/1. 概述.md"
+    },
+    {
+      "basename": "1.闭包",
+      "path": "开发语言学习/Swift/7.闭包/1.闭包.md"
     },
     {
       "basename": "6. 函数",
@@ -179,26 +199,6 @@
     {
       "basename": "性能优化",
       "path": "iOS/iOS_APM/1.卡顿检测及优化/性能优化/性能优化.md"
-    },
-    {
-      "basename": "屏幕显像原理",
-      "path": "iOS/iOS_APM/1.卡顿检测及优化/性能优化/屏幕显像原理.png"
-    },
-    {
-      "basename": "3. VSCode 的Task",
-      "path": "开发环境搭建/VSCode/1. VSCode/3. VSCode 的Task.md"
-    },
-    {
-      "basename": "2. VSCode 的调试功能",
-      "path": "开发环境搭建/VSCode/1. VSCode/2. VSCode 的调试功能.md"
-    },
-    {
-      "basename": "4. VSCode下 Swift 开发环境搭建",
-      "path": "开发环境搭建/VSCode/4. VSCode下 Swift 开发环境搭建.md"
-    },
-    {
-      "basename": "5. VSCode的JSTS开发环境搭建",
-      "path": "开发环境搭建/VSCode/5. VSCode的JSTS开发环境搭建.md"
     }
   ],
   "omittedPaths": [],
