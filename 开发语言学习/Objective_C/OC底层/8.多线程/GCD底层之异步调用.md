@@ -447,7 +447,7 @@ _dispatch_root_queue_poke_slow(dispatch_queue_global_t dq, int n, int floor)
 
 我们通过符号断点调试程序，可以确定使用的`_pthread_workqueue_addthreads`
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-04%20%E4%B8%8B%E5%8D%887.49.20.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-04%20%E4%B8%8B%E5%8D%887.49.20.png)
 
 ## 2.5 `_dispatch_root_queues_init`
 
@@ -503,7 +503,7 @@ _dispatch_root_queues_init_once(void *context DISPATCH_UNUSED)
 
 ```
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-05%20%E4%B8%8B%E5%8D%8811.11.38.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-05%20%E4%B8%8B%E5%8D%8811.11.38.png)
 
 通过符号断点`_dispatch_root_queues_init_once`调试, 可以看到使用`_dispatch_worker_thread2`和`	pthread_workqueue_function_kevent_t`。因此推断是通过`_pthread_workqueue_init_with_kevent`注册了线程的执行函数。
 
@@ -575,11 +575,11 @@ pthread_workqueue_setup(struct pthread_workqueue_config *cfg, size_t cfg_size)
 
 我们通过断点调试也确定并发队列异步执行的堆栈中，调用了`_dispatch_worker_thread2`。（串行队列异步执行的堆栈调用了`_dispatch_workloop_worker_thread`函数，但是我在**libdispatch**源码中没有查询到，这里暂不讨论）
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.38.34.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.38.34.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.34.54.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.34.54.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-06%20%E4%B8%8B%E5%8D%884.34.23.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-06%20%E4%B8%8B%E5%8D%884.34.23.png)
 
 ```objc
 static void
@@ -881,9 +881,9 @@ const struct dispatch_continuation_vtable_s _dispatch_continuation_vtables[] = {
 
 从方法列表中可知，**私有并发队列**的任务设置为`DC_VTABLE(ASYNC_REDIRECT)`类型，则`do_invoke`指向的函数实现是`_dispatch_async_redirect_invoke`；**全局并发队列**的任务设置为`DC_VTABLE(OVERRIDE_OWNING)`类型，则`do_invoke`指向的函数实现是`_dispatch_queue_override_invoke`。这个可以通过断点调试验证：
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-06%20%E4%B8%8B%E5%8D%884.34.24.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-06%20%E4%B8%8B%E5%8D%884.34.24.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.34.55.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-06-30%20%E4%B8%8A%E5%8D%884.34.55.png)
 
 ## 3.4 `_dispatch_async_redirect_invoke`
 
@@ -1017,4 +1017,4 @@ _dispatch_call_block_and_release(void *block)
 }
 ```
 
-![](https://github.com/existorlive/existorlivepic/raw/master/dispatch_async1.png)
+![](https://pic.existorlive.cn/dispatch_async1.png)

@@ -12,7 +12,7 @@ fastlane init
 
 执行完成后，项目目录下会自动生成`fastlane`文件夹，文件夹中生成两个文件`Appfile` 和 `Fastfile` 
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.05.49.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.05.49.png)
    
 
 - **Appfile** 中包含该应用的基本信息(app id,开发者账号信息)
@@ -80,13 +80,13 @@ fastlane action actionName
 
 2. 在项目目录下执行`fastlane match init`,输入仓库地址；在fastlane目录下会生成`Matchfile`文件，包含match的配置信息
 
-![](https://github.com/existorlive/existorlivepic/raw/master/fastlane_match_init.png)
+![](https://pic.existorlive.cn/fastlane_match_init.png)
 
 3. 执行这些命令`fastlane match development`, `fastlane match adhoc`, `fastlane match enterprise`，`fastlane match appstore`，首次执行自动在`apple store connect`中创建provisioning file，证书并下载加密保存在git仓库，并上传.
 
 4. 其他开发者就可以使用`fastlane match`命令共享github中的证书和配置文件。
 
-![](https://github.com/existorlive/existorlivepic/raw/master/fastlane_match_github.png)
+![](https://pic.existorlive.cn/fastlane_match_github.png)
 
 ### match的参数 
 
@@ -234,13 +234,13 @@ end
 
 1. 申请访问权限
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.53.35.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.53.35.png)
 
 2. 生成API密钥
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.57.12.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.57.12.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.59.03.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2020-11-17%20%E4%B8%8A%E5%8D%886.59.03.png)
 
 3. 密钥生成后需要关注`Issuer ID`,`密钥 ID`以及下载密钥文件(.p8); 密钥文件只能下载一次。
 

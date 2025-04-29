@@ -38,7 +38,7 @@ CMake(Cross Platform Make),一款跨平台的工程构建工具。
 
 CMake 有 GUI版本下载后可以直接使用；如果希望在命令行中使用，需要配置对应的环境变量：
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-11-08%20%E4%B8%8B%E5%8D%886.19.50.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2020-11-08%20%E4%B8%8B%E5%8D%886.19.50.png)
 
 
 [CMake](https://cmake.org/download/) 

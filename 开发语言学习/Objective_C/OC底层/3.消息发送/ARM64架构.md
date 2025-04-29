@@ -9,7 +9,7 @@
 ARM64处理器共有 33 个寄存器，包括通用寄存器 `X0`～`X30`, `SP(x31)` 和 `PC`. 其中`W0`~`W31`分别是`X0`~`X31`的低32位.
 
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-05-07%20%E4%B8%8B%E5%8D%887.01.20.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-05-07%20%E4%B8%8B%E5%8D%887.01.20.png)
 
 
 - X0~X7：用于传递子程序参数和结果，使用时不需要保存，多余参数采用堆栈传递，64位返回结果采用X0表示，128位返回结果采用X1:X0表示。

@@ -24,7 +24,7 @@ Relocatable Object File|可重定位的目标文件，即.o目标文件
 
 在**Building Setting** -> **Mach-O Type** 中，可以选择`Mach-O`类型
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-05-24%20%E4%B8%8A%E5%8D%883.43.23.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-05-24%20%E4%B8%8A%E5%8D%883.43.23.png)
 
 ## 3.  Target 
 **Target** 描述的是 Xcode 中的编译单元，编译对象； 一个 **Target** 对应 一个 **Product**， 生成一个 **Product** 需要指定 源码文件，以及 一系列 处理源码的配置，这些都将在 **Target** 中指定。

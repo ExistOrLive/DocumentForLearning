@@ -20,7 +20,7 @@ fastlane match development --readonly
 
 > [!] Your certificate 'XXXXXXXXXX.cer' is not valid, please check end date and renew it if necessary
 
-![](https://github.com/existorlive/existorlivepic/raw/master/202202220123931.png)
+![](https://pic.existorlive.cn/202202220123931.png)
 
 在证书过期后，首先要删除仓库中的证书，有两种方式来处理：
 
@@ -59,13 +59,13 @@ certs/development/XXXXXXXXXX.cer
 certs/development/XXXXXXXXXX.p12
 ```
 
-![](https://github.com/existorlive/existorlivepic/raw/master/202202220132059.png)
+![](https://pic.existorlive.cn/202202220132059.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/202202220132048.png)
+![](https://pic.existorlive.cn/202202220132048.png)
 
 2. 在苹果开发者网站中删除对应的provision文件 
 
-![](https://github.com/existorlive/existorlivepic/raw/master/202202220135273.png)
+![](https://pic.existorlive.cn/202202220135273.png)
 
 3.  使用 `fastlane match` 创建指定类型的证书
 

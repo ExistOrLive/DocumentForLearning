@@ -1,24 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "2. Activity的生命周期",
-      "path": "Android/四大组件/Activity/2. Activity的生命周期.md"
+      "basename": "1. 2021.06.02HarmonyOS发布会",
+      "path": "HarmonyOS/1. 2021.06.02HarmonyOS发布会.md"
+    },
+    {
+      "basename": "dispatch_queue_set_specific",
+      "path": "开发语言学习/Objective_C/GCD/dispatch_queue_set_specific.md"
+    },
+    {
+      "basename": "属性",
+      "path": "开发语言学习/Objective_C/类/属性/属性.md"
+    },
+    {
+      "basename": "load_and_initialize",
+      "path": "开发语言学习/Objective_C/类/分类/load_and_initialize.md"
+    },
+    {
+      "basename": "LaTex",
+      "path": "开发语言学习/markdown/LaTex.md"
+    },
+    {
+      "basename": "fastlane的安装",
+      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane的安装.md"
+    },
+    {
+      "basename": "Cocoapods_issue",
+      "path": "学习工具及开发工具/Cocoapods依赖管理/Cocoapods_issue.md"
+    },
+    {
+      "basename": "1. 3D数学应用",
+      "path": "视频课学习/视觉相关/3. 3D数学/1. 3D数学应用.md"
+    },
+    {
+      "basename": "1. 概述",
+      "path": "开发语言学习/Swift/Swift底层/1. 概述.md"
+    },
+    {
+      "basename": "1. 概述",
+      "path": "iOS/iOS_Framework/WidgetKit/1. 概述.md"
     },
     {
       "basename": "1. 概述",
       "path": "开发语言学习/Kotlin/1. 概述.md"
     },
     {
+      "basename": "4. 语句",
+      "path": "开发语言学习/JavaScript/1. 基础/4. 语句.md"
+    },
+    {
       "basename": "4. Intent",
       "path": "Android/四大组件/Activity/4. Intent.md"
     },
     {
-      "basename": "3. View Binding",
-      "path": "Android/四大组件/Activity/3. View Binding.md"
+      "basename": "fastlane证书管理",
+      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane证书管理.md"
+    },
+    {
+      "basename": "fastlane一键打包",
+      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane一键打包.md"
+    },
+    {
+      "basename": "fastlane",
+      "path": "学习工具及开发工具/iOS构建工具/fastlane/fastlane.md"
+    },
+    {
+      "basename": "2.iOS构建原理之预处理",
+      "path": "iOS/iOS_工程架构/5.构建原理/2.iOS构建原理之预处理.md"
+    },
+    {
+      "basename": "1. display",
+      "path": "开发语言学习/CSS/6. 布局/1. display.md"
     },
     {
       "basename": "1. 概述",
       "path": "Android/四大组件/Activity/1. 概述.md"
+    },
+    {
+      "basename": "2. Activity的生命周期",
+      "path": "Android/四大组件/Activity/2. Activity的生命周期.md"
+    },
+    {
+      "basename": "3. View Binding",
+      "path": "Android/四大组件/Activity/3. View Binding.md"
     },
     {
       "basename": "1.闭包",
@@ -99,106 +163,6 @@
     {
       "basename": "3. 集合",
       "path": "开发语言学习/JavaScript/3. 对象/3. 集合.md"
-    },
-    {
-      "basename": "2. symbol 类型",
-      "path": "开发语言学习/JavaScript/3. 对象/2. symbol 类型.md"
-    },
-    {
-      "basename": "3. Function",
-      "path": "开发语言学习/JavaScript/2. 函数/3. Function.md"
-    },
-    {
-      "basename": "2. 函数进阶特性",
-      "path": "开发语言学习/JavaScript/2. 函数/2. 函数进阶特性.md"
-    },
-    {
-      "basename": "4. 语句",
-      "path": "开发语言学习/JavaScript/1. 基础/4. 语句.md"
-    },
-    {
-      "basename": "3. 运算符",
-      "path": "开发语言学习/JavaScript/1. 基础/3. 运算符.md"
-    },
-    {
-      "basename": "2. 基本数据类型",
-      "path": "开发语言学习/JavaScript/1. 基础/2. 基本数据类型.md"
-    },
-    {
-      "basename": "4. 数组和切片",
-      "path": "开发语言学习/Golang/4. 数组和切片.md"
-    },
-    {
-      "basename": "1. 概述",
-      "path": "开发语言学习/Golang/1. 概述.md"
-    },
-    {
-      "basename": "2. 变量和常量",
-      "path": "开发语言学习/Golang/2. 变量和常量.md"
-    },
-    {
-      "basename": "1. display",
-      "path": "开发语言学习/CSS/6. 布局/1. display.md"
-    },
-    {
-      "basename": "1. Go开发环境搭建",
-      "path": "开发环境搭建/Go开发环境/1. Go开发环境搭建.md"
-    },
-    {
-      "basename": "SUMMARY",
-      "path": "SUMMARY.md"
-    },
-    {
-      "basename": "To Do",
-      "path": "To Do.md"
-    },
-    {
-      "basename": "4. module，package",
-      "path": "开发环境搭建/Go开发环境/4. module，package.md"
-    },
-    {
-      "basename": "3. 使用Go开发命令行工具",
-      "path": "开发环境搭建/Go开发环境/3. 使用Go开发命令行工具.md"
-    },
-    {
-      "basename": "2. Go命令行工具",
-      "path": "开发环境搭建/Go开发环境/2. Go命令行工具.md"
-    },
-    {
-      "basename": "Swiftlint源码学习",
-      "path": "学习工具及开发工具/静态分析及代码风格/swiftlint/Swiftlint源码学习.md"
-    },
-    {
-      "basename": "4. ESLint本地检查",
-      "path": "开发环境搭建/JS开发环境/4. ESLint本地检查.md"
-    },
-    {
-      "basename": "利用Swiftlint发现潜在的循环引用",
-      "path": "学习工具及开发工具/静态分析及代码风格/swiftlint/利用Swiftlint发现潜在的循环引用.md"
-    },
-    {
-      "basename": "利用Swiftlint自定义规则实现自动化code review",
-      "path": "学习工具及开发工具/静态分析及代码风格/swiftlint/利用Swiftlint自定义规则实现自动化code review.md"
-    },
-    {
-      "basename": "SwiftLint",
-      "path": "学习工具及开发工具/静态分析及代码风格/swiftlint/SwiftLint.md"
-    },
-    {
-      "basename": "倒计时",
-      "path": "iOS/iOS最佳实践/倒计时.md"
-    },
-    {
-      "basename": "隐私清单",
-      "path": "iOS/iOS发版/隐私清单.md"
-    },
-    {
-      "basename": "圆角与离屏渲染",
-      "path": "iOS/iOS_APM/1.卡顿检测及优化/性能优化/圆角与离屏渲染.md"
-    },
-    {
-      "basename": "性能优化",
-      "path": "iOS/iOS_APM/1.卡顿检测及优化/性能优化/性能优化.md"
     }
   ],
   "omittedPaths": [],

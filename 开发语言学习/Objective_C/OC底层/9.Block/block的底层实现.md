@@ -5,7 +5,7 @@ Block的本质是一个结构体，包含`isa`，`FuncPtr`等主要成员变量�
 其中`isa`默认赋值为`_NSStackBlock`，但是我们使用中的Block 都是`_NSGlobalBlock`或者`_NSMallocBlock`类型。
 
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-13%20%E4%B8%8A%E5%8D%882.33.42.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-13%20%E4%B8%8A%E5%8D%882.33.42.png)
 
 在Block赋值给某个变量时，变量如果需要持有Block，将会给Block发送`retain`消息，底层则调用到`objc_retainBlock`函数，我们把关注点锁定在`objc_retainBlock`函数上。
 
@@ -115,7 +115,7 @@ void *_Block_copy(const void *arg) {
 
 - 当为stack block，则拷贝一份，并设置类型为 malloc block，再返回。
 
-![](https://github.com/existorlive/existorlivepic/raw/master/Block_copy.png)
+![](https://pic.existorlive.cn/Block_copy.png)
 
 ## 2.`_Block_release`
 
@@ -540,7 +540,7 @@ static struct Block_byref *_Block_byref_copy(const void *arg) {
 
 - 如果`Block_byref`已经存储在堆上，只需要操作引用计数+1
 
-![](https://github.com/existorlive/existorlivepic/raw/master/Block_byref_copy.png)
+![](https://pic.existorlive.cn/Block_byref_copy.png)
 
 ### 5.1  `_Block_byref_release`
 
@@ -616,4 +616,4 @@ static void _Block_byref_release(const void *arg) {
 
 如上的代码改写为C语言，[main.cpp](main.cpp)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/Block_layout1.png)
+![](https://pic.existorlive.cn/Block_layout1.png)

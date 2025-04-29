@@ -2,7 +2,7 @@
 
 苹果设备的 model 信息是苹果内存的设备码，用于区分不同的设备。
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-10-28%20%E4%B8%8A%E5%8D%881.21.19.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-10-28%20%E4%B8%8A%E5%8D%881.21.19.png)
 
 
 ```objc

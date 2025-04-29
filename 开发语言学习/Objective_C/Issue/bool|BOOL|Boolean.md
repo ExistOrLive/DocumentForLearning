@@ -24,4 +24,4 @@ Tip：
 BOOL｜Boolean｜bool 都不要和数值类型之间直接进行互相赋值。
 
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2020-09-17%20%E4%B8%8A%E5%8D%8812.32.26.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2020-09-17%20%E4%B8%8A%E5%8D%8812.32.26.png)

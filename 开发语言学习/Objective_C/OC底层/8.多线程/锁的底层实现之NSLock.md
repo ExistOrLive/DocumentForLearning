@@ -2,9 +2,9 @@
 
  有如下的示例代码，在100个并发中修改共享变量`array`，发生`EXC_BAD_ACCESS`错误。
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%886.50.07.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%886.50.07.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%886.49.30.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%886.49.30.png)
 
 在OC/Swift代码中,简单的赋值操作其实并不是单纯的赋值，涉及到ARC的内存管理。
 
@@ -41,9 +41,9 @@ self.array = [NSMutableArray alloc] init];
 
 我们通过符号断点监听了`-[NSLock lock]`和`-[NSLock unlock]`方法。
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%887.01.53.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%887.01.53.png)
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%887.07.44.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-12%20%E4%B8%8B%E5%8D%887.07.44.png)
 
 可以看到`pthread_mutex_t`相关的符号，因此可以确定`NSLock`底层就是利用`pthread_mutex_t`实现的。
 

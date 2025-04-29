@@ -2,7 +2,7 @@
 
 **Runloop**是线程相关的基础设备的一部分。**Runloop**是一个用于调度工作和协调事件回执的事件处理循环。**Runloop**的目的的用于保证线程有工作时被唤醒去处理，没有工作时进入睡眠状态。
 
-![](https://github.com/existorlive/existorlivepic/raw/master/runloop.jpeg)
+![](https://pic.existorlive.cn/runloop.jpeg)
 
 ## 1. Runloop Source
 
@@ -42,7 +42,7 @@
 
 **Foundation**和**Core Foundation**预定义了一些**Mode**：
 
-![](https://github.com/existorlive/existorlivepic/raw/master/%E6%88%AA%E5%B1%8F2021-07-24%20%E4%B8%8A%E5%8D%8811.26.20.png)
+![](https://pic.existorlive.cn/%E6%88%AA%E5%B1%8F2021-07-24%20%E4%B8%8A%E5%8D%8811.26.20.png)
 
 - **NSDefaultRunloopMode**
 
